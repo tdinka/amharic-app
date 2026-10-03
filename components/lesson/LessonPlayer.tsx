@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { lessonById, lessons, type ExerciseStep, type Lesson, type Step } from "@/lib/content";
 import { useProgress } from "@/lib/progress/ProgressProvider";
+import type { Skill } from "@/lib/progress/types";
+import { cardsToIntroduce } from "@/lib/srs";
 import { stopAudio } from "@/lib/useAudio";
 import { BuildWord, Dictation, GridFill, MinimalPair, PictureNaming, SoundMatch, type ExerciseProps } from "./Exercises";
 import { SayStep, StoryStep, TraceStep } from "./PracticeSteps";
@@ -21,6 +23,33 @@ import { Badge, StepHeading, StepText } from "./ui";
 
 type QueueItem = { stepIndex: number; retry: boolean };
 type Feedback = { correct: boolean; answer: string; praise: string } | { skipped: true };
+
+/** Which skill each kind of step practises, for the progress page's skill bars. */
+function skillOf(step: Step): Skill | null {
+  switch (step.type) {
+    case "hear":
+    case "chant":
+    case "phrase":
+      return "listen";
+    case "see":
+    case "words":
+    case "story":
+    case "punctuation":
+      return "read";
+    case "trace":
+      return "write";
+    case "say":
+      return "speak";
+    case "exercise":
+      return step.kind === "soundMatch" || step.kind === "minimalPair"
+        ? "listen"
+        : step.kind === "dictation"
+          ? "write"
+          : "read";
+    default:
+      return null;
+  }
+}
 
 const PRAISE = ["Nice!", "Exactly right!", "Yes — well done!", "Perfect!", "You got it!"];
 
@@ -95,6 +124,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
   const [phase, setPhase] = useState<"steps" | "culture" | "done">("steps");
   const startedAt = useRef(Date.now());
   const saved = useRef(false);
+  const skillCounts = useRef<Partial<Record<Skill, number>>>({});
 
   const item = queue[pos];
   const step = item ? lesson.steps[item.stepIndex] : undefined;
@@ -113,10 +143,14 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
     saved.current = true;
     const now = new Date();
     act(async (s) => {
+      await s.upsertCards(cardsToIntroduce(lesson, await s.load(), now));
       await s.completeLesson(lesson.id, now);
       await s.logPractice({ at: now, seconds: Math.round((now.getTime() - startedAt.current) / 1000) });
+      for (const [skill, count] of Object.entries(skillCounts.current) as [Skill, number][]) {
+        await s.logPractice({ at: now, skill, count });
+      }
     });
-  }, [phase, act, lesson.id]);
+  }, [phase, act, lesson]);
 
   function onAnswer(correct: boolean, answer: string) {
     setFeedback({ correct, answer, praise: pick(PRAISE) });
@@ -132,6 +166,8 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
 
   function next() {
     stopAudio();
+    const skill = step && !(feedback && "skipped" in feedback) ? skillOf(step) : null;
+    if (skill) skillCounts.current[skill] = (skillCounts.current[skill] ?? 0) + 1;
     setFeedback(null);
     if (pos + 1 < queue.length) setPos(pos + 1);
     else setPhase("culture");
