@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { withSpeed } from "@/lib/audio";
-import { playAudio, useAudioAvailable } from "@/lib/useAudio";
+import { playAudio, useAudioAvailable, useAudioSource } from "@/lib/useAudio";
 
 type Props = {
   path: string | undefined;
@@ -24,8 +24,21 @@ export function RecordingComing({ className = "" }: { className?: string }) {
   );
 }
 
+/** Marks audio that is a computer-voice stand-in, not Tsega's recording. */
+export function ComputerVoice({ className = "" }: { className?: string }) {
+  return (
+    <span
+      className={`inline-flex items-center rounded-full bg-indigo-light px-2 py-0.5 text-[11px] text-indigo ${className}`}
+      title="A computer voice for now — Tsega's recording will replace it"
+    >
+      computer voice
+    </span>
+  );
+}
+
 export function AudioButton({ path, label = "Play", size = "md", withSlow = false, className = "" }: Props) {
-  const available = useAudioAvailable(path);
+  const source = useAudioSource(path);
+  const available = source === null ? null : source !== "none";
   const slowAvailable = useAudioAvailable(withSlow && path ? withSpeed(path, "slow") : undefined);
   const [playing, setPlaying] = useState<null | "natural" | "slow">(null);
 
@@ -67,6 +80,7 @@ export function AudioButton({ path, label = "Play", size = "md", withSlow = fals
           🐢 slow
         </button>
       )}
+      {source === "tts" && <ComputerVoice />}
     </span>
   );
 }

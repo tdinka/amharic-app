@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { AudioButton, RecordingComing } from "@/components/AudioButton";
+import { AudioButton, ComputerVoice, RecordingComing } from "@/components/AudioButton";
 import { Roman } from "@/components/Roman";
 import { charAudioPath, wordAudioPath } from "@/lib/audio";
 import {
@@ -11,7 +11,7 @@ import {
   type ExerciseStep,
 } from "@/lib/content";
 import { romanOf, romanOfChar } from "@/lib/romanization";
-import { playAudio, useAudioAvailable } from "@/lib/useAudio";
+import { playAudio, useAudioSource } from "@/lib/useAudio";
 import { CharTile, StepHeading, StepText } from "./ui";
 
 type KindOf<K extends ExerciseStep["kind"]> = Extract<ExerciseStep, { kind: K }>;
@@ -46,22 +46,26 @@ function SoundClue({ text, roman }: { text?: string; roman: string | undefined }
   );
 }
 
-function ListenButton({ path }: { path: string | undefined }) {
+function ListenButton({ path, tts = false }: { path: string | undefined; tts?: boolean }) {
   return (
-    <button
-      type="button"
-      onClick={() => path && playAudio(path)}
-      className="mx-auto mt-5 flex h-20 w-20 items-center justify-center rounded-full bg-berbere text-3xl text-white shadow-md active:scale-95"
-      aria-label="Play the sound again"
-    >
-      🔊
-    </button>
+    <div className="mt-5 flex flex-col items-center gap-2">
+      <button
+        type="button"
+        onClick={() => path && playAudio(path)}
+        className="flex h-20 w-20 items-center justify-center rounded-full bg-berbere text-3xl text-white shadow-md active:scale-95"
+        aria-label="Play the sound again"
+      >
+        🔊
+      </button>
+      {tts && <ComputerVoice />}
+    </div>
   );
 }
 
 export function SoundMatch({ step, onAnswer }: ExerciseProps<KindOf<"soundMatch">>) {
   const path = charAudioPath(step.prompt);
-  const hasAudio = useAudioAvailable(path);
+  const source = useAudioSource(path);
+  const hasAudio = source === null ? null : source !== "none";
   const [picked, setPicked] = useState<string | null>(null);
 
   useEffect(() => {
@@ -77,7 +81,11 @@ export function SoundMatch({ step, onAnswer }: ExerciseProps<KindOf<"soundMatch"
   return (
     <div>
       <StepHeading>Which letter do you hear?</StepHeading>
-      {hasAudio ? <ListenButton path={path} /> : hasAudio === false && <SoundClue roman={romanOfChar(step.prompt)} />}
+      {hasAudio ? (
+        <ListenButton path={path} tts={source === "tts"} />
+      ) : (
+        hasAudio === false && <SoundClue roman={romanOfChar(step.prompt)} />
+      )}
       <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
         {step.options.map((c) => (
           <CharTile
@@ -233,10 +241,13 @@ export function BuildWord({ step, onAnswer }: ExerciseProps<KindOf<"buildWord">>
 export function MinimalPair({ step, onAnswer, onSkip }: ExerciseProps<KindOf<"minimalPair">>) {
   const [target] = useState(() => (Math.random() < 0.5 ? step.a : step.b));
   const otherPath = target === step.a ? wordAudioPath(step.b) : wordAudioPath(step.a);
-  const hasTarget = useAudioAvailable(wordAudioPath(target));
-  const hasOther = useAudioAvailable(otherPath);
+  // Only real recordings work here: a computer voice reads both spellings the same,
+  // because doubling isn't written.
+  const targetSource = useAudioSource(wordAudioPath(target));
+  const otherSource = useAudioSource(otherPath);
   const [picked, setPicked] = useState<string | null>(null);
-  const ready = hasTarget && hasOther;
+  const ready =
+    targetSource === null || otherSource === null ? null : targetSource === "native" && otherSource === "native";
 
   useEffect(() => {
     if (ready) playAudio(wordAudioPath(target));
@@ -256,8 +267,8 @@ export function MinimalPair({ step, onAnswer, onSkip }: ExerciseProps<KindOf<"mi
         <div className="mt-5 rounded-2xl bg-ochre-light p-4">
           <RecordingComing />
           <p className="mt-2 text-sm">
-            This one needs both recordings to work. Read the two below, then skip for now — it will be ready once the
-            recordings are in.
+            This one needs Tsega&rsquo;s own recordings of both words — a computer voice can&rsquo;t show the
+            difference. Read the two below, then skip for now.
           </p>
           <button type="button" onClick={onSkip} className="mt-3 rounded-full border border-ink px-4 py-2 text-sm">
             Skip for now
@@ -296,7 +307,8 @@ export function MinimalPair({ step, onAnswer, onSkip }: ExerciseProps<KindOf<"mi
 export function Dictation({ step, lessonId, onAnswer }: ExerciseProps<KindOf<"dictation">>) {
   const word = wordByAmharic(step.target);
   const path = word ? wordAudioPath(word) : undefined;
-  const hasAudio = useAudioAvailable(path);
+  const source = useAudioSource(path);
+  const hasAudio = source === null ? null : source !== "none";
   const [typed, setTyped] = useState<string[]>([]);
   const [checked, setChecked] = useState(false);
   const picker = useMemo(() => familiesTaughtThrough(lessonId), [lessonId]);
@@ -314,7 +326,7 @@ export function Dictation({ step, lessonId, onAnswer }: ExerciseProps<KindOf<"di
     <div>
       <StepHeading>Write what you hear</StepHeading>
       {hasAudio ? (
-        <ListenButton path={path} />
+        <ListenButton path={path} tts={source === "tts"} />
       ) : (
         hasAudio === false && (
           <SoundClue

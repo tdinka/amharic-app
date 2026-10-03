@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { AudioButton, RecordingComing } from "@/components/AudioButton";
+import { AudioButton, ComputerVoice, RecordingComing } from "@/components/AudioButton";
 import { VowelMarkGlyph } from "@/components/Glyphs";
 import { Roman } from "@/components/Roman";
 import { charAudioPath, wordAudioPath } from "@/lib/audio";
 import { familyByBase, punctuationName, type Step, type Word } from "@/lib/content";
 import { romanOfChar } from "@/lib/romanization";
-import { playAudio, stopAudio, wait } from "@/lib/useAudio";
+import { audioSource, playAudio, stopAudio, wait } from "@/lib/useAudio";
 import { Badge, CharTile, StepHeading, StepText } from "./ui";
 
 type StepOf<T extends Step["type"]> = Extract<Step, { type: T }>;
@@ -33,6 +33,7 @@ export function TextCardStep({ step }: { step: StepOf<"intro"> | StepOf<"rule"> 
 function useSequence(chars: string[], gapMs: number) {
   const [active, setActive] = useState<number | null>(null);
   const [anyMissing, setAnyMissing] = useState(false);
+  const [anyTts, setAnyTts] = useState(false);
   const run = useRef(0);
 
   async function play() {
@@ -40,7 +41,9 @@ function useSequence(chars: string[], gapMs: number) {
     for (let i = 0; i < chars.length; i++) {
       if (run.current !== id) return;
       setActive(i);
-      const ok = await playAudio(charAudioPath(chars[i]) ?? "");
+      const path = charAudioPath(chars[i]) ?? "";
+      if ((await audioSource(path)) === "tts") setAnyTts(true);
+      const ok = await playAudio(path);
       if (!ok) {
         setAnyMissing(true);
         await wait(650);
@@ -59,11 +62,11 @@ function useSequence(chars: string[], gapMs: number) {
     };
   }, []);
 
-  return { active, anyMissing, play, stop: () => (run.current++, setActive(null)) };
+  return { active, anyMissing, anyTts, play, stop: () => (run.current++, setActive(null)) };
 }
 
 export function HearStep({ step }: { step: StepOf<"hear"> }) {
-  const { active, anyMissing, play, stop } = useSequence(step.items, 250);
+  const { active, anyMissing, anyTts, play, stop } = useSequence(step.items, 250);
 
   useEffect(() => {
     play();
@@ -94,6 +97,7 @@ export function HearStep({ step }: { step: StepOf<"hear"> }) {
           ▶ Play all again
         </button>
         {anyMissing && <RecordingComing />}
+        {anyTts && <ComputerVoice />}
       </div>
     </div>
   );
@@ -129,7 +133,7 @@ export function SeeStep({ step }: { step: StepOf<"see"> }) {
 export function ChantStep({ step }: { step: StepOf<"chant"> }) {
   const family = familyByBase(step.family);
   const chars = family?.forms.map((f) => f.char) ?? [];
-  const { active, anyMissing, play } = useSequence(chars, 120);
+  const { active, anyMissing, anyTts, play } = useSequence(chars, 120);
 
   useEffect(() => {
     play();
@@ -159,6 +163,7 @@ export function ChantStep({ step }: { step: StepOf<"chant"> }) {
           ▶ Chant again
         </button>
         {anyMissing && <RecordingComing />}
+        {anyTts && <ComputerVoice />}
       </div>
     </div>
   );

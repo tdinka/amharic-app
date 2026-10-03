@@ -6,6 +6,10 @@
 //   story lines:  /audio/stories/w1-l3-1.mp3      (lesson id + line number)
 //
 // Every file can also have a slow version next to it: selam.mp3 → selam-slow.mp3
+//
+// Until Tsega records something, a computer-voice stand-in may exist at the same
+// path under /audio-tts/ instead of /audio/ (made by scripts/generate-tts.mjs).
+// Her recording always wins; deleting /public/audio-tts removes every stand-in.
 import { charInfo, type Word } from "@/lib/content";
 
 export type Speed = "natural" | "slow";
@@ -22,6 +26,11 @@ export function wordAudioPath(word: Word): string {
 
 export function storyLineAudioPath(lessonId: string, lineIndex: number): string {
   return `/audio/stories/${lessonId}-${lineIndex + 1}.mp3`;
+}
+
+/** Where the computer-voice stand-in for a recording lives. */
+export function ttsPath(path: string): string {
+  return path.replace(/^\/audio\//, "/audio-tts/");
 }
 
 export function withSpeed(path: string, speed: Speed): string {
