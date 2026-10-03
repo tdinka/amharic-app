@@ -25,6 +25,10 @@ export function DrawnGlyph({ char, size = 160 }: { char: string; size?: number }
   );
 }
 
+// Every form is drawn from the same left edge (not centred): vowel marks change a
+// letter's width, and centring would shift the shared base shape out of line.
+const GLYPH_X = 18;
+
 /**
  * A fidel form with its vowel mark in a second colour. Done by drawing the form
  * in ochre, then drawing it again in ink but masked to the shape of the family's
@@ -55,24 +59,24 @@ export function VowelMarkGlyph({
       <defs>
         <mask id={maskId}>
           <text
-            x="50"
+            x={GLYPH_X}
             y="54"
-            textAnchor="middle"
+            textAnchor="start"
             dominantBaseline="middle"
             fontSize="78"
             className="font-ethiopic"
             fill="white"
             stroke="white"
-            strokeWidth="1.5"
+            strokeWidth="3"
           >
             {base}
           </text>
         </mask>
       </defs>
       <text
-        x="50"
+        x={GLYPH_X}
         y="54"
-        textAnchor="middle"
+        textAnchor="start"
         dominantBaseline="middle"
         fontSize="78"
         className="font-ethiopic"
@@ -82,9 +86,9 @@ export function VowelMarkGlyph({
       </text>
       {!isBase && (
         <text
-          x="50"
+          x={GLYPH_X}
           y="54"
-          textAnchor="middle"
+          textAnchor="start"
           dominantBaseline="middle"
           fontSize="78"
           className="font-ethiopic"
