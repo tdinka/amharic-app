@@ -7,7 +7,7 @@ Goal: a working web prototype that a real learner can use for the first week of 
 1. **Home / lesson path**
    - Week 1 shown as a path of 3 lesson nodes; later weeks shown locked.
    - Next lesson highlighted; finished lessons show a check.
-   - Header: streak (days in a row), "reviews due" count, characters mastered out of 231.
+   - Header: streak (days in a row), "reviews due" count, characters mastered out of 238.
 
 2. **Lesson player** — plays the `steps` array from `content/lessons/week-1.json` one step per screen, with a progress bar and a Continue button. Step types to support:
    | Step type | What to render |

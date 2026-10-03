@@ -23,7 +23,8 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 
 ## Working with Tsega
 - She is early in her technical journey: explain every terminal command before running it, one step at a time, in plain words.
-- **Do not run `git commit` or `git push`.** She reviews diffs and commits in GitHub Desktop — tell her when it's a good moment to commit and suggest a message.
+- **Claude may run `git commit` and `git push`.** Before each one, tell her in plain words which files are included and the commit message. Never force-push. She can still review diffs and commit herself in GitHub Desktop.
+- `docs/questions-for-tsega.md` lists open content questions. Mention any open items at the start of a session, add new ones there instead of guessing, and move items to "Answered" when she decides.
 - Back up `.env` before any file reorganizing.
 - If Prisma is added later: use `prisma db push`, never `prisma migrate dev`.
 - Known Next.js 14.2 trap: `useSearchParams` + `Suspense` + `force-dynamic` in a Server Component can stack-overflow; read `window.location.search` instead.
