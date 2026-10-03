@@ -14,12 +14,12 @@ import {
   HearStep,
   PhraseStep,
   PunctuationStep,
-  ReviewStep,
   SeeStep,
   TextCardStep,
   WordsStep,
 } from "./TeachingSteps";
 import { Badge, StepHeading, StepText } from "./ui";
+import { WarmUpStep } from "./WarmUpStep";
 
 type QueueItem = { stepIndex: number; retry: boolean };
 type Feedback = { correct: boolean; answer: string; praise: string } | { skipped: true };
@@ -79,11 +79,13 @@ function StepView({
   lesson,
   onAnswer,
   onSkip,
+  onWarmUpDone,
 }: {
   step: Step;
   lesson: Lesson;
   onAnswer: ExerciseProps<ExerciseStep>["onAnswer"];
   onSkip: () => void;
+  onWarmUpDone: () => void;
 }) {
   switch (step.type) {
     case "intro":
@@ -107,7 +109,7 @@ function StepView({
     case "story":
       return <StoryStep step={step} lessonId={lesson.id} />;
     case "review":
-      return <ReviewStep />;
+      return <WarmUpStep onDone={onWarmUpDone} />;
     case "punctuation":
       return <PunctuationStep step={step} />;
     case "exercise":
@@ -129,7 +131,9 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
   const item = queue[pos];
   const step = item ? lesson.steps[item.stepIndex] : undefined;
   const isExercise = step?.type === "exercise";
-  const canContinue = !isExercise || feedback !== null;
+  const isWarmUp = step?.type === "review";
+  const [warmUpDone, setWarmUpDone] = useState(false);
+  const canContinue = isExercise ? feedback !== null : isWarmUp ? warmUpDone : true;
   const nextLesson = lessons[lessons.indexOf(lesson) + 1];
 
   useEffect(() => {
@@ -169,6 +173,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
     const skill = step && !(feedback && "skipped" in feedback) ? skillOf(step) : null;
     if (skill) skillCounts.current[skill] = (skillCounts.current[skill] ?? 0) + 1;
     setFeedback(null);
+    setWarmUpDone(false);
     if (pos + 1 < queue.length) setPos(pos + 1);
     else setPhase("culture");
   }
@@ -206,7 +211,13 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
                 <Badge tone="indigo">One more try</Badge>
               </div>
             )}
-            <StepView step={step} lesson={lesson} onAnswer={onAnswer} onSkip={() => setFeedback({ skipped: true })} />
+            <StepView
+              step={step}
+              lesson={lesson}
+              onAnswer={onAnswer}
+              onSkip={() => setFeedback({ skipped: true })}
+              onWarmUpDone={() => setWarmUpDone(true)}
+            />
           </div>
         ) : phase === "culture" ? (
           <div className="animate-pop">
@@ -263,7 +274,13 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
               disabled={!canContinue}
               className="w-full rounded-full bg-berbere py-3.5 text-lg font-semibold text-white shadow-sm transition active:scale-[0.98] disabled:bg-line disabled:text-muted"
             >
-              {phase === "culture" ? "Finish lesson" : isExercise && !feedback ? "Answer to continue" : "Continue"}
+              {phase === "culture"
+                ? "Finish lesson"
+                : isExercise && !feedback
+                  ? "Answer to continue"
+                  : isWarmUp && !warmUpDone
+                    ? "Finish the warm-up"
+                    : "Continue"}
             </button>
           </div>
         </footer>

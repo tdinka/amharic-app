@@ -236,16 +236,3 @@ export function PunctuationStep({ step }: { step: StepOf<"punctuation"> }) {
     </div>
   );
 }
-
-/** Placeholder until spaced repetition arrives in build step 4. */
-export function ReviewStep() {
-  return (
-    <div>
-      <StepHeading>Warm-up review</StepHeading>
-      <StepText>
-        Soon, letters and words you&rsquo;ve learned will come back here for a quick review at just the right time.
-        Nothing to review yet — on to new things!
-      </StepText>
-    </div>
-  );
-}
