@@ -41,7 +41,7 @@ Goal: a working web prototype that a real learner can use for the first week of 
    - Record → listen → save each one, at slow and natural speed.
    - Saves files into `public/audio/...` at the paths the content expects (in dev, via a local API route that writes the file).
    - A "mark reviewed" toggle per item, plus a filter for "not yet reviewed".
-   - This is how native audio gets made for the prototype — no TTS for core content.
+   - This is how native audio gets made for the prototype. Until a recording exists, a Google Cloud computer voice stands in (`npm run audio:tts`, files in `public/audio-tts/`), labelled "computer voice" in the app. Tsega's recordings always replace it. Minimal pairs need real recordings — a computer voice can't show doubling.
 
 ## Handwriting canvas
 - Pointer events, works with finger, mouse or stylus.

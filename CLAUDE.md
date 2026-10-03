@@ -20,6 +20,7 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 - `content/fidel.json` — all 34 consonant families × 7 vowel orders, labialized forms, punctuation, numerals, in teaching order (`week` 1–6). Generated from Unicode; do not hand-edit codepoints.
 - `content/lessons/week-1.json` — the first three lessons. Every word and story in them uses only characters taught so far — keep that rule for all new lessons.
 - Audio lives at `public/audio/...` with paths given in the content. Missing audio must never break a lesson: show a "recording coming" state.
+- Temporary computer voices (Google Cloud TTS, Amharic) live in `public/audio-tts/`, made by `npm run audio:tts` (needs `GOOGLE_TTS_API_KEY` in `.env.local`). The app prefers Tsega's recording, falls back to these, and labels them "computer voice". Never treat them as reviewed.
 
 ## Working with Tsega
 - She is early in her technical journey: explain every terminal command before running it, one step at a time, in plain words.
