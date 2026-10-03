@@ -1,0 +1,2374 @@
+{
+  "meta": {
+    "description": "Amharic fidel families used by the app, in teaching order (week 1-6).",
+    "vowelOrders": [
+      {
+        "order": 1,
+        "roman": "e"
+      },
+      {
+        "order": 2,
+        "roman": "u"
+      },
+      {
+        "order": 3,
+        "roman": "i"
+      },
+      {
+        "order": 4,
+        "roman": "a"
+      },
+      {
+        "order": 5,
+        "roman": "ē"
+      },
+      {
+        "order": 6,
+        "roman": "ə"
+      },
+      {
+        "order": 7,
+        "roman": "o"
+      }
+    ],
+    "romanization": "Simple learner-friendly scheme: e u i a ē ə o; apostrophe marks ejectives (q is also ejective). Editable by the reviewer.",
+    "punctuation": [
+      {
+        "char": "፡",
+        "name": "word separator"
+      },
+      {
+        "char": "።",
+        "name": "full stop"
+      },
+      {
+        "char": "፣",
+        "name": "comma"
+      },
+      {
+        "char": "፤",
+        "name": "semicolon"
+      },
+      {
+        "char": "፧",
+        "name": "question mark"
+      }
+    ],
+    "numerals": [
+      {
+        "char": "፩",
+        "value": 1
+      },
+      {
+        "char": "፪",
+        "value": 2
+      },
+      {
+        "char": "፫",
+        "value": 3
+      },
+      {
+        "char": "፬",
+        "value": 4
+      },
+      {
+        "char": "፭",
+        "value": 5
+      },
+      {
+        "char": "፮",
+        "value": 6
+      },
+      {
+        "char": "፯",
+        "value": 7
+      },
+      {
+        "char": "፰",
+        "value": 8
+      },
+      {
+        "char": "፱",
+        "value": 9
+      },
+      {
+        "char": "፲",
+        "value": 10
+      }
+    ]
+  },
+  "families": [
+    {
+      "id": "glottal a",
+      "sequence": 1,
+      "base": "አ",
+      "consonantRoman": "",
+      "week": 1,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "glottal",
+      "forms": [
+        {
+          "order": 1,
+          "char": "አ",
+          "roman": "a",
+          "codepoint": "U+12A0",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL A"
+        },
+        {
+          "order": 2,
+          "char": "ኡ",
+          "roman": "u",
+          "codepoint": "U+12A1",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL U"
+        },
+        {
+          "order": 3,
+          "char": "ኢ",
+          "roman": "i",
+          "codepoint": "U+12A2",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL I"
+        },
+        {
+          "order": 4,
+          "char": "ኣ",
+          "roman": "a",
+          "codepoint": "U+12A3",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL AA"
+        },
+        {
+          "order": 5,
+          "char": "ኤ",
+          "roman": "ē",
+          "codepoint": "U+12A4",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL EE"
+        },
+        {
+          "order": 6,
+          "char": "እ",
+          "roman": "ə",
+          "codepoint": "U+12A5",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL E"
+        },
+        {
+          "order": 7,
+          "char": "ኦ",
+          "roman": "o",
+          "codepoint": "U+12A6",
+          "unicodeName": "ETHIOPIC SYLLABLE GLOTTAL O"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "la",
+      "sequence": 2,
+      "base": "ለ",
+      "consonantRoman": "l",
+      "week": 1,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ለ",
+          "roman": "le",
+          "codepoint": "U+1208",
+          "unicodeName": "ETHIOPIC SYLLABLE LA"
+        },
+        {
+          "order": 2,
+          "char": "ሉ",
+          "roman": "lu",
+          "codepoint": "U+1209",
+          "unicodeName": "ETHIOPIC SYLLABLE LU"
+        },
+        {
+          "order": 3,
+          "char": "ሊ",
+          "roman": "li",
+          "codepoint": "U+120A",
+          "unicodeName": "ETHIOPIC SYLLABLE LI"
+        },
+        {
+          "order": 4,
+          "char": "ላ",
+          "roman": "la",
+          "codepoint": "U+120B",
+          "unicodeName": "ETHIOPIC SYLLABLE LAA"
+        },
+        {
+          "order": 5,
+          "char": "ሌ",
+          "roman": "lē",
+          "codepoint": "U+120C",
+          "unicodeName": "ETHIOPIC SYLLABLE LEE"
+        },
+        {
+          "order": 6,
+          "char": "ል",
+          "roman": "lə",
+          "codepoint": "U+120D",
+          "unicodeName": "ETHIOPIC SYLLABLE LE"
+        },
+        {
+          "order": 7,
+          "char": "ሎ",
+          "roman": "lo",
+          "codepoint": "U+120E",
+          "unicodeName": "ETHIOPIC SYLLABLE LO"
+        }
+      ],
+      "labialized": {
+        "char": "ሏ",
+        "roman": "lwa",
+        "codepoint": "U+120F",
+        "unicodeName": "ETHIOPIC SYLLABLE LWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ma",
+      "sequence": 3,
+      "base": "መ",
+      "consonantRoman": "m",
+      "week": 1,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "መ",
+          "roman": "me",
+          "codepoint": "U+1218",
+          "unicodeName": "ETHIOPIC SYLLABLE MA"
+        },
+        {
+          "order": 2,
+          "char": "ሙ",
+          "roman": "mu",
+          "codepoint": "U+1219",
+          "unicodeName": "ETHIOPIC SYLLABLE MU"
+        },
+        {
+          "order": 3,
+          "char": "ሚ",
+          "roman": "mi",
+          "codepoint": "U+121A",
+          "unicodeName": "ETHIOPIC SYLLABLE MI"
+        },
+        {
+          "order": 4,
+          "char": "ማ",
+          "roman": "ma",
+          "codepoint": "U+121B",
+          "unicodeName": "ETHIOPIC SYLLABLE MAA"
+        },
+        {
+          "order": 5,
+          "char": "ሜ",
+          "roman": "mē",
+          "codepoint": "U+121C",
+          "unicodeName": "ETHIOPIC SYLLABLE MEE"
+        },
+        {
+          "order": 6,
+          "char": "ም",
+          "roman": "mə",
+          "codepoint": "U+121D",
+          "unicodeName": "ETHIOPIC SYLLABLE ME"
+        },
+        {
+          "order": 7,
+          "char": "ሞ",
+          "roman": "mo",
+          "codepoint": "U+121E",
+          "unicodeName": "ETHIOPIC SYLLABLE MO"
+        }
+      ],
+      "labialized": {
+        "char": "ሟ",
+        "roman": "mwa",
+        "codepoint": "U+121F",
+        "unicodeName": "ETHIOPIC SYLLABLE MWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "sa",
+      "sequence": 4,
+      "base": "ሰ",
+      "consonantRoman": "s",
+      "week": 1,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ሰ",
+          "roman": "se",
+          "codepoint": "U+1230",
+          "unicodeName": "ETHIOPIC SYLLABLE SA"
+        },
+        {
+          "order": 2,
+          "char": "ሱ",
+          "roman": "su",
+          "codepoint": "U+1231",
+          "unicodeName": "ETHIOPIC SYLLABLE SU"
+        },
+        {
+          "order": 3,
+          "char": "ሲ",
+          "roman": "si",
+          "codepoint": "U+1232",
+          "unicodeName": "ETHIOPIC SYLLABLE SI"
+        },
+        {
+          "order": 4,
+          "char": "ሳ",
+          "roman": "sa",
+          "codepoint": "U+1233",
+          "unicodeName": "ETHIOPIC SYLLABLE SAA"
+        },
+        {
+          "order": 5,
+          "char": "ሴ",
+          "roman": "sē",
+          "codepoint": "U+1234",
+          "unicodeName": "ETHIOPIC SYLLABLE SEE"
+        },
+        {
+          "order": 6,
+          "char": "ስ",
+          "roman": "sə",
+          "codepoint": "U+1235",
+          "unicodeName": "ETHIOPIC SYLLABLE SE"
+        },
+        {
+          "order": 7,
+          "char": "ሶ",
+          "roman": "so",
+          "codepoint": "U+1236",
+          "unicodeName": "ETHIOPIC SYLLABLE SO"
+        }
+      ],
+      "labialized": {
+        "char": "ሷ",
+        "roman": "swa",
+        "codepoint": "U+1237",
+        "unicodeName": "ETHIOPIC SYLLABLE SWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ba",
+      "sequence": 5,
+      "base": "በ",
+      "consonantRoman": "b",
+      "week": 1,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "በ",
+          "roman": "be",
+          "codepoint": "U+1260",
+          "unicodeName": "ETHIOPIC SYLLABLE BA"
+        },
+        {
+          "order": 2,
+          "char": "ቡ",
+          "roman": "bu",
+          "codepoint": "U+1261",
+          "unicodeName": "ETHIOPIC SYLLABLE BU"
+        },
+        {
+          "order": 3,
+          "char": "ቢ",
+          "roman": "bi",
+          "codepoint": "U+1262",
+          "unicodeName": "ETHIOPIC SYLLABLE BI"
+        },
+        {
+          "order": 4,
+          "char": "ባ",
+          "roman": "ba",
+          "codepoint": "U+1263",
+          "unicodeName": "ETHIOPIC SYLLABLE BAA"
+        },
+        {
+          "order": 5,
+          "char": "ቤ",
+          "roman": "bē",
+          "codepoint": "U+1264",
+          "unicodeName": "ETHIOPIC SYLLABLE BEE"
+        },
+        {
+          "order": 6,
+          "char": "ብ",
+          "roman": "bə",
+          "codepoint": "U+1265",
+          "unicodeName": "ETHIOPIC SYLLABLE BE"
+        },
+        {
+          "order": 7,
+          "char": "ቦ",
+          "roman": "bo",
+          "codepoint": "U+1266",
+          "unicodeName": "ETHIOPIC SYLLABLE BO"
+        }
+      ],
+      "labialized": {
+        "char": "ቧ",
+        "roman": "bwa",
+        "codepoint": "U+1267",
+        "unicodeName": "ETHIOPIC SYLLABLE BWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "na",
+      "sequence": 6,
+      "base": "ነ",
+      "consonantRoman": "n",
+      "week": 2,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ነ",
+          "roman": "ne",
+          "codepoint": "U+1290",
+          "unicodeName": "ETHIOPIC SYLLABLE NA"
+        },
+        {
+          "order": 2,
+          "char": "ኑ",
+          "roman": "nu",
+          "codepoint": "U+1291",
+          "unicodeName": "ETHIOPIC SYLLABLE NU"
+        },
+        {
+          "order": 3,
+          "char": "ኒ",
+          "roman": "ni",
+          "codepoint": "U+1292",
+          "unicodeName": "ETHIOPIC SYLLABLE NI"
+        },
+        {
+          "order": 4,
+          "char": "ና",
+          "roman": "na",
+          "codepoint": "U+1293",
+          "unicodeName": "ETHIOPIC SYLLABLE NAA"
+        },
+        {
+          "order": 5,
+          "char": "ኔ",
+          "roman": "nē",
+          "codepoint": "U+1294",
+          "unicodeName": "ETHIOPIC SYLLABLE NEE"
+        },
+        {
+          "order": 6,
+          "char": "ን",
+          "roman": "nə",
+          "codepoint": "U+1295",
+          "unicodeName": "ETHIOPIC SYLLABLE NE"
+        },
+        {
+          "order": 7,
+          "char": "ኖ",
+          "roman": "no",
+          "codepoint": "U+1296",
+          "unicodeName": "ETHIOPIC SYLLABLE NO"
+        }
+      ],
+      "labialized": {
+        "char": "ኗ",
+        "roman": "nwa",
+        "codepoint": "U+1297",
+        "unicodeName": "ETHIOPIC SYLLABLE NWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ta",
+      "sequence": 7,
+      "base": "ተ",
+      "consonantRoman": "t",
+      "week": 2,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ተ",
+          "roman": "te",
+          "codepoint": "U+1270",
+          "unicodeName": "ETHIOPIC SYLLABLE TA"
+        },
+        {
+          "order": 2,
+          "char": "ቱ",
+          "roman": "tu",
+          "codepoint": "U+1271",
+          "unicodeName": "ETHIOPIC SYLLABLE TU"
+        },
+        {
+          "order": 3,
+          "char": "ቲ",
+          "roman": "ti",
+          "codepoint": "U+1272",
+          "unicodeName": "ETHIOPIC SYLLABLE TI"
+        },
+        {
+          "order": 4,
+          "char": "ታ",
+          "roman": "ta",
+          "codepoint": "U+1273",
+          "unicodeName": "ETHIOPIC SYLLABLE TAA"
+        },
+        {
+          "order": 5,
+          "char": "ቴ",
+          "roman": "tē",
+          "codepoint": "U+1274",
+          "unicodeName": "ETHIOPIC SYLLABLE TEE"
+        },
+        {
+          "order": 6,
+          "char": "ት",
+          "roman": "tə",
+          "codepoint": "U+1275",
+          "unicodeName": "ETHIOPIC SYLLABLE TE"
+        },
+        {
+          "order": 7,
+          "char": "ቶ",
+          "roman": "to",
+          "codepoint": "U+1276",
+          "unicodeName": "ETHIOPIC SYLLABLE TO"
+        }
+      ],
+      "labialized": {
+        "char": "ቷ",
+        "roman": "twa",
+        "codepoint": "U+1277",
+        "unicodeName": "ETHIOPIC SYLLABLE TWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ra",
+      "sequence": 8,
+      "base": "ረ",
+      "consonantRoman": "r",
+      "week": 2,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ረ",
+          "roman": "re",
+          "codepoint": "U+1228",
+          "unicodeName": "ETHIOPIC SYLLABLE RA"
+        },
+        {
+          "order": 2,
+          "char": "ሩ",
+          "roman": "ru",
+          "codepoint": "U+1229",
+          "unicodeName": "ETHIOPIC SYLLABLE RU"
+        },
+        {
+          "order": 3,
+          "char": "ሪ",
+          "roman": "ri",
+          "codepoint": "U+122A",
+          "unicodeName": "ETHIOPIC SYLLABLE RI"
+        },
+        {
+          "order": 4,
+          "char": "ራ",
+          "roman": "ra",
+          "codepoint": "U+122B",
+          "unicodeName": "ETHIOPIC SYLLABLE RAA"
+        },
+        {
+          "order": 5,
+          "char": "ሬ",
+          "roman": "rē",
+          "codepoint": "U+122C",
+          "unicodeName": "ETHIOPIC SYLLABLE REE"
+        },
+        {
+          "order": 6,
+          "char": "ር",
+          "roman": "rə",
+          "codepoint": "U+122D",
+          "unicodeName": "ETHIOPIC SYLLABLE RE"
+        },
+        {
+          "order": 7,
+          "char": "ሮ",
+          "roman": "ro",
+          "codepoint": "U+122E",
+          "unicodeName": "ETHIOPIC SYLLABLE RO"
+        }
+      ],
+      "labialized": {
+        "char": "ሯ",
+        "roman": "rwa",
+        "codepoint": "U+122F",
+        "unicodeName": "ETHIOPIC SYLLABLE RWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "da",
+      "sequence": 9,
+      "base": "ደ",
+      "consonantRoman": "d",
+      "week": 2,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ደ",
+          "roman": "de",
+          "codepoint": "U+12F0",
+          "unicodeName": "ETHIOPIC SYLLABLE DA"
+        },
+        {
+          "order": 2,
+          "char": "ዱ",
+          "roman": "du",
+          "codepoint": "U+12F1",
+          "unicodeName": "ETHIOPIC SYLLABLE DU"
+        },
+        {
+          "order": 3,
+          "char": "ዲ",
+          "roman": "di",
+          "codepoint": "U+12F2",
+          "unicodeName": "ETHIOPIC SYLLABLE DI"
+        },
+        {
+          "order": 4,
+          "char": "ዳ",
+          "roman": "da",
+          "codepoint": "U+12F3",
+          "unicodeName": "ETHIOPIC SYLLABLE DAA"
+        },
+        {
+          "order": 5,
+          "char": "ዴ",
+          "roman": "dē",
+          "codepoint": "U+12F4",
+          "unicodeName": "ETHIOPIC SYLLABLE DEE"
+        },
+        {
+          "order": 6,
+          "char": "ድ",
+          "roman": "də",
+          "codepoint": "U+12F5",
+          "unicodeName": "ETHIOPIC SYLLABLE DE"
+        },
+        {
+          "order": 7,
+          "char": "ዶ",
+          "roman": "do",
+          "codepoint": "U+12F6",
+          "unicodeName": "ETHIOPIC SYLLABLE DO"
+        }
+      ],
+      "labialized": {
+        "char": "ዷ",
+        "roman": "dwa",
+        "codepoint": "U+12F7",
+        "unicodeName": "ETHIOPIC SYLLABLE DWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ka",
+      "sequence": 10,
+      "base": "ከ",
+      "consonantRoman": "k",
+      "week": 2,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ከ",
+          "roman": "ke",
+          "codepoint": "U+12A8",
+          "unicodeName": "ETHIOPIC SYLLABLE KA"
+        },
+        {
+          "order": 2,
+          "char": "ኩ",
+          "roman": "ku",
+          "codepoint": "U+12A9",
+          "unicodeName": "ETHIOPIC SYLLABLE KU"
+        },
+        {
+          "order": 3,
+          "char": "ኪ",
+          "roman": "ki",
+          "codepoint": "U+12AA",
+          "unicodeName": "ETHIOPIC SYLLABLE KI"
+        },
+        {
+          "order": 4,
+          "char": "ካ",
+          "roman": "ka",
+          "codepoint": "U+12AB",
+          "unicodeName": "ETHIOPIC SYLLABLE KAA"
+        },
+        {
+          "order": 5,
+          "char": "ኬ",
+          "roman": "kē",
+          "codepoint": "U+12AC",
+          "unicodeName": "ETHIOPIC SYLLABLE KEE"
+        },
+        {
+          "order": 6,
+          "char": "ክ",
+          "roman": "kə",
+          "codepoint": "U+12AD",
+          "unicodeName": "ETHIOPIC SYLLABLE KE"
+        },
+        {
+          "order": 7,
+          "char": "ኮ",
+          "roman": "ko",
+          "codepoint": "U+12AE",
+          "unicodeName": "ETHIOPIC SYLLABLE KO"
+        }
+      ],
+      "labialized": {
+        "char": "ኳ",
+        "roman": "kwa",
+        "codepoint": "U+12B3",
+        "unicodeName": "ETHIOPIC SYLLABLE KWAA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "qa",
+      "sequence": 11,
+      "base": "ቀ",
+      "consonantRoman": "q",
+      "week": 2,
+      "ejective": true,
+      "homophoneOf": null,
+      "notes": "ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ቀ",
+          "roman": "qe",
+          "codepoint": "U+1240",
+          "unicodeName": "ETHIOPIC SYLLABLE QA"
+        },
+        {
+          "order": 2,
+          "char": "ቁ",
+          "roman": "qu",
+          "codepoint": "U+1241",
+          "unicodeName": "ETHIOPIC SYLLABLE QU"
+        },
+        {
+          "order": 3,
+          "char": "ቂ",
+          "roman": "qi",
+          "codepoint": "U+1242",
+          "unicodeName": "ETHIOPIC SYLLABLE QI"
+        },
+        {
+          "order": 4,
+          "char": "ቃ",
+          "roman": "qa",
+          "codepoint": "U+1243",
+          "unicodeName": "ETHIOPIC SYLLABLE QAA"
+        },
+        {
+          "order": 5,
+          "char": "ቄ",
+          "roman": "qē",
+          "codepoint": "U+1244",
+          "unicodeName": "ETHIOPIC SYLLABLE QEE"
+        },
+        {
+          "order": 6,
+          "char": "ቅ",
+          "roman": "qə",
+          "codepoint": "U+1245",
+          "unicodeName": "ETHIOPIC SYLLABLE QE"
+        },
+        {
+          "order": 7,
+          "char": "ቆ",
+          "roman": "qo",
+          "codepoint": "U+1246",
+          "unicodeName": "ETHIOPIC SYLLABLE QO"
+        }
+      ],
+      "labialized": {
+        "char": "ቋ",
+        "roman": "qwa",
+        "codepoint": "U+124B",
+        "unicodeName": "ETHIOPIC SYLLABLE QWAA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ha",
+      "sequence": 12,
+      "base": "ሀ",
+      "consonantRoman": "h",
+      "week": 3,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ሀ",
+          "roman": "ha",
+          "codepoint": "U+1200",
+          "unicodeName": "ETHIOPIC SYLLABLE HA"
+        },
+        {
+          "order": 2,
+          "char": "ሁ",
+          "roman": "hu",
+          "codepoint": "U+1201",
+          "unicodeName": "ETHIOPIC SYLLABLE HU"
+        },
+        {
+          "order": 3,
+          "char": "ሂ",
+          "roman": "hi",
+          "codepoint": "U+1202",
+          "unicodeName": "ETHIOPIC SYLLABLE HI"
+        },
+        {
+          "order": 4,
+          "char": "ሃ",
+          "roman": "ha",
+          "codepoint": "U+1203",
+          "unicodeName": "ETHIOPIC SYLLABLE HAA"
+        },
+        {
+          "order": 5,
+          "char": "ሄ",
+          "roman": "hē",
+          "codepoint": "U+1204",
+          "unicodeName": "ETHIOPIC SYLLABLE HEE"
+        },
+        {
+          "order": 6,
+          "char": "ህ",
+          "roman": "hə",
+          "codepoint": "U+1205",
+          "unicodeName": "ETHIOPIC SYLLABLE HE"
+        },
+        {
+          "order": 7,
+          "char": "ሆ",
+          "roman": "ho",
+          "codepoint": "U+1206",
+          "unicodeName": "ETHIOPIC SYLLABLE HO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "ga",
+      "sequence": 13,
+      "base": "ገ",
+      "consonantRoman": "g",
+      "week": 3,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ገ",
+          "roman": "ge",
+          "codepoint": "U+1308",
+          "unicodeName": "ETHIOPIC SYLLABLE GA"
+        },
+        {
+          "order": 2,
+          "char": "ጉ",
+          "roman": "gu",
+          "codepoint": "U+1309",
+          "unicodeName": "ETHIOPIC SYLLABLE GU"
+        },
+        {
+          "order": 3,
+          "char": "ጊ",
+          "roman": "gi",
+          "codepoint": "U+130A",
+          "unicodeName": "ETHIOPIC SYLLABLE GI"
+        },
+        {
+          "order": 4,
+          "char": "ጋ",
+          "roman": "ga",
+          "codepoint": "U+130B",
+          "unicodeName": "ETHIOPIC SYLLABLE GAA"
+        },
+        {
+          "order": 5,
+          "char": "ጌ",
+          "roman": "gē",
+          "codepoint": "U+130C",
+          "unicodeName": "ETHIOPIC SYLLABLE GEE"
+        },
+        {
+          "order": 6,
+          "char": "ግ",
+          "roman": "gə",
+          "codepoint": "U+130D",
+          "unicodeName": "ETHIOPIC SYLLABLE GE"
+        },
+        {
+          "order": 7,
+          "char": "ጎ",
+          "roman": "go",
+          "codepoint": "U+130E",
+          "unicodeName": "ETHIOPIC SYLLABLE GO"
+        }
+      ],
+      "labialized": {
+        "char": "ጓ",
+        "roman": "gwa",
+        "codepoint": "U+1313",
+        "unicodeName": "ETHIOPIC SYLLABLE GWAA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "tha",
+      "sequence": 14,
+      "base": "ጠ",
+      "consonantRoman": "t'",
+      "week": 3,
+      "ejective": true,
+      "homophoneOf": null,
+      "notes": "ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ጠ",
+          "roman": "t'e",
+          "codepoint": "U+1320",
+          "unicodeName": "ETHIOPIC SYLLABLE THA"
+        },
+        {
+          "order": 2,
+          "char": "ጡ",
+          "roman": "t'u",
+          "codepoint": "U+1321",
+          "unicodeName": "ETHIOPIC SYLLABLE THU"
+        },
+        {
+          "order": 3,
+          "char": "ጢ",
+          "roman": "t'i",
+          "codepoint": "U+1322",
+          "unicodeName": "ETHIOPIC SYLLABLE THI"
+        },
+        {
+          "order": 4,
+          "char": "ጣ",
+          "roman": "t'a",
+          "codepoint": "U+1323",
+          "unicodeName": "ETHIOPIC SYLLABLE THAA"
+        },
+        {
+          "order": 5,
+          "char": "ጤ",
+          "roman": "t'ē",
+          "codepoint": "U+1324",
+          "unicodeName": "ETHIOPIC SYLLABLE THEE"
+        },
+        {
+          "order": 6,
+          "char": "ጥ",
+          "roman": "t'ə",
+          "codepoint": "U+1325",
+          "unicodeName": "ETHIOPIC SYLLABLE THE"
+        },
+        {
+          "order": 7,
+          "char": "ጦ",
+          "roman": "t'o",
+          "codepoint": "U+1326",
+          "unicodeName": "ETHIOPIC SYLLABLE THO"
+        }
+      ],
+      "labialized": {
+        "char": "ጧ",
+        "roman": "t'wa",
+        "codepoint": "U+1327",
+        "unicodeName": "ETHIOPIC SYLLABLE THWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ca",
+      "sequence": 15,
+      "base": "ቸ",
+      "consonantRoman": "ch",
+      "week": 3,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ቸ",
+          "roman": "che",
+          "codepoint": "U+1278",
+          "unicodeName": "ETHIOPIC SYLLABLE CA"
+        },
+        {
+          "order": 2,
+          "char": "ቹ",
+          "roman": "chu",
+          "codepoint": "U+1279",
+          "unicodeName": "ETHIOPIC SYLLABLE CU"
+        },
+        {
+          "order": 3,
+          "char": "ቺ",
+          "roman": "chi",
+          "codepoint": "U+127A",
+          "unicodeName": "ETHIOPIC SYLLABLE CI"
+        },
+        {
+          "order": 4,
+          "char": "ቻ",
+          "roman": "cha",
+          "codepoint": "U+127B",
+          "unicodeName": "ETHIOPIC SYLLABLE CAA"
+        },
+        {
+          "order": 5,
+          "char": "ቼ",
+          "roman": "chē",
+          "codepoint": "U+127C",
+          "unicodeName": "ETHIOPIC SYLLABLE CEE"
+        },
+        {
+          "order": 6,
+          "char": "ች",
+          "roman": "chə",
+          "codepoint": "U+127D",
+          "unicodeName": "ETHIOPIC SYLLABLE CE"
+        },
+        {
+          "order": 7,
+          "char": "ቾ",
+          "roman": "cho",
+          "codepoint": "U+127E",
+          "unicodeName": "ETHIOPIC SYLLABLE CO"
+        }
+      ],
+      "labialized": {
+        "char": "ቿ",
+        "roman": "chwa",
+        "codepoint": "U+127F",
+        "unicodeName": "ETHIOPIC SYLLABLE CWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "cha",
+      "sequence": 16,
+      "base": "ጨ",
+      "consonantRoman": "ch'",
+      "week": 3,
+      "ejective": true,
+      "homophoneOf": null,
+      "notes": "ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ጨ",
+          "roman": "ch'e",
+          "codepoint": "U+1328",
+          "unicodeName": "ETHIOPIC SYLLABLE CHA"
+        },
+        {
+          "order": 2,
+          "char": "ጩ",
+          "roman": "ch'u",
+          "codepoint": "U+1329",
+          "unicodeName": "ETHIOPIC SYLLABLE CHU"
+        },
+        {
+          "order": 3,
+          "char": "ጪ",
+          "roman": "ch'i",
+          "codepoint": "U+132A",
+          "unicodeName": "ETHIOPIC SYLLABLE CHI"
+        },
+        {
+          "order": 4,
+          "char": "ጫ",
+          "roman": "ch'a",
+          "codepoint": "U+132B",
+          "unicodeName": "ETHIOPIC SYLLABLE CHAA"
+        },
+        {
+          "order": 5,
+          "char": "ጬ",
+          "roman": "ch'ē",
+          "codepoint": "U+132C",
+          "unicodeName": "ETHIOPIC SYLLABLE CHEE"
+        },
+        {
+          "order": 6,
+          "char": "ጭ",
+          "roman": "ch'ə",
+          "codepoint": "U+132D",
+          "unicodeName": "ETHIOPIC SYLLABLE CHE"
+        },
+        {
+          "order": 7,
+          "char": "ጮ",
+          "roman": "ch'o",
+          "codepoint": "U+132E",
+          "unicodeName": "ETHIOPIC SYLLABLE CHO"
+        }
+      ],
+      "labialized": {
+        "char": "ጯ",
+        "roman": "ch'wa",
+        "codepoint": "U+132F",
+        "unicodeName": "ETHIOPIC SYLLABLE CHWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "wa",
+      "sequence": 17,
+      "base": "ወ",
+      "consonantRoman": "w",
+      "week": 3,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ወ",
+          "roman": "we",
+          "codepoint": "U+12C8",
+          "unicodeName": "ETHIOPIC SYLLABLE WA"
+        },
+        {
+          "order": 2,
+          "char": "ዉ",
+          "roman": "wu",
+          "codepoint": "U+12C9",
+          "unicodeName": "ETHIOPIC SYLLABLE WU"
+        },
+        {
+          "order": 3,
+          "char": "ዊ",
+          "roman": "wi",
+          "codepoint": "U+12CA",
+          "unicodeName": "ETHIOPIC SYLLABLE WI"
+        },
+        {
+          "order": 4,
+          "char": "ዋ",
+          "roman": "wa",
+          "codepoint": "U+12CB",
+          "unicodeName": "ETHIOPIC SYLLABLE WAA"
+        },
+        {
+          "order": 5,
+          "char": "ዌ",
+          "roman": "wē",
+          "codepoint": "U+12CC",
+          "unicodeName": "ETHIOPIC SYLLABLE WEE"
+        },
+        {
+          "order": 6,
+          "char": "ው",
+          "roman": "wə",
+          "codepoint": "U+12CD",
+          "unicodeName": "ETHIOPIC SYLLABLE WE"
+        },
+        {
+          "order": 7,
+          "char": "ዎ",
+          "roman": "wo",
+          "codepoint": "U+12CE",
+          "unicodeName": "ETHIOPIC SYLLABLE WO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "ya",
+      "sequence": 18,
+      "base": "የ",
+      "consonantRoman": "y",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "የ",
+          "roman": "ye",
+          "codepoint": "U+12E8",
+          "unicodeName": "ETHIOPIC SYLLABLE YA"
+        },
+        {
+          "order": 2,
+          "char": "ዩ",
+          "roman": "yu",
+          "codepoint": "U+12E9",
+          "unicodeName": "ETHIOPIC SYLLABLE YU"
+        },
+        {
+          "order": 3,
+          "char": "ዪ",
+          "roman": "yi",
+          "codepoint": "U+12EA",
+          "unicodeName": "ETHIOPIC SYLLABLE YI"
+        },
+        {
+          "order": 4,
+          "char": "ያ",
+          "roman": "ya",
+          "codepoint": "U+12EB",
+          "unicodeName": "ETHIOPIC SYLLABLE YAA"
+        },
+        {
+          "order": 5,
+          "char": "ዬ",
+          "roman": "yē",
+          "codepoint": "U+12EC",
+          "unicodeName": "ETHIOPIC SYLLABLE YEE"
+        },
+        {
+          "order": 6,
+          "char": "ይ",
+          "roman": "yə",
+          "codepoint": "U+12ED",
+          "unicodeName": "ETHIOPIC SYLLABLE YE"
+        },
+        {
+          "order": 7,
+          "char": "ዮ",
+          "roman": "yo",
+          "codepoint": "U+12EE",
+          "unicodeName": "ETHIOPIC SYLLABLE YO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "za",
+      "sequence": 19,
+      "base": "ዘ",
+      "consonantRoman": "z",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ዘ",
+          "roman": "ze",
+          "codepoint": "U+12D8",
+          "unicodeName": "ETHIOPIC SYLLABLE ZA"
+        },
+        {
+          "order": 2,
+          "char": "ዙ",
+          "roman": "zu",
+          "codepoint": "U+12D9",
+          "unicodeName": "ETHIOPIC SYLLABLE ZU"
+        },
+        {
+          "order": 3,
+          "char": "ዚ",
+          "roman": "zi",
+          "codepoint": "U+12DA",
+          "unicodeName": "ETHIOPIC SYLLABLE ZI"
+        },
+        {
+          "order": 4,
+          "char": "ዛ",
+          "roman": "za",
+          "codepoint": "U+12DB",
+          "unicodeName": "ETHIOPIC SYLLABLE ZAA"
+        },
+        {
+          "order": 5,
+          "char": "ዜ",
+          "roman": "zē",
+          "codepoint": "U+12DC",
+          "unicodeName": "ETHIOPIC SYLLABLE ZEE"
+        },
+        {
+          "order": 6,
+          "char": "ዝ",
+          "roman": "zə",
+          "codepoint": "U+12DD",
+          "unicodeName": "ETHIOPIC SYLLABLE ZE"
+        },
+        {
+          "order": 7,
+          "char": "ዞ",
+          "roman": "zo",
+          "codepoint": "U+12DE",
+          "unicodeName": "ETHIOPIC SYLLABLE ZO"
+        }
+      ],
+      "labialized": {
+        "char": "ዟ",
+        "roman": "zwa",
+        "codepoint": "U+12DF",
+        "unicodeName": "ETHIOPIC SYLLABLE ZWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "fa",
+      "sequence": 20,
+      "base": "ፈ",
+      "consonantRoman": "f",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ፈ",
+          "roman": "fe",
+          "codepoint": "U+1348",
+          "unicodeName": "ETHIOPIC SYLLABLE FA"
+        },
+        {
+          "order": 2,
+          "char": "ፉ",
+          "roman": "fu",
+          "codepoint": "U+1349",
+          "unicodeName": "ETHIOPIC SYLLABLE FU"
+        },
+        {
+          "order": 3,
+          "char": "ፊ",
+          "roman": "fi",
+          "codepoint": "U+134A",
+          "unicodeName": "ETHIOPIC SYLLABLE FI"
+        },
+        {
+          "order": 4,
+          "char": "ፋ",
+          "roman": "fa",
+          "codepoint": "U+134B",
+          "unicodeName": "ETHIOPIC SYLLABLE FAA"
+        },
+        {
+          "order": 5,
+          "char": "ፌ",
+          "roman": "fē",
+          "codepoint": "U+134C",
+          "unicodeName": "ETHIOPIC SYLLABLE FEE"
+        },
+        {
+          "order": 6,
+          "char": "ፍ",
+          "roman": "fə",
+          "codepoint": "U+134D",
+          "unicodeName": "ETHIOPIC SYLLABLE FE"
+        },
+        {
+          "order": 7,
+          "char": "ፎ",
+          "roman": "fo",
+          "codepoint": "U+134E",
+          "unicodeName": "ETHIOPIC SYLLABLE FO"
+        }
+      ],
+      "labialized": {
+        "char": "ፏ",
+        "roman": "fwa",
+        "codepoint": "U+134F",
+        "unicodeName": "ETHIOPIC SYLLABLE FWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "sha",
+      "sequence": 21,
+      "base": "ሸ",
+      "consonantRoman": "sh",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ሸ",
+          "roman": "she",
+          "codepoint": "U+1238",
+          "unicodeName": "ETHIOPIC SYLLABLE SHA"
+        },
+        {
+          "order": 2,
+          "char": "ሹ",
+          "roman": "shu",
+          "codepoint": "U+1239",
+          "unicodeName": "ETHIOPIC SYLLABLE SHU"
+        },
+        {
+          "order": 3,
+          "char": "ሺ",
+          "roman": "shi",
+          "codepoint": "U+123A",
+          "unicodeName": "ETHIOPIC SYLLABLE SHI"
+        },
+        {
+          "order": 4,
+          "char": "ሻ",
+          "roman": "sha",
+          "codepoint": "U+123B",
+          "unicodeName": "ETHIOPIC SYLLABLE SHAA"
+        },
+        {
+          "order": 5,
+          "char": "ሼ",
+          "roman": "shē",
+          "codepoint": "U+123C",
+          "unicodeName": "ETHIOPIC SYLLABLE SHEE"
+        },
+        {
+          "order": 6,
+          "char": "ሽ",
+          "roman": "shə",
+          "codepoint": "U+123D",
+          "unicodeName": "ETHIOPIC SYLLABLE SHE"
+        },
+        {
+          "order": 7,
+          "char": "ሾ",
+          "roman": "sho",
+          "codepoint": "U+123E",
+          "unicodeName": "ETHIOPIC SYLLABLE SHO"
+        }
+      ],
+      "labialized": {
+        "char": "ሿ",
+        "roman": "shwa",
+        "codepoint": "U+123F",
+        "unicodeName": "ETHIOPIC SYLLABLE SHWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "ja",
+      "sequence": 22,
+      "base": "ጀ",
+      "consonantRoman": "j",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ጀ",
+          "roman": "je",
+          "codepoint": "U+1300",
+          "unicodeName": "ETHIOPIC SYLLABLE JA"
+        },
+        {
+          "order": 2,
+          "char": "ጁ",
+          "roman": "ju",
+          "codepoint": "U+1301",
+          "unicodeName": "ETHIOPIC SYLLABLE JU"
+        },
+        {
+          "order": 3,
+          "char": "ጂ",
+          "roman": "ji",
+          "codepoint": "U+1302",
+          "unicodeName": "ETHIOPIC SYLLABLE JI"
+        },
+        {
+          "order": 4,
+          "char": "ጃ",
+          "roman": "ja",
+          "codepoint": "U+1303",
+          "unicodeName": "ETHIOPIC SYLLABLE JAA"
+        },
+        {
+          "order": 5,
+          "char": "ጄ",
+          "roman": "jē",
+          "codepoint": "U+1304",
+          "unicodeName": "ETHIOPIC SYLLABLE JEE"
+        },
+        {
+          "order": 6,
+          "char": "ጅ",
+          "roman": "jə",
+          "codepoint": "U+1305",
+          "unicodeName": "ETHIOPIC SYLLABLE JE"
+        },
+        {
+          "order": 7,
+          "char": "ጆ",
+          "roman": "jo",
+          "codepoint": "U+1306",
+          "unicodeName": "ETHIOPIC SYLLABLE JO"
+        }
+      ],
+      "labialized": {
+        "char": "ጇ",
+        "roman": "jwa",
+        "codepoint": "U+1307",
+        "unicodeName": "ETHIOPIC SYLLABLE JWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "nya",
+      "sequence": 23,
+      "base": "ኘ",
+      "consonantRoman": "ny",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "palatal",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ኘ",
+          "roman": "nye",
+          "codepoint": "U+1298",
+          "unicodeName": "ETHIOPIC SYLLABLE NYA"
+        },
+        {
+          "order": 2,
+          "char": "ኙ",
+          "roman": "nyu",
+          "codepoint": "U+1299",
+          "unicodeName": "ETHIOPIC SYLLABLE NYU"
+        },
+        {
+          "order": 3,
+          "char": "ኚ",
+          "roman": "nyi",
+          "codepoint": "U+129A",
+          "unicodeName": "ETHIOPIC SYLLABLE NYI"
+        },
+        {
+          "order": 4,
+          "char": "ኛ",
+          "roman": "nya",
+          "codepoint": "U+129B",
+          "unicodeName": "ETHIOPIC SYLLABLE NYAA"
+        },
+        {
+          "order": 5,
+          "char": "ኜ",
+          "roman": "nyē",
+          "codepoint": "U+129C",
+          "unicodeName": "ETHIOPIC SYLLABLE NYEE"
+        },
+        {
+          "order": 6,
+          "char": "ኝ",
+          "roman": "nyə",
+          "codepoint": "U+129D",
+          "unicodeName": "ETHIOPIC SYLLABLE NYE"
+        },
+        {
+          "order": 7,
+          "char": "ኞ",
+          "roman": "nyo",
+          "codepoint": "U+129E",
+          "unicodeName": "ETHIOPIC SYLLABLE NYO"
+        }
+      ],
+      "labialized": {
+        "char": "ኟ",
+        "roman": "nywa",
+        "codepoint": "U+129F",
+        "unicodeName": "ETHIOPIC SYLLABLE NYWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "zha",
+      "sequence": 24,
+      "base": "ዠ",
+      "consonantRoman": "zh",
+      "week": 4,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ዠ",
+          "roman": "zhe",
+          "codepoint": "U+12E0",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHA"
+        },
+        {
+          "order": 2,
+          "char": "ዡ",
+          "roman": "zhu",
+          "codepoint": "U+12E1",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHU"
+        },
+        {
+          "order": 3,
+          "char": "ዢ",
+          "roman": "zhi",
+          "codepoint": "U+12E2",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHI"
+        },
+        {
+          "order": 4,
+          "char": "ዣ",
+          "roman": "zha",
+          "codepoint": "U+12E3",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHAA"
+        },
+        {
+          "order": 5,
+          "char": "ዤ",
+          "roman": "zhē",
+          "codepoint": "U+12E4",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHEE"
+        },
+        {
+          "order": 6,
+          "char": "ዥ",
+          "roman": "zhə",
+          "codepoint": "U+12E5",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHE"
+        },
+        {
+          "order": 7,
+          "char": "ዦ",
+          "roman": "zho",
+          "codepoint": "U+12E6",
+          "unicodeName": "ETHIOPIC SYLLABLE ZHO"
+        }
+      ],
+      "labialized": {
+        "char": "ዧ",
+        "roman": "zhwa",
+        "codepoint": "U+12E7",
+        "unicodeName": "ETHIOPIC SYLLABLE ZHWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "pa",
+      "sequence": 25,
+      "base": "ፐ",
+      "consonantRoman": "p",
+      "week": 5,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ፐ",
+          "roman": "pe",
+          "codepoint": "U+1350",
+          "unicodeName": "ETHIOPIC SYLLABLE PA"
+        },
+        {
+          "order": 2,
+          "char": "ፑ",
+          "roman": "pu",
+          "codepoint": "U+1351",
+          "unicodeName": "ETHIOPIC SYLLABLE PU"
+        },
+        {
+          "order": 3,
+          "char": "ፒ",
+          "roman": "pi",
+          "codepoint": "U+1352",
+          "unicodeName": "ETHIOPIC SYLLABLE PI"
+        },
+        {
+          "order": 4,
+          "char": "ፓ",
+          "roman": "pa",
+          "codepoint": "U+1353",
+          "unicodeName": "ETHIOPIC SYLLABLE PAA"
+        },
+        {
+          "order": 5,
+          "char": "ፔ",
+          "roman": "pē",
+          "codepoint": "U+1354",
+          "unicodeName": "ETHIOPIC SYLLABLE PEE"
+        },
+        {
+          "order": 6,
+          "char": "ፕ",
+          "roman": "pə",
+          "codepoint": "U+1355",
+          "unicodeName": "ETHIOPIC SYLLABLE PE"
+        },
+        {
+          "order": 7,
+          "char": "ፖ",
+          "roman": "po",
+          "codepoint": "U+1356",
+          "unicodeName": "ETHIOPIC SYLLABLE PO"
+        }
+      ],
+      "labialized": {
+        "char": "ፗ",
+        "roman": "pwa",
+        "codepoint": "U+1357",
+        "unicodeName": "ETHIOPIC SYLLABLE PWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "pha",
+      "sequence": 26,
+      "base": "ጰ",
+      "consonantRoman": "p'",
+      "week": 5,
+      "ejective": true,
+      "homophoneOf": null,
+      "notes": "ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ጰ",
+          "roman": "p'e",
+          "codepoint": "U+1330",
+          "unicodeName": "ETHIOPIC SYLLABLE PHA"
+        },
+        {
+          "order": 2,
+          "char": "ጱ",
+          "roman": "p'u",
+          "codepoint": "U+1331",
+          "unicodeName": "ETHIOPIC SYLLABLE PHU"
+        },
+        {
+          "order": 3,
+          "char": "ጲ",
+          "roman": "p'i",
+          "codepoint": "U+1332",
+          "unicodeName": "ETHIOPIC SYLLABLE PHI"
+        },
+        {
+          "order": 4,
+          "char": "ጳ",
+          "roman": "p'a",
+          "codepoint": "U+1333",
+          "unicodeName": "ETHIOPIC SYLLABLE PHAA"
+        },
+        {
+          "order": 5,
+          "char": "ጴ",
+          "roman": "p'ē",
+          "codepoint": "U+1334",
+          "unicodeName": "ETHIOPIC SYLLABLE PHEE"
+        },
+        {
+          "order": 6,
+          "char": "ጵ",
+          "roman": "p'ə",
+          "codepoint": "U+1335",
+          "unicodeName": "ETHIOPIC SYLLABLE PHE"
+        },
+        {
+          "order": 7,
+          "char": "ጶ",
+          "roman": "p'o",
+          "codepoint": "U+1336",
+          "unicodeName": "ETHIOPIC SYLLABLE PHO"
+        }
+      ],
+      "labialized": {
+        "char": "ጷ",
+        "roman": "p'wa",
+        "codepoint": "U+1337",
+        "unicodeName": "ETHIOPIC SYLLABLE PHWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "tsa",
+      "sequence": 27,
+      "base": "ጸ",
+      "consonantRoman": "ts'",
+      "week": 5,
+      "ejective": true,
+      "homophoneOf": null,
+      "notes": "ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ጸ",
+          "roman": "ts'e",
+          "codepoint": "U+1338",
+          "unicodeName": "ETHIOPIC SYLLABLE TSA"
+        },
+        {
+          "order": 2,
+          "char": "ጹ",
+          "roman": "ts'u",
+          "codepoint": "U+1339",
+          "unicodeName": "ETHIOPIC SYLLABLE TSU"
+        },
+        {
+          "order": 3,
+          "char": "ጺ",
+          "roman": "ts'i",
+          "codepoint": "U+133A",
+          "unicodeName": "ETHIOPIC SYLLABLE TSI"
+        },
+        {
+          "order": 4,
+          "char": "ጻ",
+          "roman": "ts'a",
+          "codepoint": "U+133B",
+          "unicodeName": "ETHIOPIC SYLLABLE TSAA"
+        },
+        {
+          "order": 5,
+          "char": "ጼ",
+          "roman": "ts'ē",
+          "codepoint": "U+133C",
+          "unicodeName": "ETHIOPIC SYLLABLE TSEE"
+        },
+        {
+          "order": 6,
+          "char": "ጽ",
+          "roman": "ts'ə",
+          "codepoint": "U+133D",
+          "unicodeName": "ETHIOPIC SYLLABLE TSE"
+        },
+        {
+          "order": 7,
+          "char": "ጾ",
+          "roman": "ts'o",
+          "codepoint": "U+133E",
+          "unicodeName": "ETHIOPIC SYLLABLE TSO"
+        }
+      ],
+      "labialized": {
+        "char": "ጿ",
+        "roman": "ts'wa",
+        "codepoint": "U+133F",
+        "unicodeName": "ETHIOPIC SYLLABLE TSWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "va",
+      "sequence": 28,
+      "base": "ቨ",
+      "consonantRoman": "v",
+      "week": 5,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ቨ",
+          "roman": "ve",
+          "codepoint": "U+1268",
+          "unicodeName": "ETHIOPIC SYLLABLE VA"
+        },
+        {
+          "order": 2,
+          "char": "ቩ",
+          "roman": "vu",
+          "codepoint": "U+1269",
+          "unicodeName": "ETHIOPIC SYLLABLE VU"
+        },
+        {
+          "order": 3,
+          "char": "ቪ",
+          "roman": "vi",
+          "codepoint": "U+126A",
+          "unicodeName": "ETHIOPIC SYLLABLE VI"
+        },
+        {
+          "order": 4,
+          "char": "ቫ",
+          "roman": "va",
+          "codepoint": "U+126B",
+          "unicodeName": "ETHIOPIC SYLLABLE VAA"
+        },
+        {
+          "order": 5,
+          "char": "ቬ",
+          "roman": "vē",
+          "codepoint": "U+126C",
+          "unicodeName": "ETHIOPIC SYLLABLE VEE"
+        },
+        {
+          "order": 6,
+          "char": "ቭ",
+          "roman": "və",
+          "codepoint": "U+126D",
+          "unicodeName": "ETHIOPIC SYLLABLE VE"
+        },
+        {
+          "order": 7,
+          "char": "ቮ",
+          "roman": "vo",
+          "codepoint": "U+126E",
+          "unicodeName": "ETHIOPIC SYLLABLE VO"
+        }
+      ],
+      "labialized": {
+        "char": "ቯ",
+        "roman": "vwa",
+        "codepoint": "U+126F",
+        "unicodeName": "ETHIOPIC SYLLABLE VWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "kxa",
+      "sequence": 29,
+      "base": "ኸ",
+      "consonantRoman": "h",
+      "week": 5,
+      "ejective": false,
+      "homophoneOf": null,
+      "notes": "",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ኸ",
+          "roman": "he",
+          "codepoint": "U+12B8",
+          "unicodeName": "ETHIOPIC SYLLABLE KXA"
+        },
+        {
+          "order": 2,
+          "char": "ኹ",
+          "roman": "hu",
+          "codepoint": "U+12B9",
+          "unicodeName": "ETHIOPIC SYLLABLE KXU"
+        },
+        {
+          "order": 3,
+          "char": "ኺ",
+          "roman": "hi",
+          "codepoint": "U+12BA",
+          "unicodeName": "ETHIOPIC SYLLABLE KXI"
+        },
+        {
+          "order": 4,
+          "char": "ኻ",
+          "roman": "ha",
+          "codepoint": "U+12BB",
+          "unicodeName": "ETHIOPIC SYLLABLE KXAA"
+        },
+        {
+          "order": 5,
+          "char": "ኼ",
+          "roman": "hē",
+          "codepoint": "U+12BC",
+          "unicodeName": "ETHIOPIC SYLLABLE KXEE"
+        },
+        {
+          "order": 6,
+          "char": "ኽ",
+          "roman": "hə",
+          "codepoint": "U+12BD",
+          "unicodeName": "ETHIOPIC SYLLABLE KXE"
+        },
+        {
+          "order": 7,
+          "char": "ኾ",
+          "roman": "ho",
+          "codepoint": "U+12BE",
+          "unicodeName": "ETHIOPIC SYLLABLE KXO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "hha",
+      "sequence": 30,
+      "base": "ሐ",
+      "consonantRoman": "h",
+      "week": 6,
+      "ejective": false,
+      "homophoneOf": "ሀ",
+      "notes": "homophone",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ሐ",
+          "roman": "ha",
+          "codepoint": "U+1210",
+          "unicodeName": "ETHIOPIC SYLLABLE HHA"
+        },
+        {
+          "order": 2,
+          "char": "ሑ",
+          "roman": "hu",
+          "codepoint": "U+1211",
+          "unicodeName": "ETHIOPIC SYLLABLE HHU"
+        },
+        {
+          "order": 3,
+          "char": "ሒ",
+          "roman": "hi",
+          "codepoint": "U+1212",
+          "unicodeName": "ETHIOPIC SYLLABLE HHI"
+        },
+        {
+          "order": 4,
+          "char": "ሓ",
+          "roman": "ha",
+          "codepoint": "U+1213",
+          "unicodeName": "ETHIOPIC SYLLABLE HHAA"
+        },
+        {
+          "order": 5,
+          "char": "ሔ",
+          "roman": "hē",
+          "codepoint": "U+1214",
+          "unicodeName": "ETHIOPIC SYLLABLE HHEE"
+        },
+        {
+          "order": 6,
+          "char": "ሕ",
+          "roman": "hə",
+          "codepoint": "U+1215",
+          "unicodeName": "ETHIOPIC SYLLABLE HHE"
+        },
+        {
+          "order": 7,
+          "char": "ሖ",
+          "roman": "ho",
+          "codepoint": "U+1216",
+          "unicodeName": "ETHIOPIC SYLLABLE HHO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "xa",
+      "sequence": 31,
+      "base": "ኀ",
+      "consonantRoman": "h",
+      "week": 6,
+      "ejective": false,
+      "homophoneOf": "ሀ",
+      "notes": "homophone",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ኀ",
+          "roman": "ha",
+          "codepoint": "U+1280",
+          "unicodeName": "ETHIOPIC SYLLABLE XA"
+        },
+        {
+          "order": 2,
+          "char": "ኁ",
+          "roman": "hu",
+          "codepoint": "U+1281",
+          "unicodeName": "ETHIOPIC SYLLABLE XU"
+        },
+        {
+          "order": 3,
+          "char": "ኂ",
+          "roman": "hi",
+          "codepoint": "U+1282",
+          "unicodeName": "ETHIOPIC SYLLABLE XI"
+        },
+        {
+          "order": 4,
+          "char": "ኃ",
+          "roman": "ha",
+          "codepoint": "U+1283",
+          "unicodeName": "ETHIOPIC SYLLABLE XAA"
+        },
+        {
+          "order": 5,
+          "char": "ኄ",
+          "roman": "hē",
+          "codepoint": "U+1284",
+          "unicodeName": "ETHIOPIC SYLLABLE XEE"
+        },
+        {
+          "order": 6,
+          "char": "ኅ",
+          "roman": "hə",
+          "codepoint": "U+1285",
+          "unicodeName": "ETHIOPIC SYLLABLE XE"
+        },
+        {
+          "order": 7,
+          "char": "ኆ",
+          "roman": "ho",
+          "codepoint": "U+1286",
+          "unicodeName": "ETHIOPIC SYLLABLE XO"
+        }
+      ],
+      "labialized": {
+        "char": "ኋ",
+        "roman": "hwa",
+        "codepoint": "U+128B",
+        "unicodeName": "ETHIOPIC SYLLABLE XWAA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "sza",
+      "sequence": 32,
+      "base": "ሠ",
+      "consonantRoman": "s",
+      "week": 6,
+      "ejective": false,
+      "homophoneOf": "ሰ",
+      "notes": "homophone",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ሠ",
+          "roman": "se",
+          "codepoint": "U+1220",
+          "unicodeName": "ETHIOPIC SYLLABLE SZA"
+        },
+        {
+          "order": 2,
+          "char": "ሡ",
+          "roman": "su",
+          "codepoint": "U+1221",
+          "unicodeName": "ETHIOPIC SYLLABLE SZU"
+        },
+        {
+          "order": 3,
+          "char": "ሢ",
+          "roman": "si",
+          "codepoint": "U+1222",
+          "unicodeName": "ETHIOPIC SYLLABLE SZI"
+        },
+        {
+          "order": 4,
+          "char": "ሣ",
+          "roman": "sa",
+          "codepoint": "U+1223",
+          "unicodeName": "ETHIOPIC SYLLABLE SZAA"
+        },
+        {
+          "order": 5,
+          "char": "ሤ",
+          "roman": "sē",
+          "codepoint": "U+1224",
+          "unicodeName": "ETHIOPIC SYLLABLE SZEE"
+        },
+        {
+          "order": 6,
+          "char": "ሥ",
+          "roman": "sə",
+          "codepoint": "U+1225",
+          "unicodeName": "ETHIOPIC SYLLABLE SZE"
+        },
+        {
+          "order": 7,
+          "char": "ሦ",
+          "roman": "so",
+          "codepoint": "U+1226",
+          "unicodeName": "ETHIOPIC SYLLABLE SZO"
+        }
+      ],
+      "labialized": {
+        "char": "ሧ",
+        "roman": "swa",
+        "codepoint": "U+1227",
+        "unicodeName": "ETHIOPIC SYLLABLE SZWA"
+      },
+      "reviewed": false
+    },
+    {
+      "id": "pharyngeal a",
+      "sequence": 33,
+      "base": "ዐ",
+      "consonantRoman": "",
+      "week": 6,
+      "ejective": false,
+      "homophoneOf": "አ",
+      "notes": "homophone",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ዐ",
+          "roman": "a",
+          "codepoint": "U+12D0",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL A"
+        },
+        {
+          "order": 2,
+          "char": "ዑ",
+          "roman": "u",
+          "codepoint": "U+12D1",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL U"
+        },
+        {
+          "order": 3,
+          "char": "ዒ",
+          "roman": "i",
+          "codepoint": "U+12D2",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL I"
+        },
+        {
+          "order": 4,
+          "char": "ዓ",
+          "roman": "a",
+          "codepoint": "U+12D3",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL AA"
+        },
+        {
+          "order": 5,
+          "char": "ዔ",
+          "roman": "ē",
+          "codepoint": "U+12D4",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL EE"
+        },
+        {
+          "order": 6,
+          "char": "ዕ",
+          "roman": "ə",
+          "codepoint": "U+12D5",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL E"
+        },
+        {
+          "order": 7,
+          "char": "ዖ",
+          "roman": "o",
+          "codepoint": "U+12D6",
+          "unicodeName": "ETHIOPIC SYLLABLE PHARYNGEAL O"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    },
+    {
+      "id": "tza",
+      "sequence": 34,
+      "base": "ፀ",
+      "consonantRoman": "ts'",
+      "week": 6,
+      "ejective": true,
+      "homophoneOf": "ጸ",
+      "notes": "homophone ejective",
+      "forms": [
+        {
+          "order": 1,
+          "char": "ፀ",
+          "roman": "ts'e",
+          "codepoint": "U+1340",
+          "unicodeName": "ETHIOPIC SYLLABLE TZA"
+        },
+        {
+          "order": 2,
+          "char": "ፁ",
+          "roman": "ts'u",
+          "codepoint": "U+1341",
+          "unicodeName": "ETHIOPIC SYLLABLE TZU"
+        },
+        {
+          "order": 3,
+          "char": "ፂ",
+          "roman": "ts'i",
+          "codepoint": "U+1342",
+          "unicodeName": "ETHIOPIC SYLLABLE TZI"
+        },
+        {
+          "order": 4,
+          "char": "ፃ",
+          "roman": "ts'a",
+          "codepoint": "U+1343",
+          "unicodeName": "ETHIOPIC SYLLABLE TZAA"
+        },
+        {
+          "order": 5,
+          "char": "ፄ",
+          "roman": "ts'ē",
+          "codepoint": "U+1344",
+          "unicodeName": "ETHIOPIC SYLLABLE TZEE"
+        },
+        {
+          "order": 6,
+          "char": "ፅ",
+          "roman": "ts'ə",
+          "codepoint": "U+1345",
+          "unicodeName": "ETHIOPIC SYLLABLE TZE"
+        },
+        {
+          "order": 7,
+          "char": "ፆ",
+          "roman": "ts'o",
+          "codepoint": "U+1346",
+          "unicodeName": "ETHIOPIC SYLLABLE TZO"
+        }
+      ],
+      "labialized": null,
+      "reviewed": false
+    }
+  ]
+}

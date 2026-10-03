@@ -1,0 +1,437 @@
+{
+  "week": 1,
+  "lessons": [
+    {
+      "id": "w1-l1",
+      "week": 1,
+      "order": 1,
+      "title": "Seven sounds, one shape",
+      "goal": "Learn the 7 vowel orders using the አ and ለ families.",
+      "newFamilies": [
+        "አ",
+        "ለ"
+      ],
+      "estimatedMinutes": 15,
+      "cultureNote": "Ethiopian children learn the fidel by chanting each family across its seven orders: ሀ ሁ ሂ ሃ ሄ ህ ሆ. The app's 'chant' button does the same.",
+      "steps": [
+        {
+          "type": "intro",
+          "text": "Amharic letters come in families. Each family has 7 forms — one per vowel. Learn the 7 vowel marks once, and they work for every family."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "አ",
+            "ኡ",
+            "ኢ",
+            "ኣ",
+            "ኤ",
+            "እ",
+            "ኦ"
+          ],
+          "text": "Listen to the 7 vowel sounds: a, u, i, a, ē, ə, o."
+        },
+        {
+          "type": "see",
+          "family": "ለ",
+          "text": "Watch how ለ changes: a foot for u, a little leg for i, a lowered leg for a, a ring for ē, a bent stem for ə, a loop for o."
+        },
+        {
+          "type": "chant",
+          "family": "ለ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "አ",
+            "ለ",
+            "ሉ",
+            "ላ",
+            "ሎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሉ",
+          "options": [
+            "ለ",
+            "ሉ",
+            "ሊ",
+            "ላ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሎ",
+          "options": [
+            "ሌ",
+            "ል",
+            "ሎ",
+            "ሊ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ለ",
+          "hide": [
+            3,
+            5
+          ]
+        },
+        {
+          "type": "say",
+          "items": [
+            "ለ",
+            "ሉ",
+            "ሊ",
+            "ላ",
+            "ሌ",
+            "ል",
+            "ሎ"
+          ]
+        },
+        {
+          "type": "phrase",
+          "word": {
+            "id": "selam",
+            "amharic": "ሰላም",
+            "roman": "selam",
+            "english": "hello / peace",
+            "picture": "🕊️",
+            "audio": "/audio/words/selam.mp3",
+            "reviewed": false,
+            "note": "You'll learn to read this in lesson 2 — for now, just hear and say it."
+          }
+        },
+        {
+          "type": "wrapUp",
+          "text": "You can already read 14 characters. Tomorrow: መ and ሰ."
+        }
+      ]
+    },
+    {
+      "id": "w1-l2",
+      "week": 1,
+      "order": 2,
+      "title": "Hello, name, mother",
+      "goal": "Add the መ and ሰ families and read your first words.",
+      "newFamilies": [
+        "መ",
+        "ሰ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "ሰላም (selam) means peace. It is the everyday greeting — and many Ethiopian girls are named Selam.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "መ",
+            "ሙ",
+            "ሚ",
+            "ማ",
+            "ሜ",
+            "ም",
+            "ሞ",
+            "ሰ",
+            "ሱ",
+            "ሲ",
+            "ሳ",
+            "ሴ",
+            "ስ",
+            "ሶ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "መ"
+        },
+        {
+          "type": "see",
+          "family": "ሰ"
+        },
+        {
+          "type": "rule",
+          "title": "The 6th order does double duty",
+          "text": "ስ and ም can be 'sə'/'mə' or just 's'/'m' with no vowel. So ስም is 'səm' (name), not 'sə-mə'."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "መ",
+            "ማ",
+            "ሰ",
+            "ሳ",
+            "ስ",
+            "ም"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "selam",
+              "amharic": "ሰላም",
+              "roman": "selam",
+              "english": "hello / peace",
+              "picture": "🕊️",
+              "audio": "/audio/words/selam.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "səm",
+              "amharic": "ስም",
+              "roman": "səm",
+              "english": "name",
+              "picture": "🏷️",
+              "audio": "/audio/words/səm.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "əmama",
+              "amharic": "እማማ",
+              "roman": "əmama",
+              "english": "mom",
+              "picture": "👩",
+              "audio": "/audio/words/əmama.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "seba",
+              "amharic": "ሰባ",
+              "roman": "seba",
+              "english": "seventy",
+              "picture": "7️⃣0️⃣",
+              "audio": "/audio/words/seba.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "semma",
+              "amharic": "ሰማ",
+              "roman": "semma",
+              "english": "he heard",
+              "picture": "👂",
+              "audio": "/audio/words/semma.mp3",
+              "reviewed": false,
+              "note": "Doubling! The m is held longer — listen closely. Writing doesn't show it."
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሰላም",
+          "tiles": [
+            "ላ",
+            "ም",
+            "ሰ",
+            "ሊ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "minimalPair",
+          "note": "Hear the held m",
+          "a": {
+            "id": "semma",
+            "amharic": "ሰማ",
+            "roman": "semma",
+            "english": "he heard",
+            "picture": "👂",
+            "audio": "/audio/words/semma.mp3",
+            "reviewed": false
+          },
+          "b": {
+            "id": "sema",
+            "amharic": "ሰማ",
+            "roman": "sema",
+            "english": "(no doubling)",
+            "picture": "🔈",
+            "audio": "/audio/words/sema.mp3",
+            "reviewed": false,
+            "note": "Contrast audio only — record a short m."
+          }
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ስም"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ሰላም",
+            "እማማ",
+            "ስም"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Four families, four real words. Tomorrow: በ, and you'll read a mini story."
+        }
+      ]
+    },
+    {
+      "id": "w1-l3",
+      "week": 1,
+      "order": 3,
+      "title": "Dad, cow, fish, lemon",
+      "goal": "Add the በ family and read a short story aloud.",
+      "newFamilies": [
+        "በ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "አባ (abba) is dad — and also the title for a priest or elder, a sign of respect.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "በ",
+            "ቡ",
+            "ቢ",
+            "ባ",
+            "ቤ",
+            "ብ",
+            "ቦ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "በ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "በ",
+            "ባ",
+            "ቤ",
+            "ብ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "abba",
+              "amharic": "አባ",
+              "roman": "abba",
+              "english": "dad",
+              "picture": "👨",
+              "audio": "/audio/words/abba.mp3",
+              "reviewed": false,
+              "note": "Doubled b"
+            },
+            {
+              "id": "lam",
+              "amharic": "ላም",
+              "roman": "lam",
+              "english": "cow",
+              "picture": "🐄",
+              "audio": "/audio/words/lam.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "asa",
+              "amharic": "አሳ",
+              "roman": "asa",
+              "english": "fish",
+              "picture": "🐟",
+              "audio": "/audio/words/asa.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "lomi",
+              "amharic": "ሎሚ",
+              "roman": "lomi",
+              "english": "lemon",
+              "picture": "🍋",
+              "audio": "/audio/words/lomi.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "bal",
+              "amharic": "ባል",
+              "roman": "bal",
+              "english": "husband",
+              "picture": "💍",
+              "audio": "/audio/words/bal.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "lēla",
+              "amharic": "ሌላ",
+              "roman": "lēla",
+              "english": "other / another",
+              "picture": "➕",
+              "audio": "/audio/words/lēla.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ላም",
+          "options": [
+            "ላም",
+            "አሳ",
+            "ሎሚ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሎሚ",
+          "tiles": [
+            "ሚ",
+            "ሎ",
+            "ማ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "አሳ"
+        },
+        {
+          "type": "story",
+          "title": "At home",
+          "lines": [
+            {
+              "amharic": "ሰላም አባ!",
+              "english": "Hello, Dad!"
+            },
+            {
+              "amharic": "ሰላም እማማ!",
+              "english": "Hello, Mom!"
+            },
+            {
+              "amharic": "ላም፣ አሳ፣ ሎሚ።",
+              "english": "Cow, fish, lemon."
+            }
+          ],
+          "note": "Every character here is one you've learned. Tap any word to hear it; then record yourself reading it all."
+        },
+        {
+          "type": "punctuation",
+          "items": [
+            "፣",
+            "።"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Week 1 milestone: 5 families, 35 characters, 9 words, your first story. 🎉"
+        }
+      ]
+    }
+  ]
+}

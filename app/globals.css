@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink antialiased;
+}
+
+/* A woven band that nods to tibeb borders on habesha kemis cloth. */
+.tibeb {
+  height: 10px;
+  background-color: #faf5ec;
+  background-image:
+    linear-gradient(135deg, #2f4b7c 25%, transparent 25%),
+    linear-gradient(225deg, #2f4b7c 25%, transparent 25%),
+    linear-gradient(315deg, #c8962b 25%, transparent 25%),
+    linear-gradient(45deg, #c8962b 25%, transparent 25%);
+  background-size: 10px 10px;
+  border-top: 2px solid #b0472c;
+  border-bottom: 2px solid #b0472c;
+}
+
+.tibeb-thin {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    90deg,
+    #b0472c 0 8px,
+    #c8962b 8px 12px,
+    #2f4b7c 12px 20px,
+    #c8962b 20px 24px
+  );
+}
+
+/* Draw-on animation for a character outline (prototype stand-in for real stroke order). */
+@keyframes draw-stroke {
+  from {
+    stroke-dashoffset: var(--dash, 600);
+    fill-opacity: 0;
+  }
+  70% {
+    stroke-dashoffset: 0;
+    fill-opacity: 0;
+  }
+  to {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-opacity: 0;
+  }
+}
+.draw-glyph {
+  stroke-dasharray: var(--dash, 600);
+  animation: draw-stroke 1.8s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .draw-glyph {
+    animation: none;
+    stroke-dasharray: none;
+  }
+}
