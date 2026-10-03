@@ -17,7 +17,7 @@ export function RecordingComing({ className = "" }: { className?: string }) {
   return (
     <span
       className={`inline-flex items-center gap-1 rounded-full border border-dashed border-line bg-paper px-3 py-1 text-xs text-muted ${className}`}
-      title="Tsega hasn't recorded this one yet"
+      title="A native speaker hasn't recorded this one yet"
     >
       🎙️ recording coming
     </span>
@@ -29,7 +29,7 @@ export function ComputerVoice({ className = "" }: { className?: string }) {
   return (
     <span
       className={`inline-flex items-center rounded-full bg-indigo-light px-2 py-0.5 text-[11px] text-indigo ${className}`}
-      title="A computer voice for now — Tsega's recording will replace it"
+      title="A computer voice for now — a native speaker's recording will replace it"
     >
       computer voice
     </span>

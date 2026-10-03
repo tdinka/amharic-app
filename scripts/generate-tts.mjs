@@ -79,9 +79,9 @@ async function pickVoice() {
   const { voices = [] } = await google("voices?languageCode=am-ET");
   if (voices.length === 0) throw new Error("Google has no Amharic (am-ET) voices for this key.");
   console.log("Amharic voices available:", voices.map((v) => `${v.name} (${v.ssmlGender.toLowerCase()})`).join(", "));
-  const wanted = process.env.GOOGLE_TTS_VOICE;
+  const wanted = process.env.GOOGLE_TTS_VOICE?.trim(); // an empty line in .env.local means "no preference"
   const voice =
-    (wanted && voices.find((v) => v.name === wanted)) ??
+    (wanted ? voices.find((v) => v.name === wanted) : undefined) ??
     voices.find((v) => v.name.includes("Wavenet")) ??
     voices[0];
   if (wanted && voice.name !== wanted) console.log(`GOOGLE_TTS_VOICE "${wanted}" not found.`);

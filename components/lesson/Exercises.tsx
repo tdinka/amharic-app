@@ -267,8 +267,8 @@ export function MinimalPair({ step, onAnswer, onSkip }: ExerciseProps<KindOf<"mi
         <div className="mt-5 rounded-2xl bg-ochre-light p-4">
           <RecordingComing />
           <p className="mt-2 text-sm">
-            This one needs Tsega&rsquo;s own recordings of both words — a computer voice can&rsquo;t show the
-            difference. Read the two below, then skip for now.
+            This one needs a native speaker&rsquo;s recordings of both words — a computer voice can&rsquo;t show
+            the difference. Read the two below, then skip for now.
           </p>
           <button type="button" onClick={onSkip} className="mt-3 rounded-full border border-ink px-4 py-2 text-sm">
             Skip for now
