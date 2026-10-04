@@ -26,3 +26,18 @@ export function currentStreak(days: Record<string, unknown>, now = new Date()): 
   }
   return streak;
 }
+
+/** The longest run of consecutive practice days ever. */
+export function longestStreak(days: Record<string, unknown>): number {
+  const keys = Object.keys(days).sort();
+  let best = 0;
+  let run = 0;
+  let prev: Date | null = null;
+  for (const key of keys) {
+    const date = new Date(`${key}T12:00:00`);
+    run = prev && localDateKey(addDays(prev, 1)) === key ? run + 1 : 1;
+    best = Math.max(best, run);
+    prev = date;
+  }
+  return best;
+}
