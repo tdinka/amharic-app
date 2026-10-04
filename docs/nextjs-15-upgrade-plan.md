@@ -2,6 +2,8 @@
 
 _Written 4 October 2026, from `npm audit` on Next.js 14.2.35._
 
+> **Done (4 October 2026):** upgraded to Next.js 15.5.27 and React 19.3. `npm audit --omit=dev` now shows no Next.js advisories. The one remaining live-site warning is the PostCSS 8.4.31 that Next.js bundles (moderate/high). It only processes our own CSS at build time, so it can't be used against the site. Next.js 16.3.8 bundles a fixed PostCSS; until we move there, it can be silenced with an npm `overrides` entry if wanted.
+
 ## Summary
 
 - `npm audit` reports 10 problems (1 critical, 9 high). **8 of them are in tools that only run on the developer's computer** (ESLint, Tailwind's file watcher). They never reach the live site.
@@ -39,7 +41,7 @@ Do this on its own branch, in one sitting, before deploying.
 4. **Keep `images: { unoptimized: true }`** unless we start using `next/image`.
 5. **ESLint**: `next lint` still works in 15.5 but prints a "deprecated" notice. Leave ESLint 8 and `.eslintrc.json` as they are for now; moving to ESLint 9 is separate.
 6. **Check everything**: `npx tsc --noEmit`, `npm run lint`, `npm run build`, then click through home, `/lesson/w1-l1`, `/review`, `/fidel`, `/progress`, and record and save one clip in `/studio` with `npm run dev`.
-7. **Re-run `npm audit --omit=dev`** — it should show 0 problems for the live site.
+7. **Re-run `npm audit --omit=dev`**. No Next.js advisories should remain; only the build-time PostCSS one bundled inside Next.js (see the note at the top).
 
 ## Risks
 
