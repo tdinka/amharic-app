@@ -58,6 +58,20 @@ export function dueCards(data: ProgressData, now = new Date()): StoredCard[] {
     .sort((a, b) => a.fsrs.due.localeCompare(b.fsrs.due));
 }
 
+/** A card is "mastered" once reviews have pushed its next showing at least this far out. */
+export const MASTERED_INTERVAL_DAYS = 21;
+
+export function isMastered(card: StoredCard): boolean {
+  if (!card.fsrs.last_review) return false; // introduced but never reviewed
+  const interval = (new Date(card.fsrs.due).getTime() - new Date(card.fsrs.last_review).getTime()) / 86_400_000;
+  return interval >= MASTERED_INTERVAL_DAYS;
+}
+
+/** Letters (not words) the learner has mastered, for "letters mastered out of 238". */
+export function masteredLetterCount(data: ProgressData): number {
+  return Object.values(data.cards).filter((c) => c.kind === "char" && isMastered(c)).length;
+}
+
 /** The next time any card comes due (for "next review tomorrow" style messages). */
 export function nextDue(data: ProgressData): Date | undefined {
   const dues = Object.values(data.cards).map((c) => c.fsrs.due).sort();
