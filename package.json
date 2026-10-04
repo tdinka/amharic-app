@@ -10,6 +10,7 @@
     "audio:tts": "node --env-file-if-exists=.env.local scripts/generate-tts.mjs"
   },
   "dependencies": {
+    "@breezystack/lamejs": "^1.2.7",
     "next": "14.2.35",
     "react": "^18",
     "react-dom": "^18",

@@ -21,6 +21,7 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 - `content/lessons/week-1.json` — the first three lessons. Every word and story in them uses only characters taught so far — keep that rule for all new lessons.
 - Audio lives at `public/audio/...` with paths given in the content. Missing audio must never break a lesson: show a "recording coming" state.
 - Temporary computer voices (Google Cloud TTS, Amharic) live in `public/audio-tts/`, made by `npm run audio:tts` (needs `GOOGLE_TTS_API_KEY` in `.env.local`). The app prefers Tsega's recording, falls back to these, and labels them "computer voice". Never treat them as reviewed.
+- Tsega records audio in the recording studio at `/studio` (not linked from the menu). It only saves while running `npm run dev`: recordings go to `public/audio/...` as MP3, and its "reviewed" switches write the `reviewed` flags in `content/` (letters are reviewed per family). Commit her new recordings and flag changes when she asks.
 
 ## Working with Tsega
 - She is early in her technical journey: explain every terminal command before running it, one step at a time, in plain words.
