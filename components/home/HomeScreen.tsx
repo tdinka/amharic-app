@@ -5,10 +5,10 @@ import { families, TOTAL_CHARACTERS, TOTAL_WEEKS, weeks, type Lesson } from "@/l
 import { isLessonUnlocked, learnedFamilies, nextLesson } from "@/lib/learning";
 import { currentStreak, localDateKey } from "@/lib/progress/dates";
 import { useProgress } from "@/lib/progress/ProgressProvider";
-import { dueCards } from "@/lib/srs";
+import { dueCards, masteredLetterCount } from "@/lib/srs";
 import { ProgressSettings } from "./ProgressSettings";
 
-function Stat({ value, label, href, highlight }: { value: React.ReactNode; label: string; href?: string; highlight?: boolean }) {
+function Stat({ value, label, href, highlight }: { value: React.ReactNode; label: React.ReactNode; href?: string; highlight?: boolean }) {
   const inner = (
     <>
       <div className={`font-display text-2xl font-semibold ${highlight ? "text-berbere" : ""}`}>{value}</div>
@@ -74,6 +74,7 @@ export function HomeScreen() {
   const streak = currentStreak(data.days, now);
   const practisedToday = !!data.days[localDateKey(now)];
   const due = dueCards(data, now).length;
+  const lettersMastered = masteredLetterCount(data);
   const lettersLearned = learnedFamilies(data).reduce((n, f) => n + f.forms.length, 0);
   const upNext = nextLesson(data);
   const weeksWithLessons = new Set(weeks.map((w) => w.week));
@@ -92,11 +93,16 @@ export function HomeScreen() {
         <Stat
           value={
             <>
-              {lettersLearned}
+              {lettersMastered}
               <span className="text-base font-normal text-muted">/{TOTAL_CHARACTERS}</span>
             </>
           }
-          label="letters learned"
+          label={
+            <>
+              letters mastered
+              <span className="block">{lettersLearned} learned</span>
+            </>
+          }
           href="/fidel"
         />
       </div>
