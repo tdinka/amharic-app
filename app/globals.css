@@ -6,29 +6,46 @@ body {
   @apply bg-paper text-ink antialiased;
 }
 
-/* A woven band that nods to tibeb borders on habesha kemis cloth. */
+/* The woven tibeb band (gold diamonds, emerald centres, on crimson), edged in ink.
+   Use it as an accent: headers and celebrations, not every screen. */
 .tibeb {
-  height: 10px;
-  background-color: #faf5ec;
-  background-image:
-    linear-gradient(135deg, #2f4b7c 25%, transparent 25%),
-    linear-gradient(225deg, #2f4b7c 25%, transparent 25%),
-    linear-gradient(315deg, #c8962b 25%, transparent 25%),
-    linear-gradient(45deg, #c8962b 25%, transparent 25%);
-  background-size: 10px 10px;
-  border-top: 2px solid #b0472c;
-  border-bottom: 2px solid #b0472c;
+  height: 22px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><rect width='22' height='22' fill='%23A8142A'/><path d='M11 2 L20 11 L11 20 L2 11 Z' fill='%23F0AE1C'/><path d='M11 7 L15 11 L11 15 L7 11 Z' fill='%231E7448'/></svg>") repeat-x left center / 22px 22px;
+  border-top: 2px solid #2a1a1d;
+  border-bottom: 2px solid #2a1a1d;
+}
+.tibeb-thin {
+  height: 14px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><rect width='22' height='22' fill='%23A8142A'/><path d='M11 2 L20 11 L11 20 L2 11 Z' fill='%23F0AE1C'/><path d='M11 7 L15 11 L11 15 L7 11 Z' fill='%231E7448'/></svg>") repeat-x left center / 14px 14px;
+  border-top: 1.5px solid #2a1a1d;
+  border-bottom: 1.5px solid #2a1a1d;
+}
+/* The same weave running down the side of a framed card. */
+.tibeb-v {
+  width: 22px;
+  background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><rect width='22' height='22' fill='%23A8142A'/><path d='M11 2 L20 11 L11 20 L2 11 Z' fill='%23F0AE1C'/><path d='M11 7 L15 11 L11 15 L7 11 Z' fill='%231E7448'/></svg>") repeat-y center top / 22px 22px;
 }
 
-.tibeb-thin {
-  height: 6px;
-  background-image: repeating-linear-gradient(
-    90deg,
-    #b0472c 0 8px,
-    #c8962b 8px 12px,
-    #2f4b7c 12px 20px,
-    #c8962b 20px 24px
-  );
+@layer components {
+  /* Buttons: ink outline + a press shadow that collapses when pressed. */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-ink font-semibold shadow-press transition;
+  }
+  .btn:active:not(:disabled) {
+    @apply translate-x-[2px] translate-y-[2px] shadow-none;
+  }
+  .btn:disabled {
+    @apply border-ink/30 bg-line text-muted shadow-none;
+  }
+  .btn-primary {
+    @apply btn bg-berbere text-white;
+  }
+  .btn-secondary {
+    @apply btn bg-card text-ink;
+  }
+  .btn-dark {
+    @apply btn bg-indigo text-white;
+  }
 }
 
 /* Draw-on animation for a character outline (prototype stand-in for real stroke order). */

@@ -76,19 +76,19 @@ export function TraceStep({ step }: { step: StepOf<"trace"> }) {
       )}
 
       <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-        <button type="button" onClick={clear} className="rounded-full border border-line bg-card px-4 py-2 text-sm">
+        <button type="button" onClick={clear} className="btn-secondary px-4 py-2 text-sm">
           Clear
         </button>
         <button
           type="button"
           onClick={() => setResult(scoreTrace(char, strokes))}
           disabled={strokes.length === 0}
-          className="rounded-full bg-indigo px-4 py-2 text-sm text-white disabled:opacity-40"
+          className="btn-dark px-4 py-2 text-sm"
         >
           Check
         </button>
         {!last && (
-          <button type="button" onClick={next} className="rounded-full border border-indigo px-4 py-2 text-sm text-indigo">
+          <button type="button" onClick={next} className="btn-secondary px-4 py-2 text-sm">
             Next letter →
           </button>
         )}

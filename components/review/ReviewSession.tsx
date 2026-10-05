@@ -4,6 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { ComputerVoice } from "@/components/AudioButton";
 import { Roman } from "@/components/Roman";
 import { CharTile } from "@/components/lesson/ui";
+import { AnswerMark } from "@/components/Marks";
 import { charAudioPath, wordAudioPath } from "@/lib/audio";
 import type { StoredCard } from "@/lib/progress/types";
 import { useProgress } from "@/lib/progress/ProgressProvider";
@@ -27,7 +28,7 @@ function HearButton({ path }: { path: string | undefined }) {
         type="button"
         onClick={() => path && playAudio(path)}
         aria-label="Play the sound again"
-        className="flex h-20 w-20 items-center justify-center rounded-full bg-berbere text-3xl text-white shadow-md active:scale-95"
+        className="flex h-20 w-20 items-center justify-center rounded-full border-2 border-ink bg-berbere text-3xl text-white shadow-press-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
       >
         🔊
       </button>
@@ -40,7 +41,7 @@ function optionClass(state: "plain" | "correct" | "wrong" | "dim") {
   return {
     plain: "border-line bg-card active:scale-95",
     correct: "border-leaf bg-leaf-light",
-    wrong: "border-berbere bg-berbere-light",
+    wrong: "border-rose bg-rose-light",
     dim: "border-line bg-card opacity-50",
   }[state];
 }
@@ -134,7 +135,7 @@ export function ReviewSession({ cards, onDone }: { cards: StoredCard[]; onDone: 
     <div>
       <div className="mb-4 flex items-center gap-3">
         <div className="h-2 flex-1 overflow-hidden rounded-full bg-line">
-          <div className="h-full rounded-full bg-indigo transition-all" style={{ width: `${(pos / queue.length) * 100}%` }} />
+          <div className="h-full rounded-full bg-leaf transition-all" style={{ width: `${(pos / queue.length) * 100}%` }} />
         </div>
         <span className="text-xs text-muted">
           {Math.min(pos + 1, queue.length)} / {queue.length}
@@ -153,9 +154,12 @@ export function ReviewSession({ cards, onDone }: { cards: StoredCard[]; onDone: 
                 type="button"
                 disabled={!!picked}
                 onClick={() => answer(o)}
-                className={`rounded-2xl border-2 py-4 text-2xl font-semibold transition ${optionClass(state(o))}`}
+                className={`relative rounded-2xl border-2 py-4 text-2xl font-semibold transition ${optionClass(state(o))}`}
               >
                 {o}
+                {(state(o) === "correct" || state(o) === "wrong") && (
+                  <AnswerMark correct={state(o) === "correct"} className="absolute right-2 top-2" />
+                )}
               </button>
             ))}
           </div>
@@ -195,9 +199,12 @@ export function ReviewSession({ cards, onDone }: { cards: StoredCard[]; onDone: 
                 type="button"
                 disabled={!!picked}
                 onClick={() => answer(o)}
-                className={`rounded-2xl border-2 px-4 py-3 text-left text-lg font-semibold transition ${optionClass(state(o))}`}
+                className={`relative rounded-2xl border-2 px-4 py-3 text-left text-lg font-semibold transition ${optionClass(state(o))}`}
               >
                 {o}
+                {(state(o) === "correct" || state(o) === "wrong") && (
+                  <AnswerMark correct={state(o) === "correct"} className="absolute right-2 top-2" />
+                )}
               </button>
             ))}
           </div>
@@ -206,7 +213,8 @@ export function ReviewSession({ cards, onDone }: { cards: StoredCard[]; onDone: 
 
       {picked && (
         <div className="mt-5 animate-pop">
-          <p className={`text-center font-semibold ${correct ? "text-leaf" : "text-berbere-dark"}`} role="status">
+          <p className={`flex items-center justify-center gap-2 text-center font-semibold ${correct ? "text-leaf" : "text-rose-dark"}`} role="status">
+            <AnswerMark correct={correct} />
             {correct
               ? "Right!"
               : question.kind === "seeWord"
@@ -218,7 +226,7 @@ export function ReviewSession({ cards, onDone }: { cards: StoredCard[]; onDone: 
           <button
             type="button"
             onClick={next}
-            className="mt-3 w-full rounded-full bg-indigo py-3 text-lg font-semibold text-white active:scale-[0.98]"
+            className="btn-dark mt-3 w-full py-3 text-lg"
           >
             {pos + 1 < queue.length ? "Next" : "Finish"}
           </button>

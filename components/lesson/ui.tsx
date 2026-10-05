@@ -1,3 +1,5 @@
+import { AnswerMark } from "@/components/Marks";
+
 // Small building blocks shared by the lesson screens.
 
 export function StepHeading({ children }: { children: React.ReactNode }) {
@@ -36,11 +38,11 @@ export function CharTile({
   label?: string;
 }) {
   const states = {
-    plain: "border-line bg-card",
-    active: "border-ochre bg-ochre-light scale-105",
-    correct: "border-leaf bg-leaf-light",
-    wrong: "border-berbere bg-berbere-light",
-    dim: "border-line bg-card opacity-50",
+    plain: "border border-line bg-card",
+    active: "border-2 border-ink bg-ochre scale-105",
+    correct: "border-2 border-leaf bg-leaf-light",
+    wrong: "border-2 border-rose bg-rose-light",
+    dim: "border border-line bg-card opacity-50",
   };
   const dims = size === "lg" ? "min-h-[6.5rem] min-w-[5.5rem] text-6xl" : "min-h-[5rem] min-w-[4.25rem] text-5xl";
   return (
@@ -49,12 +51,13 @@ export function CharTile({
       onClick={onClick}
       disabled={disabled}
       aria-label={label}
-      className={`flex flex-col items-center justify-center gap-1 rounded-2xl border-2 px-2 py-2 transition ${dims} ${states[state]} ${
+      className={`relative flex flex-col items-center justify-center gap-1 rounded-lg px-2 py-2 transition ${dims} ${states[state]} ${
         onClick && !disabled ? "active:scale-95" : ""
       }`}
     >
       <span className="font-ethiopic leading-none">{char}</span>
       {sub && <span className="text-sm leading-none">{sub}</span>}
+      {(state === "correct" || state === "wrong") && <AnswerMark correct={state === "correct"} className="absolute right-1.5 top-1.5" />}
     </button>
   );
 }

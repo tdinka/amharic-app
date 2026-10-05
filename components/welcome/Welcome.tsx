@@ -15,7 +15,7 @@ function Example({ example }: { example: NonNullable<IntroPage["example"]> }) {
     const word = wordById(example.word);
     if (!word) return null;
     return (
-      <div className="flex flex-col items-center rounded-2xl bg-card p-5 text-center">
+      <div className="flex flex-col items-center rounded-2xl border border-line bg-card p-5 text-center">
         <div className="font-ethiopic text-6xl leading-tight">{word.amharic}</div>
         <div className="mt-1 flex flex-wrap items-baseline justify-center gap-x-2">
           <Roman text={word.roman} level="always" />
@@ -28,7 +28,7 @@ function Example({ example }: { example: NonNullable<IntroPage["example"]> }) {
   const family = families.find((f) => f.consonantRoman === example.family);
   if (!family) return null;
   return (
-    <div className="rounded-2xl bg-card p-3">
+    <div className="rounded-2xl border border-line bg-card p-3">
       <div className="grid grid-cols-7 gap-1">
         {family.forms.map((f) => (
           <div key={f.char} className="flex flex-col items-center">
@@ -94,7 +94,7 @@ export function Welcome() {
               <button
                 type="button"
                 onClick={() => finish(upNext ? `/lesson/${upNext.id}` : "/")}
-                className="w-full rounded-full bg-berbere py-3.5 text-lg font-semibold text-white shadow-sm active:scale-[0.98]"
+                className="btn-primary w-full py-3.5 text-lg"
               >
                 {firstTime || !upNext ? (upNext ? "Start lesson 1" : "Back to lessons") : "Continue learning"}
               </button>
@@ -108,7 +108,7 @@ export function Welcome() {
                 <button
                   type="button"
                   onClick={() => setIndex(index - 1)}
-                  className="rounded-full border border-line bg-paper px-5 py-3.5 font-semibold"
+                  className="btn-secondary px-5 py-3.5"
                 >
                   Back
                 </button>
@@ -116,7 +116,7 @@ export function Welcome() {
               <button
                 type="button"
                 onClick={() => setIndex(index + 1)}
-                className="flex-1 rounded-full bg-berbere py-3.5 text-lg font-semibold text-white shadow-sm active:scale-[0.98]"
+                className="btn-primary flex-1 py-3.5 text-lg"
               >
                 Next
               </button>

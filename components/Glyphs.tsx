@@ -80,7 +80,7 @@ export function VowelMarkGlyph({
         dominantBaseline="middle"
         fontSize="78"
         className="font-ethiopic"
-        fill={isBase ? "#2E2119" : "#C8962B"}
+        fill={isBase ? "#2A1A1D" : "#B37A06"}
       >
         {char}
       </text>
@@ -92,7 +92,7 @@ export function VowelMarkGlyph({
           dominantBaseline="middle"
           fontSize="78"
           className="font-ethiopic"
-          fill="#2E2119"
+          fill="#2A1A1D"
           mask={`url(#${maskId})`}
         >
           {char}

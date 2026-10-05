@@ -7,6 +7,7 @@ import { useProgress } from "@/lib/progress/ProgressProvider";
 import type { Skill } from "@/lib/progress/types";
 import { cardsToIntroduce } from "@/lib/srs";
 import { stopAudio } from "@/lib/useAudio";
+import { AnswerMark, Mesob } from "@/components/Marks";
 import { BuildWord, Dictation, GridFill, MinimalPair, PictureNaming, SoundMatch, type ExerciseProps } from "./Exercises";
 import { SayStep, StoryStep, TraceStep } from "./PracticeSteps";
 import {
@@ -19,7 +20,7 @@ import {
   TextCardStep,
   WordsStep,
 } from "./TeachingSteps";
-import { Badge, StepHeading, StepText } from "./ui";
+import { Badge } from "./ui";
 import { WarmUpStep } from "./WarmUpStep";
 
 type QueueItem = { stepIndex: number; retry: boolean };
@@ -127,7 +128,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
   const [queue, setQueue] = useState<QueueItem[]>(() => lesson.steps.map((_, i) => ({ stepIndex: i, retry: false })));
   const [pos, setPos] = useState(0);
   const [feedback, setFeedback] = useState<Feedback | null>(null);
-  const [phase, setPhase] = useState<"steps" | "culture" | "done">("steps");
+  const [phase, setPhase] = useState<"steps" | "done">("steps");
   const startedAt = useRef(Date.now());
   const saved = useRef(false);
   const skillCounts = useRef<Partial<Record<Skill, number>>>({});
@@ -179,11 +180,11 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
     setFeedback(null);
     setWarmUpDone(false);
     if (pos + 1 < queue.length) setPos(pos + 1);
-    else setPhase("culture");
+    else setPhase("done");
   }
 
-  const total = queue.length + 1; // + culture note
-  const done = phase === "steps" ? pos : phase === "culture" ? queue.length : total;
+  const total = queue.length;
+  const done = phase === "steps" ? pos : total;
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -193,7 +194,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
             ✕
           </Link>
           <div
-            className="h-3 flex-1 overflow-hidden rounded-full bg-line"
+            className="h-3 flex-1 overflow-hidden rounded-full border-2 border-ink bg-line"
             role="progressbar"
             aria-valuemin={0}
             aria-valuemax={total}
@@ -202,7 +203,7 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
             <div className="h-full rounded-full bg-leaf transition-all duration-300" style={{ width: `${(done / total) * 100}%` }} />
           </div>
         </div>
-        <div className="tibeb-thin" />
+        <div className="h-0.5 bg-ink" />
       </header>
 
       <main className="mx-auto w-full max-w-2xl flex-1 px-4 pb-40 pt-6">
@@ -223,29 +224,31 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
               onWarmUpDone={() => setWarmUpDone(true)}
             />
           </div>
-        ) : phase === "culture" ? (
-          <div className="animate-pop">
-            <div className="tibeb mb-5 rounded" />
-            <Badge>Culture note</Badge>
-            <div className="mt-3">
-              <StepHeading>{lesson.title}</StepHeading>
-            </div>
-            <StepText>{lesson.cultureNote}</StepText>
-          </div>
         ) : (
-          <div className="animate-pop text-center">
-            <div className="text-6xl" aria-hidden>
-              🎉
+          <div className="animate-pop">
+            <div className="overflow-hidden rounded-lg border-2 border-ink bg-card shadow-press-lg">
+              <div className="tibeb" />
+              <div className="flex">
+                <div className="tibeb-v shrink-0 border-r-2 border-ink" />
+                <div className="flex flex-1 flex-col items-center gap-3 px-5 py-7 text-center">
+                  <Mesob size={84} />
+                  <h1 className="font-display text-3xl">Lesson complete</h1>
+                  <p className="text-muted">{lesson.title}</p>
+                  <div className="my-1 w-full border-t border-ink" />
+                  <div className="text-xs font-bold uppercase tracking-widest text-leaf">Culture note</div>
+                  <p className="text-left text-lg leading-relaxed">{lesson.cultureNote}</p>
+                </div>
+                <div className="tibeb-v shrink-0 border-l-2 border-ink" />
+              </div>
+              <div className="tibeb" />
             </div>
-            <h1 className="mt-3 font-display text-3xl font-semibold">Lesson complete</h1>
-            <p className="mt-2 text-muted">{lesson.title}</p>
-            <div className="mt-8 flex flex-col items-center gap-3">
+            <div className="mt-6 flex flex-col gap-3">
               {nextLesson && (
-                <Link href={`/lesson/${nextLesson.id}`} className="rounded-full bg-berbere px-6 py-3 text-white">
+                <Link href={`/lesson/${nextLesson.id}`} className="btn-primary px-6 py-3.5 text-lg">
                   Next lesson: {nextLesson.title}
                 </Link>
               )}
-              <Link href="/" className="rounded-full border border-line bg-card px-6 py-3">
+              <Link href="/" className="btn-secondary px-6 py-3">
                 Back to lessons
               </Link>
             </div>
@@ -254,14 +257,15 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
       </main>
 
       {phase !== "done" && ready && (
-        <footer className="fixed inset-x-0 bottom-0 z-20 border-t border-line bg-card/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
+        <footer className="fixed inset-x-0 bottom-0 z-20 border-t-2 border-ink bg-card/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">
           {feedback && (
             <div
-              className={`animate-pop px-4 py-3 text-center font-semibold ${
-                "skipped" in feedback ? "bg-paper text-muted" : feedback.correct ? "bg-leaf-light text-leaf" : "bg-berbere-light text-berbere-dark"
+              className={`flex animate-pop items-center justify-center gap-2 px-4 py-3 text-center font-semibold ${
+                "skipped" in feedback ? "bg-paper text-muted" : feedback.correct ? "bg-leaf-light text-leaf" : "bg-rose-light text-rose-dark"
               }`}
               role="status"
             >
+              {!("skipped" in feedback) && <AnswerMark correct={feedback.correct} />}
               {"skipped" in feedback
                 ? "Skipped for now."
                 : feedback.correct
@@ -274,13 +278,11 @@ export function LessonPlayer({ lessonId }: { lessonId: string }) {
           <div className="mx-auto max-w-2xl px-4 py-3">
             <button
               type="button"
-              onClick={phase === "culture" ? () => setPhase("done") : next}
+              onClick={next}
               disabled={!canContinue}
-              className="w-full rounded-full bg-berbere py-3.5 text-lg font-semibold text-white shadow-sm transition active:scale-[0.98] disabled:bg-line disabled:text-muted"
+              className="btn-primary w-full py-3.5 text-lg"
             >
-              {phase === "culture"
-                ? "Finish lesson"
-                : isExercise && !feedback
+              {isExercise && !feedback
                   ? "Answer to continue"
                   : isWarmUp && !warmUpDone
                     ? "Finish the warm-up"

@@ -13,7 +13,7 @@ const WEEKDAYS = ["M", "T", "W", "T", "F", "S", "S"];
 
 const SKILL_INFO: Record<Skill, { label: string; icon: string; color: string }> = {
   read: { label: "Reading", icon: "📖", color: "bg-indigo" },
-  write: { label: "Writing", icon: "✍️", color: "bg-berbere" },
+  write: { label: "Writing", icon: "✍️", color: "bg-ink" },
   listen: { label: "Listening", icon: "👂", color: "bg-ochre" },
   speak: { label: "Speaking", icon: "🗣️", color: "bg-leaf" },
 };

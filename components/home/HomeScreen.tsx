@@ -9,6 +9,7 @@ import { currentStreak, localDateKey } from "@/lib/progress/dates";
 import { useProgress } from "@/lib/progress/ProgressProvider";
 import { dueCards, masteredLetterCount } from "@/lib/srs";
 import { ProgressSettings } from "./ProgressSettings";
+import { Mesob } from "@/components/Marks";
 
 function Stat({ value, label, href, highlight }: { value: React.ReactNode; label: React.ReactNode; href?: string; highlight?: boolean }) {
   const inner = (
@@ -31,17 +32,15 @@ type NodeState = "done" | "next" | "open" | "locked";
 
 function LessonNode({ lesson, state, offset }: { lesson: Lesson; state: NodeState; offset: number }) {
   const circle = {
-    done: "bg-leaf text-white border-leaf",
-    next: "bg-berbere text-white border-berbere ring-4 ring-berbere/25",
-    open: "bg-card text-ink border-berbere",
-    locked: "bg-line/60 text-muted border-line",
+    done: "bg-leaf text-white border-ink",
+    next: "bg-berbere text-white border-ink shadow-press-lg",
+    open: "bg-card text-ink border-ink shadow-press",
+    locked: "bg-line text-muted border-ink/30",
   }[state];
   const content = (
     <div className="flex flex-col items-center" style={{ transform: `translateX(${offset}px)` }}>
       <div
-        className={`flex h-20 w-20 items-center justify-center rounded-full border-4 font-display text-2xl font-semibold shadow-sm transition ${circle} ${
-          state === "next" ? "animate-glow" : ""
-        }`}
+        className={`flex h-20 w-20 items-center justify-center rounded-full border-2 font-display text-2xl transition ${circle}`}
       >
         {state === "done" ? "✓" : state === "locked" ? "🔒" : lesson.order}
       </div>
@@ -119,27 +118,27 @@ export function HomeScreen() {
       {upNext ? (
         <Link
           href={`/lesson/${upNext.id}`}
-          className="mt-5 block overflow-hidden rounded-2xl border border-line bg-card shadow-sm transition hover:border-berbere"
+          className="mt-5 flex items-center gap-4 rounded-lg border-2 border-ink bg-berbere p-5 text-white shadow-press-lg transition active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
         >
-          <div className="tibeb" />
-          <div className="p-5">
-            <div className="text-sm text-muted">
+          <div className="min-w-0 flex-1">
+            <div className="text-sm text-berbere-light">
               {Object.keys(data.completedLessons).length === 0 ? "Start here" : "Up next"} · Week {upNext.week}, lesson{" "}
               {upNext.order} · about {upNext.estimatedMinutes} min
             </div>
-            <div className="mt-1 font-display text-2xl font-semibold">{upNext.title}</div>
-            <p className="mt-1 text-muted">{upNext.goal}</p>
-            <span className="mt-4 inline-block rounded-full bg-berbere px-6 py-2.5 font-semibold text-white">
+            <div className="mt-1 font-display text-2xl">{upNext.title}</div>
+            <p className="mt-1 text-berbere-light">{upNext.goal}</p>
+            <span className="mt-4 inline-flex rounded-lg border-2 border-ink bg-ochre px-5 py-2.5 font-semibold text-ink">
               {Object.keys(data.completedLessons).length === 0 ? "Start your first lesson" : "Continue"}
             </span>
           </div>
+          <Mesob size={64} />
         </Link>
       ) : (
         <div className="mt-5 rounded-2xl border border-line bg-card p-5 text-center">
-          <div className="text-4xl" aria-hidden>
-            🎉
+          <div className="flex justify-center">
+            <Mesob size={64} />
           </div>
-          <div className="mt-2 font-display text-2xl font-semibold">Every lesson so far is done</div>
+          <div className="mt-3 font-display text-2xl">Every lesson so far is done</div>
           <p className="mt-1 text-muted">
             {due > 0 ? "Keep your letters fresh with today's reviews." : "New lessons are on their way. Reviews will keep what you've learned fresh."}
           </p>

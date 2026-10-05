@@ -62,7 +62,7 @@ export function AudioButton({ path, label = "Play", size = "md", withSlow = fals
         type="button"
         onClick={() => play("natural")}
         aria-label={label}
-        className={`${dims} inline-flex items-center justify-center rounded-full bg-berbere text-white shadow-sm transition active:scale-95 ${
+        className={`${dims} inline-flex items-center justify-center rounded-full border-2 border-ink bg-berbere text-white shadow-press transition active:translate-x-[2px] active:translate-y-[2px] active:shadow-none ${
           playing === "natural" ? "animate-pulse" : ""
         }`}
       >
@@ -73,7 +73,7 @@ export function AudioButton({ path, label = "Play", size = "md", withSlow = fals
           type="button"
           onClick={() => play("slow")}
           aria-label={`${label} slowly`}
-          className={`inline-flex h-9 items-center justify-center rounded-full border border-line bg-card px-3 text-sm ${
+          className={`btn-secondary h-9 px-3 text-sm font-normal ${
             playing === "slow" ? "animate-pulse" : ""
           }`}
         >
