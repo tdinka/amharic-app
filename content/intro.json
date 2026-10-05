@@ -1,0 +1,36 @@
+{
+  "reviewed": false,
+  "pages": [
+    {
+      "title": "Welcome to Amharic",
+      "example": { "word": "selam" },
+      "paragraphs": [
+        "Amharic is one of the main languages of Ethiopia and the country's federal working language. Tens of millions of people speak it, in Ethiopia and in communities around the world.",
+        "It's a Semitic language, related to Arabic and Hebrew. You'll be learning the standard Amharic of Addis Ababa."
+      ]
+    },
+    {
+      "title": "A script of its own",
+      "example": { "family": "l" },
+      "paragraphs": [
+        "Amharic is written in the fidel. Each character is a consonant and a vowel together, so the fidel comes in families: one base shape for each consonant, changed a little for each of seven vowels.",
+        "There are 34 families, 238 characters in all — but learn the seven vowel marks once and they work across every family. The fidel reads left to right and has no capital letters."
+      ]
+    },
+    {
+      "title": "Sounds to listen for",
+      "paragraphs": [
+        "Most Amharic sounds will feel familiar. A few are new: popped sounds made with a closed throat, and consonants held a little longer, which can change what a word means.",
+        "Every letter and word comes with a recording to copy. At first the sounds are also written in Latin letters to help you; as you get comfortable, you can hide them and read the fidel itself."
+      ]
+    },
+    {
+      "title": "How the course works",
+      "paragraphs": [
+        "In six weeks of short daily lessons — about 15 to 20 minutes each — you'll learn the whole fidel, along with your first words, greetings and short stories.",
+        "Each lesson starts with a quick review, then you listen, look, write and say. Mistakes are part of learning: anything you miss comes back at the end of the lesson and in later reviews.",
+        "Your progress is saved in this browser on this device. Headphones and a microphone help, but you don't need them."
+      ]
+    }
+  ]
+}

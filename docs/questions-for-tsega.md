@@ -45,6 +45,7 @@ Open questions about content and wording. Claude adds to this list and brings it
   - Café: “ቡና ስንት ነው፧” = “How much is coffee?” and “ጥሩ! ሁለት ቡና!” = “Good! Two coffees!”. Natural? The prices are made up.
   - Culture notes: why Ge'ez had separate letters for the h/s/a/ts' sounds; the Ethiopian calendar being about 7–8 years behind; where fidel numerals are still used. Accurate?
   - No dictation in lesson 1–2 and only one in lesson 3 (ሰባት), since hearing a word can't tell you which sound-alike letter it uses. Is that the right call?
+- **Welcome screens (unreviewed)** — `content/intro.json`, shown to new learners before lesson 1 and linked from Settings. Is the description of Amharic right (one of Ethiopia's main languages and its federal working language; tens of millions of speakers; Semitic, related to Arabic and Hebrew; Addis Ababa standard)? And does “How the course works” set the right expectations for your learners — especially heritage learners?
 
 ## Answered
 

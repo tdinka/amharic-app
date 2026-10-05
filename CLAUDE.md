@@ -17,6 +17,7 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 - Hosting later: Railway (same as Recipe Box).
 
 ## Content is data, not code
+- `content/intro.json` — the welcome screens new learners see before lesson 1 (also linked from Settings). Same review rule: `"reviewed": false` until Tsega approves.
 - `content/fidel.json` — all 34 consonant families × 7 vowel orders, labialized forms, punctuation, numerals, in teaching order (`week` 1–6). Generated from Unicode; do not hand-edit codepoints.
 - `content/lessons/week-N.json` — three lessons per week (load new week files in `lib/content.ts`). Every word and story uses only characters taught so far — keep that rule for all new lessons.
 - When writing lessons, never type Amharic from memory: build each character from `fidel.json` (family + vowel order), print the letters' romanization to check spelling, and run `npm run check:lessons` (taught-letters rule, exercise sanity, word/character counts for wrap-ups). "w" forms such as ቋ count as taught only from the lesson that lists them in `newLabialized`. New content is `"reviewed": false`; list anything uncertain in `docs/questions-for-tsega.md`.

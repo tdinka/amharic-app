@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import { RomanizationSetting } from "@/components/Roman";
 import { localDateKey } from "@/lib/progress/dates";
@@ -34,6 +35,10 @@ export function ProgressSettings() {
   return (
     <section className="mt-12 space-y-5 rounded-2xl border border-line bg-card p-5">
       <h2 className="font-display text-lg font-semibold">Settings</h2>
+
+      <Link href="/welcome" className="block text-sm font-semibold text-berbere">
+        About Amharic and this course →
+      </Link>
 
       <div>
         <div className="mb-2 text-sm font-semibold">Show the sounds in Latin letters</div>
