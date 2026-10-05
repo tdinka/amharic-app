@@ -16,6 +16,13 @@ Open questions about content and wording. Claude adds to this list and brings it
   - Culture notes: coffee ceremony (three rounds, jebena), Ethiopian time counting from sunrise, the Ethiopian calendar (13 months, new year in September). Accurate and the way you’d put it?
   - The ejective rule uses the same “a popped sound” wording that’s still an open question above.
 - **ካል “kal” contrast recording** — Week 2’s minimal pair (ቃል qal vs ካል kal) needs your own recordings of both, like the “held m” pair in Week 1; a computer voice can’t make the difference.
+- **Week 3 drafts (all unreviewed)** — please check every word, romanization and picture in `content/lessons/week-3.json`. Least sure of:
+  - Spellings with more than one common form: ሀገር “hager” (country — some write it with a different first letter) and ውሃ “wuha” (water). Which spelling should learners see?
+  - Romanization: ውሃ as “wuha” (the letters say wə-ha), and doubling in ገና “genna”.
+  - ገና glossed “Christmas (Ethiopian)”; ሆድ “stomach”; ቸኮሌት “chekolēt” — the everyday spelling and sound?
+  - Story “At the table”: “ጥሩ ቁርስ!” = “A good breakfast!” and “ቻው!” = “Bye!” — natural?
+  - Culture notes: ገና on 7 January with a fast and a night church service; salt bars (amole) once used as money; greetings that bless health. Accurate?
+- **Week 3 contrast recordings** — the two new minimal pairs need your own recordings of both words: ጣት t'at vs ታት tat, and ጨው ch'ew vs ቸው chew. Also worth a listen: whether the computer voice really pops the ejectives in Weeks 2–3.
 
 ## Answered
 

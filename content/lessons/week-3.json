@@ -1,0 +1,614 @@
+{
+  "week": 3,
+  "lessons": [
+    {
+      "id": "w3-l1",
+      "week": 3,
+      "order": 1,
+      "title": "Two, country, Christmas",
+      "goal": "Add the ሀ and ገ families.",
+      "newFamilies": [
+        "ሀ",
+        "ገ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "ገና is Ethiopian Christmas, on 7 January. Many people fast beforehand, go to church through the night in white clothes, then share a feast.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Week 3: six more families, and two more popped sounds. Today: h and g."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ሀ",
+            "ሁ",
+            "ሂ",
+            "ሃ",
+            "ሄ",
+            "ህ",
+            "ሆ",
+            "ገ",
+            "ጉ",
+            "ጊ",
+            "ጋ",
+            "ጌ",
+            "ግ",
+            "ጎ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ሀ"
+        },
+        {
+          "type": "see",
+          "family": "ገ"
+        },
+        {
+          "type": "rule",
+          "title": "ሀ is your h",
+          "text": "ሀ says h, and ገ is always a hard g, as in 'go'. A few other letters also say h — you'll meet them in week 6. For now, ሀ is the one to know."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ሀ",
+            "ሁ",
+            "ህ",
+            "ገ",
+            "ጋ",
+            "ግ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "hulet",
+              "amharic": "ሁለት",
+              "roman": "hulet",
+              "english": "two",
+              "picture": "2️⃣",
+              "audio": "/audio/words/hulet.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "hager",
+              "amharic": "ሀገር",
+              "roman": "hager",
+              "english": "country",
+              "picture": "🗺️",
+              "audio": "/audio/words/hager.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "hod",
+              "amharic": "ሆድ",
+              "roman": "hod",
+              "english": "stomach",
+              "picture": "🫃",
+              "audio": "/audio/words/hod.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "gemed",
+              "amharic": "ገመድ",
+              "roman": "gemed",
+              "english": "rope",
+              "picture": "🪢",
+              "audio": "/audio/words/gemed.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "genna",
+              "amharic": "ገና",
+              "roman": "genna",
+              "english": "Christmas (Ethiopian)",
+              "picture": "🎄",
+              "audio": "/audio/words/genna.mp3",
+              "reviewed": false,
+              "note": "The n is held: gen-na."
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጉ",
+          "options": [
+            "ገ",
+            "ጉ",
+            "ጊ",
+            "ጋ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሆ",
+          "options": [
+            "ሁ",
+            "ሆ",
+            "ህ",
+            "ሎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ገ",
+          "hide": [
+            2,
+            5
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሁለት",
+          "tiles": [
+            "ለ",
+            "ሁ",
+            "ት",
+            "ሆ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ገመድ",
+          "options": [
+            "ገመድ",
+            "ሆድ",
+            "ሀገር"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ሆድ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ሁለት",
+            "ሀገር",
+            "ገና"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "You can now read 91 characters. Tomorrow: ጠ and ቸ — another popped sound."
+        }
+      ]
+    },
+    {
+      "id": "w3-l2",
+      "week": 3,
+      "order": 2,
+      "title": "Health and good things: t'",
+      "goal": "Add the ejective ጠ and the ቸ family.",
+      "newFamilies": [
+        "ጠ",
+        "ቸ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "ጤና means health, and it's at the heart of everyday greetings: Amharic speakers often greet each other with a blessing of health.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ጠ",
+            "ጡ",
+            "ጢ",
+            "ጣ",
+            "ጤ",
+            "ጥ",
+            "ጦ",
+            "ቸ",
+            "ቹ",
+            "ቺ",
+            "ቻ",
+            "ቼ",
+            "ች",
+            "ቾ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ጠ"
+        },
+        {
+          "type": "see",
+          "family": "ቸ"
+        },
+        {
+          "type": "rule",
+          "title": "ጠ is a popped t",
+          "text": "ጠ is to ተ what ቀ is to ከ: the same sound, popped. ተ is a plain t; ጠ closes the throat and releases the t with a pop. It's written t'. Say them: ታ ta, ጣ t'a."
+        },
+        {
+          "type": "chant",
+          "family": "ጠ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ጠ",
+            "ጣ",
+            "ጥ",
+            "ቸ",
+            "ቻ",
+            "ች"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "t'ēna",
+              "amharic": "ጤና",
+              "roman": "t'ēna",
+              "english": "health",
+              "picture": "🩺",
+              "audio": "/audio/words/t'ēna.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "t'əru",
+              "amharic": "ጥሩ",
+              "roman": "t'əru",
+              "english": "good",
+              "picture": "👍",
+              "audio": "/audio/words/t'əru.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "t'at",
+              "amharic": "ጣት",
+              "roman": "t'at",
+              "english": "finger",
+              "picture": "☝️",
+              "audio": "/audio/words/t'at.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "t'əqur",
+              "amharic": "ጥቁር",
+              "roman": "t'əqur",
+              "english": "black",
+              "picture": "⚫",
+              "audio": "/audio/words/t'əqur.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "chekolēt",
+              "amharic": "ቸኮሌት",
+              "roman": "chekolēt",
+              "english": "chocolate",
+              "picture": "🍫",
+              "audio": "/audio/words/chekolēt.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "minimalPair",
+          "note": "Plain t or popped t'?",
+          "a": {
+            "id": "t'at",
+            "amharic": "ጣት",
+            "roman": "t'at",
+            "english": "finger",
+            "picture": "☝️",
+            "audio": "/audio/words/t'at.mp3",
+            "reviewed": false
+          },
+          "b": {
+            "id": "tat",
+            "amharic": "ታት",
+            "roman": "tat",
+            "english": "(plain t — not a word)",
+            "picture": "🔈",
+            "audio": "/audio/words/tat.mp3",
+            "reviewed": false,
+            "note": "Contrast audio only — record ta with a plain t, then t."
+          }
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጡ",
+          "options": [
+            "ቱ",
+            "ጡ",
+            "ቶ",
+            "ጦ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ቸ",
+          "hide": [
+            3,
+            7
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ጥቁር",
+          "tiles": [
+            "ቁ",
+            "ጥ",
+            "ር",
+            "ት",
+            "ቀ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ቸኮሌት",
+          "options": [
+            "ቸኮሌት",
+            "ጣት",
+            "ጤና"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ጥሩ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ጤና",
+            "ጥሩ",
+            "ቸኮሌት"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "105 characters. Tomorrow: ጨ and ወ — and you'll say goodbye in Amharic."
+        }
+      ]
+    },
+    {
+      "id": "w3-l3",
+      "week": 3,
+      "order": 3,
+      "title": "Water, salt, bye: ch'",
+      "goal": "Add the ejective ጨ and the ወ family, and read a story.",
+      "newFamilies": [
+        "ጨ",
+        "ወ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "Salt (ጨው) was once money in Ethiopia: bars of salt called amole were used to buy and sell for centuries.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ጨ",
+            "ጩ",
+            "ጪ",
+            "ጫ",
+            "ጬ",
+            "ጭ",
+            "ጮ",
+            "ወ",
+            "ዉ",
+            "ዊ",
+            "ዋ",
+            "ዌ",
+            "ው",
+            "ዎ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ጨ"
+        },
+        {
+          "type": "see",
+          "family": "ወ"
+        },
+        {
+          "type": "rule",
+          "title": "ጨ is a popped ch",
+          "text": "One more pair: ቸ is a plain ch, as in 'church'; ጨ is the popped version, written ch'. Say them: ቻ cha, ጫ ch'a."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ጨ",
+            "ጫ",
+            "ጭ",
+            "ወ",
+            "ዋ",
+            "ው"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "wuha",
+              "amharic": "ውሃ",
+              "roman": "wuha",
+              "english": "water",
+              "picture": "💧",
+              "audio": "/audio/words/wuha.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "chaw",
+              "amharic": "ቻው",
+              "roman": "chaw",
+              "english": "bye",
+              "picture": "👋",
+              "audio": "/audio/words/chaw.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "wetet",
+              "amharic": "ወተት",
+              "roman": "wetet",
+              "english": "milk",
+              "picture": "🥛",
+              "audio": "/audio/words/wetet.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ch'ew",
+              "amharic": "ጨው",
+              "roman": "ch'ew",
+              "english": "salt",
+              "picture": "🧂",
+              "audio": "/audio/words/ch'ew.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ch'ereqa",
+              "amharic": "ጨረቃ",
+              "roman": "ch'ereqa",
+              "english": "moon",
+              "picture": "🌙",
+              "audio": "/audio/words/ch'ereqa.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "wenber",
+              "amharic": "ወንበር",
+              "roman": "wenber",
+              "english": "chair",
+              "picture": "🪑",
+              "audio": "/audio/words/wenber.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "minimalPair",
+          "note": "Plain ch or popped ch'?",
+          "a": {
+            "id": "ch'ew",
+            "amharic": "ጨው",
+            "roman": "ch'ew",
+            "english": "salt",
+            "picture": "🧂",
+            "audio": "/audio/words/ch'ew.mp3",
+            "reviewed": false
+          },
+          "b": {
+            "id": "chew",
+            "amharic": "ቸው",
+            "roman": "chew",
+            "english": "(plain ch — not a word)",
+            "picture": "🔈",
+            "audio": "/audio/words/chew.mp3",
+            "reviewed": false,
+            "note": "Contrast audio only — record che with a plain ch, then w."
+          }
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ዋ",
+          "options": [
+            "ወ",
+            "ዋ",
+            "ዊ",
+            "ዎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ወ",
+          "hide": [
+            4,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ወንበር",
+          "tiles": [
+            "በ",
+            "ወ",
+            "ር",
+            "ን",
+            "ቦ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ጨረቃ",
+          "options": [
+            "ጨረቃ",
+            "ውሃ",
+            "ወተት"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ውሃ"
+        },
+        {
+          "type": "story",
+          "title": "At the table",
+          "lines": [
+            {
+              "amharic": "ሰላም አባ! ሰላም እማማ!",
+              "english": "Hello, Dad! Hello, Mom!"
+            },
+            {
+              "amharic": "ውሃ፣ ወተት፣ ዳቦ፣ ጨው።",
+              "english": "Water, milk, bread, salt."
+            },
+            {
+              "amharic": "ጥሩ ቁርስ!",
+              "english": "A good breakfast!"
+            },
+            {
+              "amharic": "ቻው!",
+              "english": "Bye!"
+            }
+          ],
+          "note": "Every character here is one you've learned. Describing words come first: ጥሩ ቁርስ = a good breakfast."
+        },
+        {
+          "type": "say",
+          "items": [
+            "ውሃ",
+            "ወተት",
+            "ቻው"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Week 3 milestone: 17 families, 119 characters, 43 words — and two more popped sounds. 🎉"
+        }
+      ]
+    }
+  ]
+}
