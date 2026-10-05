@@ -35,7 +35,7 @@ const config: Config = {
         // Every variable has its own backup, so one missing font can never break the
         // whole list (an empty var() makes the browser drop the rule → Times).
         sans: ["var(--font-latin, system-ui)", "var(--font-latin-fallback, sans-serif)", "var(--font-ethiopic, serif)", "system-ui", "sans-serif"],
-        ethiopic: ["var(--font-ethiopic, serif)", "serif"],
+        ethiopic: ["var(--font-ethiopic, serif)", "var(--font-latin, system-ui)", "serif"],
         display: ["var(--font-display, Georgia)", "var(--font-latin-fallback, serif)", "Georgia", "serif"],
       },
       keyframes: {
