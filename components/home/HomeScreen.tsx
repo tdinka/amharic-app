@@ -173,6 +173,11 @@ export function HomeScreen() {
       </div>
 
       <ProgressSettings />
+
+      <p className="mt-6 text-center text-xs text-muted">
+        Early preview: lessons are still being checked by a native speaker, and some sounds are a computer voice for now.
+        Thank you for testing!
+      </p>
     </main>
   );
 }
