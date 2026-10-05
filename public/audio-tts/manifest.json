@@ -168,6 +168,90 @@
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
     },
+    "/audio/chars/u1228-slow.mp3": {
+      "text": "ረ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1228.mp3": {
+      "text": "ረ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1229-slow.mp3": {
+      "text": "ሩ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1229.mp3": {
+      "text": "ሩ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122a-slow.mp3": {
+      "text": "ሪ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122a.mp3": {
+      "text": "ሪ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122b-slow.mp3": {
+      "text": "ራ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122b.mp3": {
+      "text": "ራ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122c-slow.mp3": {
+      "text": "ሬ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122c.mp3": {
+      "text": "ሬ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122d-slow.mp3": {
+      "text": "ር",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122d.mp3": {
+      "text": "ር",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122e-slow.mp3": {
+      "text": "ሮ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u122e.mp3": {
+      "text": "ሮ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
     "/audio/chars/u1230-slow.mp3": {
       "text": "ሰ",
       "kind": "char",
@@ -248,6 +332,90 @@
     },
     "/audio/chars/u1236.mp3": {
       "text": "ሶ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1240-slow.mp3": {
+      "text": "ቀ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1240.mp3": {
+      "text": "ቀ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1241-slow.mp3": {
+      "text": "ቁ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1241.mp3": {
+      "text": "ቁ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1242-slow.mp3": {
+      "text": "ቂ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1242.mp3": {
+      "text": "ቂ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1243-slow.mp3": {
+      "text": "ቃ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1243.mp3": {
+      "text": "ቃ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1244-slow.mp3": {
+      "text": "ቄ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1244.mp3": {
+      "text": "ቄ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1245-slow.mp3": {
+      "text": "ቅ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1245.mp3": {
+      "text": "ቅ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1246-slow.mp3": {
+      "text": "ቆ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1246.mp3": {
+      "text": "ቆ",
       "kind": "char",
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
@@ -336,6 +504,174 @@
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
     },
+    "/audio/chars/u1270-slow.mp3": {
+      "text": "ተ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1270.mp3": {
+      "text": "ተ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1271-slow.mp3": {
+      "text": "ቱ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1271.mp3": {
+      "text": "ቱ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1272-slow.mp3": {
+      "text": "ቲ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1272.mp3": {
+      "text": "ቲ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1273-slow.mp3": {
+      "text": "ታ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1273.mp3": {
+      "text": "ታ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1274-slow.mp3": {
+      "text": "ቴ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1274.mp3": {
+      "text": "ቴ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1275-slow.mp3": {
+      "text": "ት",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1275.mp3": {
+      "text": "ት",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1276-slow.mp3": {
+      "text": "ቶ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1276.mp3": {
+      "text": "ቶ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1290-slow.mp3": {
+      "text": "ነ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1290.mp3": {
+      "text": "ነ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1291-slow.mp3": {
+      "text": "ኑ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1291.mp3": {
+      "text": "ኑ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1292-slow.mp3": {
+      "text": "ኒ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1292.mp3": {
+      "text": "ኒ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1293-slow.mp3": {
+      "text": "ና",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1293.mp3": {
+      "text": "ና",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1294-slow.mp3": {
+      "text": "ኔ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1294.mp3": {
+      "text": "ኔ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1295-slow.mp3": {
+      "text": "ን",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1295.mp3": {
+      "text": "ን",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1296-slow.mp3": {
+      "text": "ኖ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u1296.mp3": {
+      "text": "ኖ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
     "/audio/chars/u12a0-slow.mp3": {
       "text": "አ",
       "kind": "char",
@@ -420,6 +756,174 @@
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
     },
+    "/audio/chars/u12a8-slow.mp3": {
+      "text": "ከ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12a8.mp3": {
+      "text": "ከ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12a9-slow.mp3": {
+      "text": "ኩ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12a9.mp3": {
+      "text": "ኩ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12aa-slow.mp3": {
+      "text": "ኪ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12aa.mp3": {
+      "text": "ኪ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ab-slow.mp3": {
+      "text": "ካ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ab.mp3": {
+      "text": "ካ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ac-slow.mp3": {
+      "text": "ኬ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ac.mp3": {
+      "text": "ኬ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ad-slow.mp3": {
+      "text": "ክ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ad.mp3": {
+      "text": "ክ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ae-slow.mp3": {
+      "text": "ኮ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12ae.mp3": {
+      "text": "ኮ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f0-slow.mp3": {
+      "text": "ደ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f0.mp3": {
+      "text": "ደ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f1-slow.mp3": {
+      "text": "ዱ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f1.mp3": {
+      "text": "ዱ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f2-slow.mp3": {
+      "text": "ዲ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f2.mp3": {
+      "text": "ዲ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f3-slow.mp3": {
+      "text": "ዳ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f3.mp3": {
+      "text": "ዳ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f4-slow.mp3": {
+      "text": "ዴ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f4.mp3": {
+      "text": "ዴ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f5-slow.mp3": {
+      "text": "ድ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f5.mp3": {
+      "text": "ድ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f6-slow.mp3": {
+      "text": "ዶ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/chars/u12f6.mp3": {
+      "text": "ዶ",
+      "kind": "char",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
     "/audio/stories/w1-l3-1-slow.mp3": {
       "text": "ሰላም አባ!",
       "kind": "story",
@@ -456,6 +960,42 @@
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
     },
+    "/audio/stories/w2-l3-1-slow.mp3": {
+      "text": "ሰላም እማማ!",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/stories/w2-l3-1.mp3": {
+      "text": "ሰላም እማማ!",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/stories/w2-l3-2-slow.mp3": {
+      "text": "ቁርስ ቡና፣ ዳቦ፣ ቅቤ።",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/stories/w2-l3-2.mp3": {
+      "text": "ቁርስ ቡና፣ ዳቦ፣ ቅቤ።",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/stories/w2-l3-3-slow.mp3": {
+      "text": "ቡና ለእናት፣ ዳቦ ለአባ።",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/stories/w2-l3-3.mp3": {
+      "text": "ቡና ለእናት፣ ዳቦ ለአባ።",
+      "kind": "story",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
     "/audio/words/abba-slow.mp3": {
       "text": "አባ",
       "kind": "word",
@@ -464,6 +1004,30 @@
     },
     "/audio/words/abba.mp3": {
       "text": "አባ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ante-slow.mp3": {
+      "text": "አንተ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ante.mp3": {
+      "text": "አንተ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/arat-slow.mp3": {
+      "text": "አራት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/arat.mp3": {
+      "text": "አራት",
       "kind": "word",
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
@@ -492,6 +1056,78 @@
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
     },
+    "/audio/words/ber-slow.mp3": {
+      "text": "በር",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ber.mp3": {
+      "text": "በር",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/bēt-slow.mp3": {
+      "text": "ቤት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/bēt.mp3": {
+      "text": "ቤት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/bunna-slow.mp3": {
+      "text": "ቡና",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/bunna.mp3": {
+      "text": "ቡና",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/dabbo-slow.mp3": {
+      "text": "ዳቦ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/dabbo.mp3": {
+      "text": "ዳቦ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/debter-slow.mp3": {
+      "text": "ደብተር",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/debter.mp3": {
+      "text": "ደብተር",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/dəmet-slow.mp3": {
+      "text": "ድመት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/dəmet.mp3": {
+      "text": "ድመት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
     "/audio/words/əmama-slow.mp3": {
       "text": "እማማ",
       "kind": "word",
@@ -500,6 +1136,30 @@
     },
     "/audio/words/əmama.mp3": {
       "text": "እማማ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ənat-slow.mp3": {
+      "text": "እናት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ənat.mp3": {
+      "text": "እናት",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ketema-slow.mp3": {
+      "text": "ከተማ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/ketema.mp3": {
+      "text": "ከተማ",
       "kind": "word",
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
@@ -536,6 +1196,66 @@
     },
     "/audio/words/lomi.mp3": {
       "text": "ሎሚ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/mekina-slow.mp3": {
+      "text": "መኪና",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/mekina.mp3": {
+      "text": "መኪና",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qal-slow.mp3": {
+      "text": "ቃል",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qal.mp3": {
+      "text": "ቃል",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qen-slow.mp3": {
+      "text": "ቀን",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qen.mp3": {
+      "text": "ቀን",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qəbē-slow.mp3": {
+      "text": "ቅቤ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qəbē.mp3": {
+      "text": "ቅቤ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qurs-slow.mp3": {
+      "text": "ቁርስ",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/qurs.mp3": {
+      "text": "ቁርስ",
       "kind": "word",
       "voice": "am-ET-Wavenet-A",
       "reviewed": false
@@ -584,6 +1304,18 @@
     },
     "/audio/words/səm.mp3": {
       "text": "ስም",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/timatim-slow.mp3": {
+      "text": "ቲማቲም",
+      "kind": "word",
+      "voice": "am-ET-Wavenet-A",
+      "reviewed": false
+    },
+    "/audio/words/timatim.mp3": {
+      "text": "ቲማቲም",
       "kind": "word",
       "voice": "am-ET-Wavenet-A",
       "reviewed": false

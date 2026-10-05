@@ -18,7 +18,8 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 
 ## Content is data, not code
 - `content/fidel.json` — all 34 consonant families × 7 vowel orders, labialized forms, punctuation, numerals, in teaching order (`week` 1–6). Generated from Unicode; do not hand-edit codepoints.
-- `content/lessons/week-1.json` — the first three lessons. Every word and story in them uses only characters taught so far — keep that rule for all new lessons.
+- `content/lessons/week-N.json` — three lessons per week (load new week files in `lib/content.ts`). Every word and story uses only characters taught so far — keep that rule for all new lessons.
+- When writing lessons, never type Amharic from memory: build each character from `fidel.json` (family + vowel order), print the letters' romanization to check spelling, and run `npm run check:lessons` (taught-letters rule, exercise sanity, word/character counts for wrap-ups). New content is `"reviewed": false`; list anything uncertain in `docs/questions-for-tsega.md`.
 - Audio lives at `public/audio/...` with paths given in the content. Missing audio must never break a lesson: show a "recording coming" state.
 - Temporary computer voices (Google Cloud TTS, Amharic) live in `public/audio-tts/`, made by `npm run audio:tts` (needs `GOOGLE_TTS_API_KEY` in `.env.local`). The app prefers Tsega's recording, falls back to these, and labels them "computer voice". Never treat them as reviewed.
 - Tsega records audio in the recording studio at `/studio` (not linked from the menu). It only saves while running `npm run dev`: recordings go to `public/audio/...` as MP3, and its "reviewed" switches write the `reviewed` flags in `content/` (letters are reviewed per family). Commit her new recordings and flag changes when she asks.

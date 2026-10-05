@@ -2,6 +2,7 @@
 // from content/fidel.json — never typed into the code by hand.
 import fidelJson from "@/content/fidel.json";
 import week1Json from "@/content/lessons/week-1.json";
+import week2Json from "@/content/lessons/week-2.json";
 
 export type FidelForm = {
   order: number;
@@ -89,7 +90,7 @@ export type Lesson = {
 export type LessonWeek = { week: number; lessons: Lesson[] };
 
 export const fidel = fidelJson as FidelData;
-export const weeks: LessonWeek[] = [week1Json as unknown as LessonWeek];
+export const weeks: LessonWeek[] = [week1Json, week2Json] as unknown as LessonWeek[];
 export const lessons: Lesson[] = weeks.flatMap((w) => w.lessons);
 export const families: FidelFamily[] = [...fidel.families].sort(
   (a, b) => a.sequence - b.sequence,

@@ -202,15 +202,6 @@
               "reviewed": false
             },
             {
-              "id": "seba",
-              "amharic": "ሰባ",
-              "roman": "seba",
-              "english": "seventy",
-              "picture": "7️⃣0️⃣",
-              "audio": "/audio/words/seba.mp3",
-              "reviewed": false
-            },
-            {
               "id": "semma",
               "amharic": "ሰማ",
               "roman": "semma",
@@ -372,6 +363,15 @@
               "english": "other / another",
               "picture": "➕",
               "audio": "/audio/words/lēla.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "seba",
+              "amharic": "ሰባ",
+              "roman": "seba",
+              "english": "seventy",
+              "picture": "7️⃣0️⃣",
+              "audio": "/audio/words/seba.mp3",
               "reviewed": false
             }
           ]
