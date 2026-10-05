@@ -14,7 +14,7 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 - Next.js 14 (App Router, TypeScript) + Tailwind CSS
 - Prototype: progress in `localStorage` behind a `ProgressStore` interface, so it can be swapped for Postgres + Prisma + NextAuth (credentials) later without touching UI code.
 - Font: Noto Sans Ethiopic (Google Fonts).
-- Hosting later: Railway (same as Recipe Box).
+- Hosting: Railway project `amharic-app` (workspace "tdinka's Projects"), live at https://amharic-app-production.up.railway.app. It deploys automatically from `main` on GitHub, so every merged pull request goes live; no environment variables are needed there (the Google TTS key stays local). The studio can't save on the live site by design.
 
 ## Content is data, not code
 - `content/fidel.json` — all 34 consonant families × 7 vowel orders, labialized forms, punctuation, numerals, in teaching order (`week` 1–6). Generated from Unicode; do not hand-edit codepoints.
