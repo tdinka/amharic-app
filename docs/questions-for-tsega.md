@@ -23,6 +23,13 @@ Open questions about content and wording. Claude adds to this list and brings it
   - Story “At the table”: “ጥሩ ቁርስ!” = “A good breakfast!” and “ቻው!” = “Bye!” — natural?
   - Culture notes: ገና on 7 January with a fast and a night church service; salt bars (amole) once used as money; greetings that bless health. Accurate?
 - **Week 3 contrast recordings** — the two new minimal pairs need your own recordings of both words: ጣት t'at vs ታት tat, and ጨው ch'ew vs ቸው chew. Also worth a listen: whether the computer voice really pops the ejectives in Weeks 2–3.
+- **Week 4 drafts (all unreviewed)** — please check every word, romanization and picture in `content/lessons/week-4.json`. Least sure of:
+  - Romanizing the held ny: አማርኛ “amarənnya”, እንግሊዝኛ “ənglizənnya”, ሰኞ “sennyo”. fidel.json writes this letter as “ny”; would you rather learners see “ñ” (e.g. “amarəñña”)? That's a one-place change in fidel.json plus these words.
+  - The ዋና pair: “wanna” = main vs “wana” = swimming — are these really told apart only by the held n? It needs your recordings of both either way.
+  - ይቅርታ glossed “sorry / excuse me”; አዎ “yes”; ጋራዥ “garage” (chosen because ዥ-words are rare — is there a better everyday one?).
+  - Story “A little Amharic”: line 2 is the plan's example sentence (እኔ አማርኛ እናገራለሁ።); are “ትንሽ!” = “A little!” and “ጥሩ ነው!” = “That's good!” natural replies?
+  - Rule cards: “new letters from old” (an extra mark on top) and the ny/zh descriptions — clear and accurate?
+  - Culture notes: no family surnames (second name = father's first name); coffee with incense and popcorn; Amharic as the federal working language, and the fidel also writing Tigrinya. Accurate?
 
 ## Answered
 
