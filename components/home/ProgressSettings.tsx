@@ -55,13 +55,13 @@ export function ProgressSettings() {
           Progress is saved in this browser on this device. Save a copy to move it to another device, or as a backup.
         </p>
         <div className="mt-3 flex flex-wrap gap-2">
-          <button type="button" onClick={exportProgress} className="rounded-full border border-line bg-paper px-4 py-2 text-sm">
+          <button type="button" onClick={exportProgress} className="btn-secondary px-4 py-2 text-sm">
             ⬇ Save progress to a file
           </button>
           <button
             type="button"
             onClick={() => fileInput.current?.click()}
-            className="rounded-full border border-line bg-paper px-4 py-2 text-sm"
+            className="btn-secondary px-4 py-2 text-sm"
           >
             ⬆ Load progress from a file
           </button>
@@ -78,7 +78,7 @@ export function ProgressSettings() {
           />
         </div>
         {message && (
-          <p className={`mt-2 text-sm ${message.ok ? "text-leaf" : "text-berbere-dark"}`} role="status">
+          <p className={`mt-2 text-sm ${message.ok ? "text-leaf" : "text-rose-dark"}`} role="status">
             {message.text}
           </p>
         )}

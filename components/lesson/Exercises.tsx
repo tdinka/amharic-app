@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { AudioButton, ComputerVoice, RecordingComing } from "@/components/AudioButton";
+import { AnswerMark } from "@/components/Marks";
 import { Roman } from "@/components/Roman";
 import { charAudioPath, wordAudioPath } from "@/lib/audio";
 import {
@@ -52,7 +53,7 @@ function ListenButton({ path, tts = false }: { path: string | undefined; tts?: b
       <button
         type="button"
         onClick={() => path && playAudio(path)}
-        className="flex h-20 w-20 items-center justify-center rounded-full bg-berbere text-3xl text-white shadow-md active:scale-95"
+        className="flex h-20 w-20 items-center justify-center rounded-full border-2 border-ink bg-berbere text-3xl text-white shadow-press-lg active:translate-x-[2px] active:translate-y-[2px] active:shadow-none"
         aria-label="Play the sound again"
       >
         🔊
@@ -219,7 +220,7 @@ export function BuildWord({ step, onAnswer }: ExerciseProps<KindOf<"buildWord">>
               disabled={done || id === undefined}
               onClick={() => setPlaced(placed.filter((_, j) => j !== i))}
               className={`flex h-24 w-20 items-center justify-center rounded-2xl border-2 border-dashed font-ethiopic text-5xl ${
-                done ? (c === targetChars[i] ? "border-leaf bg-leaf-light" : "border-berbere bg-berbere-light") : "border-line bg-card"
+                done ? (c === targetChars[i] ? "border-leaf bg-leaf-light" : "border-rose bg-rose-light") : "border-line bg-card"
               }`}
               aria-label={c ? `Remove ${c}` : `Empty space ${i + 1}`}
             >
@@ -284,16 +285,19 @@ export function MinimalPair({ step, onAnswer, onSkip }: ExerciseProps<KindOf<"mi
             type="button"
             disabled={!ready || !!picked}
             onClick={() => pick(w.id)}
-            className={`rounded-2xl border-2 p-4 text-left transition ${
+            className={`relative rounded-lg border-2 p-4 text-left transition ${
               !picked
                 ? "border-line bg-card"
                 : w.id === target.id
                   ? "border-leaf bg-leaf-light"
                   : w.id === picked
-                    ? "border-berbere bg-berbere-light"
+                    ? "border-rose bg-rose-light"
                     : "border-line bg-card opacity-50"
             }`}
           >
+            {picked && (w.id === target.id || w.id === picked) && (
+              <AnswerMark correct={w.id === target.id} className="absolute right-2 top-2" />
+            )}
             <div className="font-ethiopic text-4xl">{w.amharic}</div>
             <div className="mt-1 text-lg font-semibold">{w.roman}</div>
             <div className="text-muted">{w.english}</div>
@@ -338,7 +342,7 @@ export function Dictation({ step, lessonId, onAnswer }: ExerciseProps<KindOf<"di
 
       <div
         className={`mt-5 flex min-h-[5.5rem] items-center justify-center rounded-2xl border-2 px-4 font-ethiopic text-5xl ${
-          !checked ? "border-line bg-card" : typed.join("") === step.target ? "border-leaf bg-leaf-light" : "border-berbere bg-berbere-light"
+          !checked ? "border-line bg-card" : typed.join("") === step.target ? "border-leaf bg-leaf-light" : "border-rose bg-rose-light"
         }`}
         aria-live="polite"
       >
@@ -350,7 +354,7 @@ export function Dictation({ step, lessonId, onAnswer }: ExerciseProps<KindOf<"di
           type="button"
           onClick={() => setTyped(typed.slice(0, -1))}
           disabled={checked || typed.length === 0}
-          className="rounded-full border border-line bg-card px-4 py-2 text-sm disabled:opacity-40"
+          className="btn-secondary px-4 py-2 text-sm"
         >
           ⌫ Delete
         </button>
@@ -358,7 +362,7 @@ export function Dictation({ step, lessonId, onAnswer }: ExerciseProps<KindOf<"di
           type="button"
           onClick={check}
           disabled={checked || typed.length === 0}
-          className="rounded-full bg-indigo px-5 py-2 text-sm text-white disabled:opacity-40"
+          className="btn-dark px-5 py-2 text-sm"
         >
           Check
         </button>
@@ -410,16 +414,19 @@ export function PictureNaming({ step, onAnswer }: ExerciseProps<KindOf<"pictureN
             type="button"
             disabled={!!picked}
             onClick={() => pick(o)}
-            className={`flex flex-col items-center rounded-2xl border-2 p-4 transition ${
+            className={`relative flex flex-col items-center rounded-lg border-2 p-4 transition ${
               !picked
                 ? "border-line bg-card active:scale-95"
                 : o === step.target
                   ? "border-leaf bg-leaf-light"
                   : o === picked
-                    ? "border-berbere bg-berbere-light"
+                    ? "border-rose bg-rose-light"
                     : "border-line bg-card opacity-50"
             }`}
           >
+            {picked && (o === step.target || o === picked) && (
+              <AnswerMark correct={o === step.target} className="absolute right-2 top-2" />
+            )}
             <span className="font-ethiopic text-5xl">{o}</span>
             <Roman text={romanOf(o)} className="mt-1" />
           </button>

@@ -86,11 +86,11 @@ export default function ReviewPage() {
                 type="button"
                 onClick={() => start(false)}
                 disabled={due === 0}
-                className="rounded-full bg-berbere px-6 py-3 font-semibold text-white disabled:bg-line disabled:text-muted"
+                className="btn-primary px-6 py-3"
               >
                 Start review{due > MAX_DUE ? ` (${MAX_DUE} of ${due})` : ""}
               </button>
-              <button type="button" onClick={() => start(true)} className="rounded-full border border-line bg-paper px-5 py-3">
+              <button type="button" onClick={() => start(true)} className="btn-secondary px-5 py-3">
                 ⏱ Quick 5-minute review
               </button>
             </div>

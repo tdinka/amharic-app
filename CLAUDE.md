@@ -13,7 +13,8 @@ A web app that teaches non-speakers to read, write and speak Amharic through sho
 ## Stack (matches Tsega's other project, Family Recipe Box)
 - Next.js 14 (App Router, TypeScript) + Tailwind CSS
 - Prototype: progress in `localStorage` behind a `ProgressStore` interface, so it can be swapped for Postgres + Prisma + NextAuth (credentials) later without touching UI code.
-- Font: Noto Sans Ethiopic (Google Fonts).
+- Fonts: Young Serif (headings), Libre Franklin (text, with Noto Sans as backup for letters like ə), Noto Serif Ethiopic (the fidel) — all Google Fonts via `lib/fonts.ts`.
+- Look ("Mix 2.1", chosen Oct 2026): linen ground, ink outlines, woven-basket colours. Colours live in `tailwind.config.ts`. Rules: crimson (`berbere`) only for actions; wrong answers rose with ✕, right answers emerald (`leaf`) with ✓ (`components/Marks.tsx`); ink press-shadows only on things you can press (`.btn-*` in `app/globals.css`); the woven `.tibeb` band only on headers and celebrations; gold (`ochre`) only behind dark text.
 - Hosting later: Railway (same as Recipe Box).
 
 ## Content is data, not code

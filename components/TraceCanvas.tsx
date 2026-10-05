@@ -125,7 +125,7 @@ export function TraceCanvas({
     const ctx = setup(guideRef.current);
     if (!ctx) return;
     ctx.clearRect(0, 0, size, size);
-    ctx.strokeStyle = "#E8DCCB";
+    ctx.strokeStyle = "#DDD3C2";
     ctx.setLineDash([4, 6]);
     ctx.beginPath();
     ctx.moveTo(size / 2, 0);
@@ -134,7 +134,7 @@ export function TraceCanvas({
     ctx.lineTo(size, size / 2);
     ctx.stroke();
     if (showGuide) {
-      ctx.fillStyle = "rgba(46, 33, 25, 0.13)";
+      ctx.fillStyle = "rgba(42, 26, 29, 0.13)";
       drawGlyph(ctx, char, size);
     }
   }, [char, showGuide, size, fontReady, setup]);
@@ -143,7 +143,7 @@ export function TraceCanvas({
     const ctx = inkRef.current?.getContext("2d");
     if (!ctx) return;
     ctx.clearRect(0, 0, size, size);
-    ctx.strokeStyle = "#2E2119";
+    ctx.strokeStyle = "#2A1A1D";
     drawStrokes(ctx, strokes.current, size);
   }, [size]);
 

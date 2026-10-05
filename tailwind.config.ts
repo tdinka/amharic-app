@@ -8,21 +8,33 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      // "Mix 2.1" — ink outlines from Ethiopian painting, woven-basket colours.
+      // The names are the app's; the comments say what each colour is now.
       colors: {
-        paper: "#FAF5EC",
-        card: "#FFFDF8",
-        line: "#E8DCCB",
-        ink: "#2E2119",
-        muted: "#7A6656",
-        berbere: { DEFAULT: "#B0472C", light: "#F5E1D8", dark: "#8A3520" },
-        ochre: { DEFAULT: "#C8962B", light: "#F6EBCF" },
-        indigo: { DEFAULT: "#2F4B7C", light: "#E1E7F2" },
-        leaf: { DEFAULT: "#3C7A52", light: "#E0EFE4" },
+        paper: "#E9E1CE", // linen ground
+        card: "#FFFDF7",
+        line: "#DDD3C2", // soft fills: tracks, placeholders (borders use ink, below)
+        ink: "#2A1A1D",
+        muted: "#6B5A5C",
+        berbere: { DEFAULT: "#A8142A", light: "#F3DDE0", dark: "#7E0F20" }, // crimson: actions only
+        ochre: { DEFAULT: "#F0AE1C", light: "#FBEBC2", dark: "#B37A06" }, // gold: highlights, always with dark text
+        indigo: { DEFAULT: "#5A1822", light: "#F2E4E1" }, // maroon: secondary actions and labels
+        leaf: { DEFAULT: "#1E7448", light: "#DCEFE2" }, // emerald: right answers, progress
+        rose: { DEFAULT: "#B4566F", light: "#F7E3E7", dark: "#7A2F44" }, // wrong answers
+      },
+      // Every outline is ink, even where the markup says border-line.
+      borderColor: { line: "#2A1A1D" },
+      borderWidth: { DEFAULT: "1.5px" },
+      // Tighter corners than Tailwind's defaults, closer to a painted panel.
+      borderRadius: { xl: "8px", "2xl": "10px" },
+      boxShadow: {
+        press: "3px 3px 0 #2A1A1D", // only on things you can press
+        "press-lg": "4px 4px 0 #2A1A1D",
       },
       fontFamily: {
-        sans: ["var(--font-latin)", "var(--font-ethiopic)", "system-ui", "sans-serif"],
+        sans: ["var(--font-latin)", "var(--font-latin-fallback)", "var(--font-ethiopic)", "system-ui", "sans-serif"],
         ethiopic: ["var(--font-ethiopic)", "serif"],
-        display: ["var(--font-display)", "Georgia", "serif"],
+        display: ["var(--font-display)", "var(--font-latin-fallback)", "Georgia", "serif"],
       },
       keyframes: {
         pop: {

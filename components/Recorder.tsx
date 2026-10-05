@@ -28,7 +28,7 @@ export function Recorder({ label = "Record yourself", onRecorded }: { label?: st
         <button
           type="button"
           onClick={stop}
-          className="inline-flex h-11 items-center gap-2 rounded-full bg-berbere px-4 text-white shadow-sm"
+          className="btn-primary h-11 px-4"
         >
           <span className="h-3 w-3 animate-pulse rounded-full bg-white" /> Stop
         </button>
@@ -36,7 +36,7 @@ export function Recorder({ label = "Record yourself", onRecorded }: { label?: st
         <button
           type="button"
           onClick={start}
-          className="inline-flex h-11 items-center gap-2 rounded-full border border-berbere px-4 text-berbere"
+          className="btn-secondary h-11 px-4 text-berbere"
         >
           🎙️ {state === "recorded" ? "Record again" : label}
         </button>
@@ -46,7 +46,7 @@ export function Recorder({ label = "Record yourself", onRecorded }: { label?: st
           <button
             type="button"
             onClick={() => player.current?.play()}
-            className="inline-flex h-11 items-center gap-2 rounded-full bg-indigo px-4 text-white"
+            className="btn-dark h-11 px-4"
           >
             ▶ Yours
           </button>
