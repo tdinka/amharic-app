@@ -7,6 +7,7 @@ import week3Json from "@/content/lessons/week-3.json";
 import week4Json from "@/content/lessons/week-4.json";
 import week5Json from "@/content/lessons/week-5.json";
 import week6Json from "@/content/lessons/week-6.json";
+import introJson from "@/content/intro.json";
 
 export type FidelForm = {
   order: number;
@@ -97,6 +98,15 @@ export type Lesson = {
 export type LessonWeek = { week: number; lessons: Lesson[] };
 
 export const fidel = fidelJson as FidelData;
+
+/** The welcome screens shown to new learners (content/intro.json). */
+export type IntroPage = {
+  title: string;
+  paragraphs: string[];
+  /** Show a word (by id) or a letter family (by its consonant romanization) from the content. */
+  example?: { word?: string; family?: string };
+};
+export const intro = introJson as { reviewed: boolean; pages: IntroPage[] };
 export const weeks: LessonWeek[] = [week1Json, week2Json, week3Json, week4Json, week5Json, week6Json] as unknown as LessonWeek[];
 export const lessons: Lesson[] = weeks.flatMap((w) => w.lessons);
 export const families: FidelFamily[] = [...fidel.families].sort(

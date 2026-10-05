@@ -13,7 +13,7 @@ const LINKS = [
 function useNav() {
   const pathname = usePathname();
   // The lesson player is full-screen; the studio has its own header.
-  const hidden = pathname.startsWith("/lesson/") || pathname.startsWith("/studio");
+  const hidden = pathname.startsWith("/lesson/") || pathname.startsWith("/studio") || pathname.startsWith("/welcome");
   const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
   return { hidden, isActive };
 }

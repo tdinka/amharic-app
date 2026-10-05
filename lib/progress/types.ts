@@ -27,6 +27,8 @@ export type DayLog = { seconds: number };
 
 export type Settings = {
   romanization: RomanizationLevel;
+  /** Whether the learner has been through the welcome screens (/welcome). */
+  introSeen: boolean;
 };
 
 export type ProgressData = {
@@ -49,7 +51,7 @@ export function emptyProgress(): ProgressData {
     days: {},
     secondsPracticed: 0,
     skills: { read: 0, write: 0, listen: 0, speak: 0 },
-    settings: { romanization: "always" },
+    settings: { romanization: "always", introSeen: false },
   };
 }
 

@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 import { families, TOTAL_CHARACTERS, TOTAL_WEEKS, weeks, type Lesson } from "@/lib/content";
 import { isLessonUnlocked, learnedFamilies, nextLesson } from "@/lib/learning";
 import { currentStreak, localDateKey } from "@/lib/progress/dates";
@@ -60,8 +62,15 @@ const OFFSETS = [0, 56, -56, 0];
 
 export function HomeScreen() {
   const { ready, data } = useProgress();
+  const router = useRouter();
+  // Brand-new learners see the welcome screens first.
+  const needsWelcome = ready && !data.settings.introSeen && Object.keys(data.completedLessons).length === 0;
 
-  if (!ready) {
+  useEffect(() => {
+    if (needsWelcome) router.replace("/welcome");
+  }, [needsWelcome, router]);
+
+  if (!ready || needsWelcome) {
     return (
       <main className="mx-auto max-w-2xl space-y-4 px-4 py-8">
         <div className="h-20 animate-pulse rounded-2xl bg-line/50" />
