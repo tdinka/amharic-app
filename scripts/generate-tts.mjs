@@ -46,6 +46,12 @@ const taught = new Set(lessons.flatMap((l) => l.newFamilies));
 for (const family of fidel.families.filter((f) => taught.has(f.base))) {
   for (const form of family.forms) items.set(charPath(form.codepoint), { text: form.char, kind: "char" });
 }
+// "w" forms (labialized, e.g. ቋ) that a lesson teaches.
+const taughtLabialized = new Set(lessons.flatMap((l) => l.newLabialized ?? []));
+for (const family of fidel.families) {
+  const lab = family.labialized;
+  if (lab && taughtLabialized.has(lab.char)) items.set(charPath(lab.codepoint), { text: lab.char, kind: "char" });
+}
 
 for (const lesson of lessons) {
   for (const step of lesson.steps) {

@@ -4,7 +4,7 @@
 // lesson is finished. The lesson itself is the introduction, not a review, so a
 // new card first comes due the next morning; reviews (build step 4) take it from there.
 import { createEmptyCard, fsrs, generatorParameters, type Card } from "ts-fsrs";
-import { familyByBase, wordsInStep, type Lesson } from "@/lib/content";
+import { charInfo, familyByBase, wordsInStep, type Lesson } from "@/lib/content";
 import { addDays } from "@/lib/progress/dates";
 import type { CardKind, ProgressData, SavedFsrsCard, StoredCard } from "@/lib/progress/types";
 
@@ -28,6 +28,7 @@ export function lessonCardRefs(lesson: Lesson): { kind: CardKind; ref: string }[
   for (const base of lesson.newFamilies) {
     for (const form of familyByBase(base)?.forms ?? []) refs.push({ kind: "char", ref: form.char });
   }
+  for (const char of lesson.newLabialized ?? []) refs.push({ kind: "char", ref: char });
   for (const step of lesson.steps) {
     // Minimal-pair contrast words are listening practice, not vocabulary.
     if (step.type !== "words" && step.type !== "phrase") continue;
@@ -67,9 +68,11 @@ export function isMastered(card: StoredCard): boolean {
   return interval >= MASTERED_INTERVAL_DAYS;
 }
 
-/** Letters (not words) the learner has mastered, for "letters mastered out of 238". */
+/** Letters (not words) the learner has mastered, for "letters mastered out of 238". Only the
+ * 7 regular forms of each family count, so w-forms like ቋ never push it past 238. */
 export function masteredLetterCount(data: ProgressData): number {
-  return Object.values(data.cards).filter((c) => c.kind === "char" && isMastered(c)).length;
+  return Object.values(data.cards).filter((c) => c.kind === "char" && charInfo(c.ref)?.order != null && isMastered(c))
+    .length;
 }
 
 /** The next time any card comes due (for "next review tomorrow" style messages). */
