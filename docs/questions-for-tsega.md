@@ -7,7 +7,6 @@ Open questions about content and wording. Claude adds to this list and brings it
 - **"ejective — a popped sound"** — the label shown on ejective letter families in the fidel explorer (`app/fidel/FidelExplorer.tsx`). Is this wording clear and accurate for learners? Kept as is for now.
 - **Computer voice** — Week 1 uses Google's `am-ET-Wavenet-A` (female) as a stand-in. Does it pronounce the letters and words correctly, and is it the best of the four voices (Standard A/B, Wavenet A/B)? Note any that sound wrong; they're listed in `public/audio-tts/manifest.json`.
 
-- **ሰባ (seventy) in Week 1, lesson 2** — its second letter belongs to the በ family, which isn’t taught until lesson 3, so it breaks the “only letters taught so far” rule (found by the new `npm run check:lessons`). Move it to lesson 3, or swap it for another word?
 - **Week 2 drafts (all unreviewed)** — please check every word, romanization and picture in `content/lessons/week-2.json`. Things I’m least sure of:
   - Doubled sounds in the romanization: ቡና “bunna”, ዳቦ “dabbo”. Is the consonant really held in each? Any other Week 2 word that should show doubling?
   - ቅቤ romanized “qəbē” and እናት “ənat” — right?
@@ -23,3 +22,4 @@ Open questions about content and wording. Claude adds to this list and brings it
 - **Total characters:** 238 (the count in `content/fidel.json`) is right. Spec updated from 231.
 - **Week 1 word count:** the Lesson 3 wrap-up now says 11 words, not 9.
 - **Grid-fill `hide` numbers:** they are vowel orders (1–7), so `"hide": [3, 5]` in Lesson 1 hides ሊ (li) and ሌ (lē). Use the same numbering in new lessons.
+- **ሰባ (seventy):** moved from Week 1 lesson 2 to lesson 3, after its letters are taught. `npm run check:lessons` now passes.
