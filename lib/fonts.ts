@@ -1,11 +1,19 @@
-import { Libre_Franklin, Noto_Sans, Noto_Serif_Ethiopic, Young_Serif } from "next/font/google";
+import localFont from "next/font/local";
+import { Libre_Franklin, Noto_Sans, Young_Serif } from "next/font/google";
 
-/** The fidel. A serif Ethiopic, to sit with the painted-manuscript feel. */
-export const ethiopicFont = Noto_Serif_Ethiopic({
-  subsets: ["ethiopic", "latin", "latin-ext"],
-  weight: ["400", "700"],
+/**
+ * The fidel: Noto Serif Ethiopic (Ethiopic-script glyphs, weights 400–700), stored in
+ * app/fonts/ under the SIL Open Font License (licence text beside it). It's stored
+ * rather than downloaded at build time because Railway's builds got differing Google
+ * responses for this font, so the page and stylesheet named it differently and it
+ * never applied on the live site. Latin letters fall through to Libre Franklin.
+ */
+export const ethiopicFont = localFont({
+  src: "../app/fonts/NotoSerifEthiopic-Ethiopic.woff2",
+  weight: "400 700",
   variable: "--font-ethiopic",
   display: "swap",
+  adjustFontFallback: "Times New Roman",
 });
 
 /** Latin body text. */
