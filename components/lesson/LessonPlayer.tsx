@@ -13,6 +13,7 @@ import {
   ChantStep,
   HearStep,
   PhraseStep,
+  NumeralsStep,
   PunctuationStep,
   SeeStep,
   TextCardStep,
@@ -35,6 +36,7 @@ function skillOf(step: Step): Skill | null {
     case "words":
     case "story":
     case "punctuation":
+    case "numerals":
       return "read";
     case "trace":
       return "write";
@@ -112,6 +114,8 @@ function StepView({
       return <WarmUpStep onDone={onWarmUpDone} />;
     case "punctuation":
       return <PunctuationStep step={step} />;
+    case "numerals":
+      return <NumeralsStep step={step} />;
     case "exercise":
       return <Exercise step={step} lessonId={lesson.id} onAnswer={onAnswer} onSkip={onSkip} />;
   }

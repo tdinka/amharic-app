@@ -29,6 +29,7 @@ Goal: a working web prototype that a real learner can use for the first week of 
    | `story` | Lines of text, every word tappable for audio, English toggle, record-yourself-reading button |
    | `review` | Spaced-repetition cards due today (see below) |
    | `punctuation` | Show the marks with their names from `fidel.json` |
+   | `numerals` | Show Ge'ez numerals with their values from `fidel.json` |
    - Correct/incorrect feedback is warm and quick; wrong answers come back at the end of the lesson.
    - The lesson finishes with a culture note card (`cultureNote`).
 

@@ -4,7 +4,7 @@
 //
 // - Every Amharic character in a lesson has been taught by then (its family is in
 //   this lesson's or an earlier lesson's newFamilies; a "w" form like ቋ must also be
-//   listed in newLabialized). The culture note, "phrase"
+//   listed in newLabialized; numerals count from the lesson whose "numerals" step shows them). The culture note, "phrase"
 //   steps (hear-and-say only) and the wrap-up (which previews the next lesson) are
 //   allowed to run ahead.
 // - Exercises are well formed: answers are among the options, word tiles can spell
@@ -23,6 +23,7 @@ const lessons = readdirSync(join(ROOT, "content/lessons"))
 
 const ETHIOPIC = /[ሀ-፿]/g;
 const punctuation = new Set(fidel.meta.punctuation.map((p) => p.char));
+const numerals = new Set(fidel.meta.numerals.map((n) => n.char));
 const familyOf = new Map();
 const labializedOf = new Map(); // w-form char → its family's base
 for (const fam of fidel.families) {
@@ -34,6 +35,7 @@ const formsOf = (base) => fidel.families.find((f) => f.base === base)?.forms ?? 
 const errors = [];
 const taughtFamilies = new Set();
 const taughtLabialized = new Set();
+const taughtNumerals = new Set();
 const wordsByAmharic = new Map();
 const wordIds = new Map(); // id → amharic
 const taughtWordIds = new Set(); // first taught in a "words" step
@@ -64,8 +66,20 @@ for (const lesson of lessons) {
     else if (!taughtFamilies.has(labializedOf.get(char))) errors.push(where(`newLabialized: ${char}'s family ${labializedOf.get(char)} isn't taught yet`));
     taughtLabialized.add(char);
   }
+  for (const step of lesson.steps) {
+    if (step.type === "numerals") {
+      for (const n of step.items) {
+        if (!numerals.has(n)) errors.push(where(`numerals step: ${n} is not a numeral in fidel.json`));
+        taughtNumerals.add(n);
+      }
+    }
+    if (step.type === "punctuation") {
+      for (const m of step.items) if (!punctuation.has(m)) errors.push(where(`punctuation step: ${m} is not in fidel.json`));
+    }
+  }
   const taught = (ch) =>
-    punctuation.has(ch) || (labializedOf.has(ch) ? taughtLabialized.has(ch) : taughtFamilies.has(familyOf.get(ch)));
+    punctuation.has(ch) ||
+    (numerals.has(ch) ? taughtNumerals.has(ch) : labializedOf.has(ch) ? taughtLabialized.has(ch) : taughtFamilies.has(familyOf.get(ch)));
 
   // Words first, so exercises later in the same lesson can use them.
   const newWords = [];
