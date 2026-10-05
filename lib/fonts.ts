@@ -30,5 +30,5 @@ export const displayFont = Young_Serif({
   display: "swap",
 });
 
-/** The real CSS font-family string, for drawing characters onto a <canvas>. */
-export const ETHIOPIC_FONT_FAMILY = ethiopicFont.style.fontFamily;
+// Import this file only from app/layout.tsx (server side). Browser-side code that
+// needs a font name reads the CSS variable instead (see components/TraceCanvas.tsx).

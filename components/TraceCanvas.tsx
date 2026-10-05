@@ -1,7 +1,6 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ETHIOPIC_FONT_FAMILY } from "@/lib/fonts";
 
 type Point = { x: number; y: number }; // 0..1 across the canvas
 type Stroke = Point[];
@@ -9,8 +8,18 @@ type Stroke = Point[];
 const GLYPH_SCALE = 0.78; // character size as a share of the canvas, matching the guide
 const INK_WIDTH = 0.06; // pen width as a share of the canvas
 
+/**
+ * The fidel font, read from the page (set once in app/layout.tsx). Reading it here,
+ * instead of importing lib/fonts into this browser-side file, keeps the font set up
+ * in one place only — two copies once came out with different names on Railway.
+ */
+function ethiopicFontFamily(): string {
+  if (typeof document === "undefined") return "serif";
+  return getComputedStyle(document.documentElement).getPropertyValue("--font-ethiopic").trim() || "serif";
+}
+
 function glyphFont(px: number) {
-  return `${Math.round(px * GLYPH_SCALE)}px ${ETHIOPIC_FONT_FAMILY}`;
+  return `${Math.round(px * GLYPH_SCALE)}px ${ethiopicFontFamily()}`;
 }
 
 function drawGlyph(ctx: CanvasRenderingContext2D, char: string, px: number) {
