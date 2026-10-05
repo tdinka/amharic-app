@@ -1,0 +1,587 @@
+{
+  "week": 2,
+  "lessons": [
+    {
+      "id": "w2-l1",
+      "week": 2,
+      "order": 1,
+      "title": "Coffee and home",
+      "goal": "Add the ነ and ተ families and read words for home.",
+      "newFamilies": [
+        "ነ",
+        "ተ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "Coffee comes from Ethiopia. In a coffee ceremony (ቡና), beans are roasted, ground and brewed in a clay pot called a jebena, and served in three rounds — a time to slow down and talk.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Week 2: six new families, and your first sound that English doesn't have. Today: n and t."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ነ",
+            "ኑ",
+            "ኒ",
+            "ና",
+            "ኔ",
+            "ን",
+            "ኖ",
+            "ተ",
+            "ቱ",
+            "ቲ",
+            "ታ",
+            "ቴ",
+            "ት",
+            "ቶ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ነ"
+        },
+        {
+          "type": "see",
+          "family": "ተ"
+        },
+        {
+          "type": "chant",
+          "family": "ተ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ነ",
+            "ና",
+            "ን",
+            "ተ",
+            "ታ",
+            "ት"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "bunna",
+              "amharic": "ቡና",
+              "roman": "bunna",
+              "english": "coffee",
+              "picture": "☕",
+              "audio": "/audio/words/bunna.mp3",
+              "reviewed": false,
+              "note": "The n is held: bun-na. Writing doesn't show it."
+            },
+            {
+              "id": "bēt",
+              "amharic": "ቤት",
+              "roman": "bēt",
+              "english": "house",
+              "picture": "🏠",
+              "audio": "/audio/words/bēt.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ənat",
+              "amharic": "እናት",
+              "roman": "ənat",
+              "english": "mother",
+              "picture": "👩‍👧",
+              "audio": "/audio/words/ənat.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ante",
+              "amharic": "አንተ",
+              "roman": "ante",
+              "english": "you (to a man or boy)",
+              "picture": "👉",
+              "audio": "/audio/words/ante.mp3",
+              "reviewed": false,
+              "note": "Amharic has several words for 'you'. This one is for a man or boy; the others are coming."
+            },
+            {
+              "id": "timatim",
+              "amharic": "ቲማቲም",
+              "roman": "timatim",
+              "english": "tomato",
+              "picture": "🍅",
+              "audio": "/audio/words/timatim.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ኑ",
+          "options": [
+            "ነ",
+            "ኑ",
+            "ኒ",
+            "ና"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ት",
+          "options": [
+            "ቴ",
+            "ት",
+            "ቶ",
+            "ን"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ነ",
+          "hide": [
+            2,
+            7
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ቡና",
+          "tiles": [
+            "ና",
+            "ቡ",
+            "ቦ",
+            "ኑ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ቤት"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ቡና",
+            "ቤት",
+            "እናት"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "You can now read 49 characters. Tomorrow: ረ and ደ."
+        }
+      ]
+    },
+    {
+      "id": "w2-l2",
+      "week": 2,
+      "order": 2,
+      "title": "Bread, door, cat",
+      "goal": "Add the ረ and ደ families.",
+      "newFamilies": [
+        "ረ",
+        "ደ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "Ethiopian time counts the hours from sunrise, not midnight. What a watch calls 7 in the morning is 1 o'clock in the day — so when someone says 'two o'clock', check which clock they mean.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ረ",
+            "ሩ",
+            "ሪ",
+            "ራ",
+            "ሬ",
+            "ር",
+            "ሮ",
+            "ደ",
+            "ዱ",
+            "ዲ",
+            "ዳ",
+            "ዴ",
+            "ድ",
+            "ዶ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ረ"
+        },
+        {
+          "type": "see",
+          "family": "ደ"
+        },
+        {
+          "type": "rule",
+          "title": "Don't mix up r and l",
+          "text": "ረ (r) and ለ (l) can look alike at first. Look closely at them side by side: ረ ለ, ራ ra and ላ la."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ረ",
+            "ራ",
+            "ር",
+            "ደ",
+            "ዳ",
+            "ድ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "dabbo",
+              "amharic": "ዳቦ",
+              "roman": "dabbo",
+              "english": "bread",
+              "picture": "🍞",
+              "audio": "/audio/words/dabbo.mp3",
+              "reviewed": false,
+              "note": "The b is held: dab-bo."
+            },
+            {
+              "id": "ber",
+              "amharic": "በር",
+              "roman": "ber",
+              "english": "door",
+              "picture": "🚪",
+              "audio": "/audio/words/ber.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "dəmet",
+              "amharic": "ድመት",
+              "roman": "dəmet",
+              "english": "cat",
+              "picture": "🐈",
+              "audio": "/audio/words/dəmet.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "arat",
+              "amharic": "አራት",
+              "roman": "arat",
+              "english": "four",
+              "picture": "4️⃣",
+              "audio": "/audio/words/arat.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "debter",
+              "amharic": "ደብተር",
+              "roman": "debter",
+              "english": "notebook",
+              "picture": "📓",
+              "audio": "/audio/words/debter.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ዱ",
+          "options": [
+            "ደ",
+            "ዱ",
+            "ዲ",
+            "ዳ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሮ",
+          "options": [
+            "ሩ",
+            "ሮ",
+            "ሬ",
+            "ሎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ረ",
+          "hide": [
+            3,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ድመት",
+          "options": [
+            "ድመት",
+            "ዳቦ",
+            "በር"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ደብተር",
+          "tiles": [
+            "ተ",
+            "ደ",
+            "ር",
+            "ብ",
+            "ዳ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "በር"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ዳቦ",
+            "አራት",
+            "ድመት"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "63 characters and ten new words. Tomorrow: ከ and ቀ — your first ejective."
+        }
+      ]
+    },
+    {
+      "id": "w2-l3",
+      "week": 2,
+      "order": 3,
+      "title": "A day, a word: k and q",
+      "goal": "Add ከ and the ejective ቀ, and hear the difference.",
+      "newFamilies": [
+        "ከ",
+        "ቀ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "ቀን means day. Ethiopia keeps its own calendar: twelve months of 30 days and a short thirteenth month, and the new year begins in September.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ከ",
+            "ኩ",
+            "ኪ",
+            "ካ",
+            "ኬ",
+            "ክ",
+            "ኮ",
+            "ቀ",
+            "ቁ",
+            "ቂ",
+            "ቃ",
+            "ቄ",
+            "ቅ",
+            "ቆ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ከ"
+        },
+        {
+          "type": "see",
+          "family": "ቀ"
+        },
+        {
+          "type": "rule",
+          "title": "Your first ejective: ቀ",
+          "text": "ከ is a plain k, as in 'kite'. ቀ is an ejective — a popped sound: close your throat, then release the k with a little pop. It's written q. Say them: ካ ka, ቃ qa."
+        },
+        {
+          "type": "chant",
+          "family": "ቀ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ከ",
+            "ካ",
+            "ክ",
+            "ቀ",
+            "ቃ",
+            "ቅ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "qen",
+              "amharic": "ቀን",
+              "roman": "qen",
+              "english": "day",
+              "picture": "📅",
+              "audio": "/audio/words/qen.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "qal",
+              "amharic": "ቃል",
+              "roman": "qal",
+              "english": "word",
+              "picture": "💬",
+              "audio": "/audio/words/qal.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ketema",
+              "amharic": "ከተማ",
+              "roman": "ketema",
+              "english": "city",
+              "picture": "🏙️",
+              "audio": "/audio/words/ketema.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "qurs",
+              "amharic": "ቁርስ",
+              "roman": "qurs",
+              "english": "breakfast",
+              "picture": "🍳",
+              "audio": "/audio/words/qurs.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "qəbē",
+              "amharic": "ቅቤ",
+              "roman": "qəbē",
+              "english": "butter",
+              "picture": "🧈",
+              "audio": "/audio/words/qəbē.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "mekina",
+              "amharic": "መኪና",
+              "roman": "mekina",
+              "english": "car",
+              "picture": "🚗",
+              "audio": "/audio/words/mekina.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "minimalPair",
+          "note": "Plain k or popped q?",
+          "a": {
+            "id": "qal",
+            "amharic": "ቃል",
+            "roman": "qal",
+            "english": "word",
+            "picture": "💬",
+            "audio": "/audio/words/qal.mp3",
+            "reviewed": false
+          },
+          "b": {
+            "id": "kal",
+            "amharic": "ካል",
+            "roman": "kal",
+            "english": "(plain k — not a word)",
+            "picture": "🔈",
+            "audio": "/audio/words/kal.mp3",
+            "reviewed": false,
+            "note": "Contrast audio only — record ka with a plain k, then l."
+          }
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ቁ",
+          "options": [
+            "ኩ",
+            "ቁ",
+            "ኮ",
+            "ቆ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ቀ",
+          "hide": [
+            4,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ከተማ",
+          "tiles": [
+            "ማ",
+            "ከ",
+            "ተ",
+            "ቀ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "መኪና",
+          "options": [
+            "መኪና",
+            "ከተማ",
+            "ቀን"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ቀን"
+        },
+        {
+          "type": "story",
+          "title": "Breakfast",
+          "lines": [
+            {
+              "amharic": "ሰላም እማማ!",
+              "english": "Hello, Mom!"
+            },
+            {
+              "amharic": "ቁርስ ቡና፣ ዳቦ፣ ቅቤ።",
+              "english": "Breakfast: coffee, bread, butter."
+            },
+            {
+              "amharic": "ቡና ለእናት፣ ዳቦ ለአባ።",
+              "english": "Coffee for Mother, bread for Dad."
+            }
+          ],
+          "note": "Every character here is one you've learned. ለ in front of a word means 'for': ለእናት = for mother."
+        },
+        {
+          "type": "say",
+          "items": [
+            "ቁርስ",
+            "ቃል",
+            "ከተማ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Week 2 milestone: 11 families, 77 characters, 27 words — and your first ejective. 🎉"
+        }
+      ]
+    }
+  ]
+}

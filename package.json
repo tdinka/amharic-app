@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "audio:tts": "node --env-file-if-exists=.env.local scripts/generate-tts.mjs"
+    "audio:tts": "node --env-file-if-exists=.env.local scripts/generate-tts.mjs",
+    "check:lessons": "node scripts/check-lessons.mjs"
   },
   "dependencies": {
     "@breezystack/lamejs": "^1.2.7",
