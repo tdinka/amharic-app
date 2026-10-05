@@ -1,0 +1,563 @@
+{
+  "week": 5,
+  "lessons": [
+    {
+      "id": "w5-l1",
+      "week": 5,
+      "order": 1,
+      "title": "Pizza, police, video",
+      "goal": "Add ፐ and ቨ, the sounds of borrowed words.",
+      "newFamilies": [
+        "ፐ",
+        "ቨ"
+      ],
+      "estimatedMinutes": 16,
+      "cultureNote": "Some everyday Amharic words come from Italian, like ፓስታ and ፒዛ. Addis Ababa's huge open-air market, the Merkato, takes its name from the Italian word for market too.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Week 5: the rarer sounds. Today: p and v — you'll recognise lots of the words."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ፐ",
+            "ፑ",
+            "ፒ",
+            "ፓ",
+            "ፔ",
+            "ፕ",
+            "ፖ",
+            "ቨ",
+            "ቩ",
+            "ቪ",
+            "ቫ",
+            "ቬ",
+            "ቭ",
+            "ቮ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ፐ"
+        },
+        {
+          "type": "see",
+          "family": "ቨ"
+        },
+        {
+          "type": "rule",
+          "title": "Borrowed sounds",
+          "text": "ፐ is p and ቨ is v. Both mostly turn up in words borrowed from other languages — pizza, police, video — so sound them out and you'll often know the word."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ፐ",
+            "ፓ",
+            "ፕ",
+            "ቨ",
+            "ቪ",
+            "ቭ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "pasta",
+              "amharic": "ፓስታ",
+              "roman": "pasta",
+              "english": "pasta",
+              "picture": "🍝",
+              "audio": "/audio/words/pasta.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "polis",
+              "amharic": "ፖሊስ",
+              "roman": "polis",
+              "english": "police",
+              "picture": "👮",
+              "audio": "/audio/words/polis.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "piza",
+              "amharic": "ፒዛ",
+              "roman": "piza",
+              "english": "pizza",
+              "picture": "🍕",
+              "audio": "/audio/words/piza.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "vidiyo",
+              "amharic": "ቪዲዮ",
+              "roman": "vidiyo",
+              "english": "video",
+              "picture": "📹",
+              "audio": "/audio/words/vidiyo.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "tēlēvizhən",
+              "amharic": "ቴሌቪዥን",
+              "roman": "tēlēvizhən",
+              "english": "television",
+              "picture": "📺",
+              "audio": "/audio/words/tēlēvizhən.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ፑ",
+          "options": [
+            "ፐ",
+            "ፑ",
+            "ፒ",
+            "ፓ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ቮ",
+          "options": [
+            "ቩ",
+            "ቮ",
+            "ቬ",
+            "ፎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ቨ",
+          "hide": [
+            2,
+            5
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ፓስታ",
+          "tiles": [
+            "ስ",
+            "ፓ",
+            "ታ",
+            "ፖ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ፒዛ",
+          "options": [
+            "ፒዛ",
+            "ፓስታ",
+            "ቴሌቪዥን"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ፖሊስ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ፒዛ",
+            "ቪዲዮ",
+            "ቴሌቪዥን"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "182 characters. Tomorrow: two more popped sounds, ጰ and ጸ."
+        }
+      ]
+    },
+    {
+      "id": "w5-l2",
+      "week": 5,
+      "order": 2,
+      "title": "Prayer, rose, cup: ts'",
+      "goal": "Add the ejectives ጰ and ጸ.",
+      "newFamilies": [
+        "ጰ",
+        "ጸ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "ጸሎት means prayer. Ethiopia has one of the world's oldest Christian churches, dating back to the 4th century, and was also home to one of the earliest Muslim communities.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ጰ",
+            "ጱ",
+            "ጲ",
+            "ጳ",
+            "ጴ",
+            "ጵ",
+            "ጶ",
+            "ጸ",
+            "ጹ",
+            "ጺ",
+            "ጻ",
+            "ጼ",
+            "ጽ",
+            "ጾ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ጰ"
+        },
+        {
+          "type": "see",
+          "family": "ጸ"
+        },
+        {
+          "type": "rule",
+          "title": "Two more popped sounds",
+          "text": "ጰ is a popped p, written p'. It's rare. ጸ is a popped ts, written ts' — and it's common. Say them: ፓ pa, ጳ p'a; ሳ sa, ጻ ts'a. Some words with ጸ are also written with another letter that sounds the same; you'll meet it in week 6."
+        },
+        {
+          "type": "chant",
+          "family": "ጸ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ጰ",
+            "ጳ",
+            "ጵ",
+            "ጸ",
+            "ጻ",
+            "ጽ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "p'ap'as",
+              "amharic": "ጳጳስ",
+              "roman": "p'ap'as",
+              "english": "bishop",
+              "picture": "⛪",
+              "audio": "/audio/words/p'ap'as.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ts'egur",
+              "amharic": "ጸጉር",
+              "roman": "ts'egur",
+              "english": "hair",
+              "picture": "💇",
+              "audio": "/audio/words/ts'egur.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ts'əgēreda",
+              "amharic": "ጽጌረዳ",
+              "roman": "ts'əgēreda",
+              "english": "rose",
+              "picture": "🌹",
+              "audio": "/audio/words/ts'əgēreda.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ts'elot",
+              "amharic": "ጸሎት",
+              "roman": "ts'elot",
+              "english": "prayer",
+              "picture": "🕯️",
+              "audio": "/audio/words/ts'elot.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ts'əwa",
+              "amharic": "ጽዋ",
+              "roman": "ts'əwa",
+              "english": "cup",
+              "picture": "🏆",
+              "audio": "/audio/words/ts'əwa.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጻ",
+          "options": [
+            "ጻ",
+            "ሳ",
+            "ታ",
+            "ጣ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጳ",
+          "options": [
+            "ፓ",
+            "ጳ",
+            "ፖ",
+            "ጶ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ጸ",
+          "hide": [
+            3,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ጸሎት",
+          "tiles": [
+            "ሎ",
+            "ጸ",
+            "ት",
+            "ሰ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ጽጌረዳ",
+          "options": [
+            "ጽጌረዳ",
+            "ጸጉር",
+            "ጽዋ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ጽዋ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ጸሎት",
+            "ጽጌረዳ",
+            "ጳጳስ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "196 characters. Tomorrow: ኸ, and letters with a w sound added."
+        }
+      ]
+    },
+    {
+      "id": "w5-l3",
+      "week": 5,
+      "order": 3,
+      "title": "Language, friend, ball",
+      "goal": "Add ኸ, and read letters with a w: ቋ ጓ ኳ ሏ.",
+      "newFamilies": [
+        "ኸ"
+      ],
+      "newLabialized": [
+        "ቋ",
+        "ጓ",
+        "ኳ",
+        "ሏ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "ጓደኛ means friend. Friends who haven't seen each other for a while often greet with kisses on alternating cheeks — three or more — and men who know each other well often touch shoulders.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ኸ",
+            "ኹ",
+            "ኺ",
+            "ኻ",
+            "ኼ",
+            "ኽ",
+            "ኾ",
+            "ቋ",
+            "ጓ",
+            "ኳ",
+            "ሏ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ኸ"
+        },
+        {
+          "type": "rule",
+          "title": "ኸ is another h",
+          "text": "ኸ says h too, just like ሀ. Amharic has several letters for the same sound — more of them in week 6."
+        },
+        {
+          "type": "rule",
+          "title": "Add a w",
+          "text": "Many letters have one extra form that adds a w sound: ቀ → ቋ qwa, ገ → ጓ gwa, ከ → ኳ kwa, ለ → ሏ lwa. You'll see them in words like ቋንቋ (language)."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ኸ",
+            "ኻ",
+            "ቋ",
+            "ጓ",
+            "ኳ",
+            "ሏ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "qwanqwa",
+              "amharic": "ቋንቋ",
+              "roman": "qwanqwa",
+              "english": "language",
+              "picture": "🌐",
+              "audio": "/audio/words/qwanqwa.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "gwadennya",
+              "amharic": "ጓደኛ",
+              "roman": "gwadennya",
+              "english": "friend",
+              "picture": "🤝",
+              "audio": "/audio/words/gwadennya.mp3",
+              "reviewed": false,
+              "note": "The ny is held: gwa-den-nya."
+            },
+            {
+              "id": "kwas",
+              "amharic": "ኳስ",
+              "roman": "kwas",
+              "english": "ball",
+              "picture": "⚽",
+              "audio": "/audio/words/kwas.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጓ",
+          "options": [
+            "ጋ",
+            "ጓ",
+            "ጉ",
+            "ጎ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ቋ",
+          "options": [
+            "ቃ",
+            "ቋ",
+            "ኳ",
+            "ካ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ኸ",
+          "hide": [
+            2,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ጓደኛ",
+          "tiles": [
+            "ደ",
+            "ጓ",
+            "ኛ",
+            "ጋ",
+            "ና"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ኳስ",
+          "options": [
+            "ኳስ",
+            "ጓደኛ",
+            "ቋንቋ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ኳስ"
+        },
+        {
+          "type": "story",
+          "title": "Friends",
+          "lines": [
+            {
+              "amharic": "ሰላም ጓደኛ!",
+              "english": "Hello, friend!"
+            },
+            {
+              "amharic": "እኔ ትንሽ አማርኛ እናገራለሁ።",
+              "english": "I speak a little Amharic."
+            },
+            {
+              "amharic": "አማርኛ ጥሩ ቋንቋ ነው።",
+              "english": "Amharic is a good language."
+            },
+            {
+              "amharic": "ቻው ጓደኛ!",
+              "english": "Bye, friend!"
+            }
+          ],
+          "note": "Every character here is one you've learned. ቋንቋ has the w-form ቋ twice."
+        },
+        {
+          "type": "say",
+          "items": [
+            "ቋንቋ",
+            "ጓደኛ",
+            "ኳስ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Week 5 milestone: 29 families, 203 characters plus 4 w-forms, 73 words. One more week of the fidel to go! 🎉"
+        }
+      ]
+    }
+  ]
+}

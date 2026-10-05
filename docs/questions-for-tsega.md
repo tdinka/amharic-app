@@ -30,6 +30,14 @@ Open questions about content and wording. Claude adds to this list and brings it
   - Story “A little Amharic”: line 2 is the plan's example sentence (እኔ አማርኛ እናገራለሁ።); are “ትንሽ!” = “A little!” and “ጥሩ ነው!” = “That's good!” natural replies?
   - Rule cards: “new letters from old” (an extra mark on top) and the ny/zh descriptions — clear and accurate?
   - Culture notes: no family surnames (second name = father's first name); coffee with incense and popcorn; Amharic as the federal working language, and the fidel also writing Tigrinya. Accurate?
+- **Week 5 drafts (all unreviewed)** — please check every word, romanization and picture in `content/lessons/week-5.json`. Least sure of:
+  - Spelling with ጸ: ጸጉር hair, ጸሎት prayer, ጽጌረዳ rose, ጽዋ cup — many people write some of these with the week-6 letter that sounds the same. Which spellings should learners see?
+  - ጳጳስ “bishop” — the best everyday word for the rare ጰ family? And is ጽዋ the word you'd use for “cup”?
+  - Loanword romanizations: ፒዛ “piza”, ቪዲዮ “vidiyo”, ቴሌቪዥን “tēlēvizhən”, and ጓደኛ “gwadennya” (held ny?).
+  - ኸ is taught as “another h”, sounding the same as ሀ — right for Addis Ababa Amharic?
+  - The w-forms taught: ቋ ጓ ኳ ሏ (the plan listed three; I added ኳ for ኳስ ball). Good choice?
+  - Story “Friends”: “እኔ ትንሽ አማርኛ እናገራለሁ።” and “አማርኛ ጥሩ ቋንቋ ነው።” = “Amharic is a good language.” — natural?
+  - Culture notes: Italian loanwords and the Merkato's name; Ethiopia's early Christian and Muslim communities; greeting with kisses on alternating cheeks and touching shoulders. Accurate?
 
 ## Answered
 

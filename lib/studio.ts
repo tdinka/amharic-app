@@ -2,7 +2,7 @@
 // studio (/studio). Used by both the page and the dev-only API routes that save
 // files, so the routes can only ever write paths the lessons actually use.
 import { charAudioPath, storyLineAudioPath, withSpeed, wordAudioPath } from "@/lib/audio";
-import { allWords, families, lessons, type FidelFamily } from "@/lib/content";
+import { allWords, charInfo, families, lessons, type FidelFamily } from "@/lib/content";
 
 /** What a "reviewed" switch updates in the content files. */
 export type ReviewTarget =
@@ -45,6 +45,21 @@ export function studioItems(): StudioItem[] {
         family,
       });
     }
+  }
+
+  for (const char of lessons.flatMap((l) => l.newLabialized ?? [])) {
+    const info = charInfo(char);
+    if (!info) continue;
+    items.push({
+      key: `char:${char}`,
+      group: "letters",
+      text: char,
+      roman: info.roman,
+      path: charAudioPath(char)!,
+      reviewed: info.family.reviewed,
+      review: { type: "family", base: info.family.base },
+      family: info.family,
+    });
   }
 
   for (const word of allWords()) {
