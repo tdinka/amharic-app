@@ -1,0 +1,617 @@
+{
+  "week": 4,
+  "lessons": [
+    {
+      "id": "w4-l1",
+      "week": 4,
+      "order": 1,
+      "title": "Yes, sorry, love",
+      "goal": "Add the የ, ዘ and ፈ families.",
+      "newFamilies": [
+        "የ",
+        "ዘ",
+        "ፈ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "Ethiopians don't have a family surname. A person's second name is their father's first name, so brothers and sisters share it, but their parents don't.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Week 4: seven new families — the most yet. Today: y, z and f, three sounds you already know from English."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "የ",
+            "ዩ",
+            "ዪ",
+            "ያ",
+            "ዬ",
+            "ይ",
+            "ዮ",
+            "ዘ",
+            "ዙ",
+            "ዚ",
+            "ዛ",
+            "ዜ",
+            "ዝ",
+            "ዞ",
+            "ፈ",
+            "ፉ",
+            "ፊ",
+            "ፋ",
+            "ፌ",
+            "ፍ",
+            "ፎ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "የ"
+        },
+        {
+          "type": "see",
+          "family": "ዘ"
+        },
+        {
+          "type": "see",
+          "family": "ፈ"
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "የ",
+            "ይ",
+            "ዘ",
+            "ዛ",
+            "ፈ",
+            "ፍ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "fəqər",
+              "amharic": "ፍቅር",
+              "roman": "fəqər",
+              "english": "love",
+              "picture": "❤️",
+              "audio": "/audio/words/fəqər.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "awo",
+              "amharic": "አዎ",
+              "roman": "awo",
+              "english": "yes",
+              "picture": "✅",
+              "audio": "/audio/words/awo.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "yəqərta",
+              "amharic": "ይቅርታ",
+              "roman": "yəqərta",
+              "english": "sorry / excuse me",
+              "picture": "🙏",
+              "audio": "/audio/words/yəqərta.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "zaf",
+              "amharic": "ዛፍ",
+              "roman": "zaf",
+              "english": "tree",
+              "picture": "🌳",
+              "audio": "/audio/words/zaf.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "feres",
+              "amharic": "ፈረስ",
+              "roman": "feres",
+              "english": "horse",
+              "picture": "🐎",
+              "audio": "/audio/words/feres.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "muz",
+              "amharic": "ሙዝ",
+              "roman": "muz",
+              "english": "banana",
+              "picture": "🍌",
+              "audio": "/audio/words/muz.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ዙ",
+          "options": [
+            "ዘ",
+            "ዙ",
+            "ዚ",
+            "ዛ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ፎ",
+          "options": [
+            "ፉ",
+            "ፎ",
+            "ፌ",
+            "ሮ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ፈ",
+          "hide": [
+            2,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ፈረስ",
+          "tiles": [
+            "ረ",
+            "ፈ",
+            "ስ",
+            "ፋ",
+            "ሰ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ሙዝ",
+          "options": [
+            "ሙዝ",
+            "ዛፍ",
+            "ፈረስ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ዛፍ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ፍቅር",
+            "አዎ",
+            "ይቅርታ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "140 characters. Tomorrow: ሸ and ጀ — new letters made from old ones."
+        }
+      ]
+    },
+    {
+      "id": "w4-l2",
+      "week": 4,
+      "order": 2,
+      "title": "Tea, child, coffee pot",
+      "goal": "Add the ሸ and ጀ families.",
+      "newFamilies": [
+        "ሸ",
+        "ጀ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "Now you can read the name of the coffee pot from week 2: ጀበና. Coffee from the ጀበና is often served with incense burning and a snack such as popcorn.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ሸ",
+            "ሹ",
+            "ሺ",
+            "ሻ",
+            "ሼ",
+            "ሽ",
+            "ሾ",
+            "ጀ",
+            "ጁ",
+            "ጂ",
+            "ጃ",
+            "ጄ",
+            "ጅ",
+            "ጆ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ሸ"
+        },
+        {
+          "type": "see",
+          "family": "ጀ"
+        },
+        {
+          "type": "rule",
+          "title": "New letters from old",
+          "text": "Compare ሸ (sh) with ሰ (s), and ጀ (j) with ደ (d): each new letter is an old one with an extra mark on top. You've seen this before — ቸ (ch) comes from ተ (t)."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ሸ",
+            "ሻ",
+            "ሽ",
+            "ጀ",
+            "ጃ",
+            "ጅ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "shay",
+              "amharic": "ሻይ",
+              "roman": "shay",
+              "english": "tea",
+              "picture": "🍵",
+              "audio": "/audio/words/shay.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "shemiz",
+              "amharic": "ሸሚዝ",
+              "roman": "shemiz",
+              "english": "shirt",
+              "picture": "👕",
+              "audio": "/audio/words/shemiz.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ləj",
+              "amharic": "ልጅ",
+              "roman": "ləj",
+              "english": "child",
+              "picture": "🧒",
+              "audio": "/audio/words/ləj.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "jebena",
+              "amharic": "ጀበና",
+              "roman": "jebena",
+              "english": "coffee pot",
+              "picture": "🫖",
+              "audio": "/audio/words/jebena.mp3",
+              "reviewed": false,
+              "note": "The clay pot for the coffee ceremony."
+            },
+            {
+              "id": "joro",
+              "amharic": "ጆሮ",
+              "roman": "joro",
+              "english": "ear",
+              "picture": "👂",
+              "audio": "/audio/words/joro.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "shənkurt",
+              "amharic": "ሽንኩርት",
+              "roman": "shənkurt",
+              "english": "onion",
+              "picture": "🧅",
+              "audio": "/audio/words/shənkurt.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ጁ",
+          "options": [
+            "ጀ",
+            "ጁ",
+            "ጂ",
+            "ጃ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሾ",
+          "options": [
+            "ሹ",
+            "ሾ",
+            "ሶ",
+            "ሽ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ሸ",
+          "hide": [
+            4,
+            7
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሸሚዝ",
+          "tiles": [
+            "ሚ",
+            "ሸ",
+            "ዝ",
+            "ሰ",
+            "ማ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ሻይ",
+          "options": [
+            "ሻይ",
+            "ጆሮ",
+            "ልጅ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ልጅ"
+        },
+        {
+          "type": "say",
+          "items": [
+            "ሻይ",
+            "ልጅ",
+            "ጀበና"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "154 characters. Tomorrow: ኘ and ዠ — and you'll read the word for Amharic."
+        }
+      ]
+    },
+    {
+      "id": "w4-l3",
+      "week": 4,
+      "order": 3,
+      "title": "Amharic, nine, Monday",
+      "goal": "Add ኘ and ዠ, and hear doubled sounds.",
+      "newFamilies": [
+        "ኘ",
+        "ዠ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "አማርኛ is the working language of Ethiopia's federal government. The fidel you're learning is also used to write Tigrinya and other languages of Ethiopia and Eritrea.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ኘ",
+            "ኙ",
+            "ኚ",
+            "ኛ",
+            "ኜ",
+            "ኝ",
+            "ኞ",
+            "ዠ",
+            "ዡ",
+            "ዢ",
+            "ዣ",
+            "ዤ",
+            "ዥ",
+            "ዦ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ኘ"
+        },
+        {
+          "type": "see",
+          "family": "ዠ"
+        },
+        {
+          "type": "rule",
+          "title": "ኘ says ny",
+          "text": "ኘ is ny, as in 'canyon' or Spanish 'señor'. It's ነ with an extra mark on top, like the letters yesterday. ዠ is zh, like the s in 'measure' — it comes from ዘ, and it's rare."
+        },
+        {
+          "type": "rule",
+          "title": "Held sounds",
+          "text": "Amharic often holds a consonant a little longer: አማርኛ is a-ma-rən-nya. Writing doesn't show it, so listen for it — the same letters can be two different words."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ኘ",
+            "ኛ",
+            "ኝ",
+            "ዠ",
+            "ዣ",
+            "ዥ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "amarənnya",
+              "amharic": "አማርኛ",
+              "roman": "amarənnya",
+              "english": "Amharic (the language)",
+              "picture": "🗣️",
+              "audio": "/audio/words/amarənnya.mp3",
+              "reviewed": false,
+              "note": "The ny is held: a-ma-rən-nya."
+            },
+            {
+              "id": "ənglizənnya",
+              "amharic": "እንግሊዝኛ",
+              "roman": "ənglizənnya",
+              "english": "English (the language)",
+              "picture": "🔤",
+              "audio": "/audio/words/ənglizənnya.mp3",
+              "reviewed": false,
+              "note": "The ny is held, as in the word for Amharic."
+            },
+            {
+              "id": "zet'eny",
+              "amharic": "ዘጠኝ",
+              "roman": "zet'eny",
+              "english": "nine",
+              "picture": "9️⃣",
+              "audio": "/audio/words/zet'eny.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "sennyo",
+              "amharic": "ሰኞ",
+              "roman": "sennyo",
+              "english": "Monday",
+              "picture": "🗓️",
+              "audio": "/audio/words/sennyo.mp3",
+              "reviewed": false,
+              "note": "The ny is held: sen-nyo."
+            },
+            {
+              "id": "garazh",
+              "amharic": "ጋራዥ",
+              "roman": "garazh",
+              "english": "garage",
+              "picture": "🅿️",
+              "audio": "/audio/words/garazh.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "minimalPair",
+          "note": "Held n or short n?",
+          "a": {
+            "id": "wanna",
+            "amharic": "ዋና",
+            "roman": "wanna",
+            "english": "main",
+            "picture": "⭐",
+            "audio": "/audio/words/wanna.mp3",
+            "reviewed": false,
+            "note": "Held n: wan-na."
+          },
+          "b": {
+            "id": "wana",
+            "amharic": "ዋና",
+            "roman": "wana",
+            "english": "swimming",
+            "picture": "🏊",
+            "audio": "/audio/words/wana.mp3",
+            "reviewed": false,
+            "note": "Short n: wa-na."
+          }
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ኙ",
+          "options": [
+            "ኑ",
+            "ኙ",
+            "ኖ",
+            "ኞ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ኘ",
+          "hide": [
+            3,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "አማርኛ",
+          "tiles": [
+            "ማ",
+            "አ",
+            "ኛ",
+            "ር",
+            "ና"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ሰኞ"
+        },
+        {
+          "type": "story",
+          "title": "A little Amharic",
+          "lines": [
+            {
+              "amharic": "ሰላም!",
+              "english": "Hello!"
+            },
+            {
+              "amharic": "እኔ አማርኛ እናገራለሁ።",
+              "english": "I speak Amharic."
+            },
+            {
+              "amharic": "ትንሽ!",
+              "english": "A little!"
+            },
+            {
+              "amharic": "ጥሩ ነው!",
+              "english": "That's good!"
+            },
+            {
+              "amharic": "ቻው!",
+              "english": "Bye!"
+            }
+          ],
+          "note": "Every character here is one you've learned. Verbs come last: line 2 is 'I Amharic speak'."
+        },
+        {
+          "type": "say",
+          "items": [
+            "አማርኛ",
+            "ዘጠኝ",
+            "ሰኞ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "Week 4 milestone: 24 families, 168 characters, 60 words — and you can say you speak Amharic. 🎉"
+        }
+      ]
+    }
+  ]
+}
