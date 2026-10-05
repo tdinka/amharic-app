@@ -38,6 +38,13 @@ Open questions about content and wording. Claude adds to this list and brings it
   - The w-forms taught: ቋ ጓ ኳ ሏ (the plan listed three; I added ኳ for ኳስ ball). Good choice?
   - Story “Friends”: “እኔ ትንሽ አማርኛ እናገራለሁ።” and “አማርኛ ጥሩ ቋንቋ ነው።” = “Amharic is a good language.” — natural?
   - Culture notes: Italian loanwords and the Merkato's name; Ethiopia's early Christian and Muslim communities; greeting with kisses on alternating cheeks and touching shoulders. Accurate?
+- **Week 6 drafts (all unreviewed)** — please check every word, romanization and picture in `content/lessons/week-6.json`. Least sure of:
+  - Spellings with the sound-alike letters: ሐኪም, ሐሙስ, ሕይወት, ኃይል, ሥራ, ሥጋ, ዓመት, ዓይን, ፀሐይ, and ሦስት (three — often written with the plain s letter). Which spellings should learners see? The rule cards now say “in these lessons” rather than “always”.
+  - Number-word romanizations: አምስት “aməst”, ስድስት “sədəst”, ስምንት “səmənt”, አስር “asər”.
+  - Holiday card: “እንኳን አደረሳችሁ!” = “Happy holiday!”, “ፍቅር፣ ጤና፣ ሕይወት!” = “Love, health, life!”, and signing off “ልጅሽ” = “Your child” (to a mother). Natural?
+  - Café: “ቡና ስንት ነው፧” = “How much is coffee?” and “ጥሩ! ሁለት ቡና!” = “Good! Two coffees!”. Natural? The prices are made up.
+  - Culture notes: why Ge'ez had separate letters for the h/s/a/ts' sounds; the Ethiopian calendar being about 7–8 years behind; where fidel numerals are still used. Accurate?
+  - No dictation in lesson 1–2 and only one in lesson 3 (ሰባት), since hearing a word can't tell you which sound-alike letter it uses. Is that the right call?
 
 ## Answered
 

@@ -1,0 +1,598 @@
+{
+  "week": 6,
+  "lessons": [
+    {
+      "id": "w6-l1",
+      "week": 6,
+      "order": 1,
+      "title": "Doctor, life, Thursday",
+      "goal": "Add ሐ and ኀ, two more ways to write h.",
+      "newFamilies": [
+        "ሐ",
+        "ኀ"
+      ],
+      "estimatedMinutes": 16,
+      "cultureNote": "Why several letters for one sound? The fidel was made for Ge'ez, an ancient language that pronounced these letters differently. Amharic merged the sounds but kept the letters, so each word's spelling is learned along with the word.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Week 6, the last week of the fidel: letters that sound like ones you already know, plus numerals and punctuation."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ሐ",
+            "ሑ",
+            "ሒ",
+            "ሓ",
+            "ሔ",
+            "ሕ",
+            "ሖ",
+            "ኀ",
+            "ኁ",
+            "ኂ",
+            "ኃ",
+            "ኄ",
+            "ኅ",
+            "ኆ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ሐ"
+        },
+        {
+          "type": "see",
+          "family": "ኀ"
+        },
+        {
+          "type": "rule",
+          "title": "Same sound, different letter",
+          "text": "ሐ says the same as ሀ, and so does ኀ (and ኸ from last week). Which one a word uses is simply how it's spelled — so learn each word with its letters. In these lessons, ሐኪም is spelled with ሐ."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ሐ",
+            "ሓ",
+            "ሕ",
+            "ኀ",
+            "ኃ",
+            "ኅ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "hamus",
+              "amharic": "ሐሙስ",
+              "roman": "hamus",
+              "english": "Thursday",
+              "picture": "🗓️",
+              "audio": "/audio/words/hamus.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "hakim",
+              "amharic": "ሐኪም",
+              "roman": "hakim",
+              "english": "doctor",
+              "picture": "👩‍⚕️",
+              "audio": "/audio/words/hakim.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "həywet",
+              "amharic": "ሕይወት",
+              "roman": "həywet",
+              "english": "life",
+              "picture": "🌱",
+              "audio": "/audio/words/həywet.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "hayl",
+              "amharic": "ኃይል",
+              "roman": "hayl",
+              "english": "strength",
+              "picture": "💪",
+              "audio": "/audio/words/hayl.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሑ",
+          "options": [
+            "ሑ",
+            "ሙ",
+            "ሩ",
+            "ሉ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ኃ",
+          "options": [
+            "ኃ",
+            "ጋ",
+            "ካ",
+            "ቃ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ሐ",
+          "hide": [
+            2,
+            6
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሐኪም",
+          "tiles": [
+            "ኪ",
+            "ሐ",
+            "ም",
+            "ሀ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ሐኪም",
+          "options": [
+            "ሐኪም",
+            "ሕይወት",
+            "ኃይል"
+          ]
+        },
+        {
+          "type": "say",
+          "items": [
+            "ሐሙስ",
+            "ሐኪም",
+            "ሕይወት"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "217 characters. Tomorrow: ሠ and ዐ, and you'll read a holiday card."
+        }
+      ]
+    },
+    {
+      "id": "w6-l2",
+      "week": 6,
+      "order": 2,
+      "title": "Work, year, eye",
+      "goal": "Add ሠ and ዐ, and read a holiday card.",
+      "newFamilies": [
+        "ሠ",
+        "ዐ"
+      ],
+      "estimatedMinutes": 18,
+      "cultureNote": "ዓመት means year. The Ethiopian calendar runs about seven to eight years behind the one used in most of the world, so Ethiopia celebrated its new millennium in 2007 by the international calendar.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ሠ",
+            "ሡ",
+            "ሢ",
+            "ሣ",
+            "ሤ",
+            "ሥ",
+            "ሦ",
+            "ዐ",
+            "ዑ",
+            "ዒ",
+            "ዓ",
+            "ዔ",
+            "ዕ",
+            "ዖ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ሠ"
+        },
+        {
+          "type": "see",
+          "family": "ዐ"
+        },
+        {
+          "type": "rule",
+          "title": "Two more sound-alikes",
+          "text": "ሠ says the same as ሰ, and ዐ says the same as አ. Again, the spelling has to be learned: these lessons spell ሥራ with ሥ. In everyday writing you'll often see sound-alike letters swapped, too."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ሠ",
+            "ሣ",
+            "ሥ",
+            "ዐ",
+            "ዓ",
+            "ዕ"
+          ]
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "səra",
+              "amharic": "ሥራ",
+              "roman": "səra",
+              "english": "work",
+              "picture": "💼",
+              "audio": "/audio/words/səra.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "səga",
+              "amharic": "ሥጋ",
+              "roman": "səga",
+              "english": "meat",
+              "picture": "🥩",
+              "audio": "/audio/words/səga.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "amet",
+              "amharic": "ዓመት",
+              "roman": "amet",
+              "english": "year",
+              "picture": "🎆",
+              "audio": "/audio/words/amet.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "ayn",
+              "amharic": "ዓይን",
+              "roman": "ayn",
+              "english": "eye",
+              "picture": "👁️",
+              "audio": "/audio/words/ayn.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ዑ",
+          "options": [
+            "ዑ",
+            "ቡ",
+            "ኑ",
+            "ሉ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሣ",
+          "options": [
+            "ሣ",
+            "ሻ",
+            "ጻ",
+            "ታ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ሠ",
+          "hide": [
+            4,
+            7
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ሥራ",
+          "tiles": [
+            "ራ",
+            "ሥ",
+            "ስ",
+            "ሬ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ዓይን",
+          "options": [
+            "ዓይን",
+            "ሥጋ",
+            "ዓመት"
+          ]
+        },
+        {
+          "type": "story",
+          "title": "A holiday card",
+          "lines": [
+            {
+              "amharic": "ለእማማ",
+              "english": "To Mom"
+            },
+            {
+              "amharic": "እንኳን አደረሳችሁ!",
+              "english": "Happy holiday!"
+            },
+            {
+              "amharic": "ፍቅር፣ ጤና፣ ሕይወት!",
+              "english": "Love, health, life!"
+            },
+            {
+              "amharic": "ልጅሽ",
+              "english": "Your child"
+            }
+          ],
+          "note": "Line 2 is what people say — and write on cards — at every big holiday. ለ in front of a word means 'to' or 'for'."
+        },
+        {
+          "type": "say",
+          "items": [
+            "ሥራ",
+            "ዓመት",
+            "ዓይን"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "231 characters. Tomorrow: the very last family, ፀ, plus numerals and a café menu."
+        }
+      ]
+    },
+    {
+      "id": "w6-l3",
+      "week": 6,
+      "order": 3,
+      "title": "Sun, numbers, café",
+      "goal": "Add ፀ, the numerals ፩–፲, and the last punctuation marks.",
+      "newFamilies": [
+        "ፀ"
+      ],
+      "estimatedMinutes": 22,
+      "cultureNote": "The fidel numerals ፩–፲ come from Ge'ez. Everyday prices and phone numbers use 1, 2, 3, but you'll see the fidel numerals on calendars, in church books and in formal dates.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ፀ",
+            "ፁ",
+            "ፂ",
+            "ፃ",
+            "ፄ",
+            "ፅ",
+            "ፆ"
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ፀ"
+        },
+        {
+          "type": "rule",
+          "title": "The last letter family",
+          "text": "ፀ says the same as ጸ: a popped ts. Some words you know are written with either one. With ፀ, you've now met all 34 families of the fidel."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ፀ",
+            "ፃ",
+            "ፅ"
+          ]
+        },
+        {
+          "type": "numerals",
+          "items": [
+            "፩",
+            "፪",
+            "፫",
+            "፬",
+            "፭",
+            "፮",
+            "፯",
+            "፰",
+            "፱",
+            "፲"
+          ],
+          "text": "The fidel has its own numerals, from Ge'ez. Here are one to ten."
+        },
+        {
+          "type": "words",
+          "items": [
+            {
+              "id": "ts'ehay",
+              "amharic": "ፀሐይ",
+              "roman": "ts'ehay",
+              "english": "sun",
+              "picture": "☀️",
+              "audio": "/audio/words/ts'ehay.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "and",
+              "amharic": "አንድ",
+              "roman": "and",
+              "english": "one",
+              "picture": "1️⃣",
+              "audio": "/audio/words/and.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "sost",
+              "amharic": "ሦስት",
+              "roman": "sost",
+              "english": "three",
+              "picture": "3️⃣",
+              "audio": "/audio/words/sost.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "aməst",
+              "amharic": "አምስት",
+              "roman": "aməst",
+              "english": "five",
+              "picture": "5️⃣",
+              "audio": "/audio/words/aməst.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "sədəst",
+              "amharic": "ስድስት",
+              "roman": "sədəst",
+              "english": "six",
+              "picture": "6️⃣",
+              "audio": "/audio/words/sədəst.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "sebat",
+              "amharic": "ሰባት",
+              "roman": "sebat",
+              "english": "seven",
+              "picture": "7️⃣",
+              "audio": "/audio/words/sebat.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "səmənt",
+              "amharic": "ስምንት",
+              "roman": "səmənt",
+              "english": "eight",
+              "picture": "8️⃣",
+              "audio": "/audio/words/səmənt.mp3",
+              "reviewed": false
+            },
+            {
+              "id": "asər",
+              "amharic": "አስር",
+              "roman": "asər",
+              "english": "ten",
+              "picture": "🔟",
+              "audio": "/audio/words/asər.mp3",
+              "reviewed": false
+            }
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ፃ",
+          "options": [
+            "ፃ",
+            "ሳ",
+            "ታ",
+            "ቻ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "gridFill",
+          "family": "ፀ",
+          "hide": [
+            2,
+            4
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "buildWord",
+          "target": "ስድስት",
+          "tiles": [
+            "ድ",
+            "ስ",
+            "ት",
+            "ስ",
+            "ደ"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "pictureNaming",
+          "target": "ፀሐይ",
+          "options": [
+            "ፀሐይ",
+            "ሦስት",
+            "አምስት"
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "dictation",
+          "target": "ሰባት"
+        },
+        {
+          "type": "story",
+          "title": "At the café",
+          "lines": [
+            {
+              "amharic": "ቡና ስንት ነው፧",
+              "english": "How much is coffee?"
+            },
+            {
+              "amharic": "ቡና ፲ ብር ነው።",
+              "english": "Coffee is 10 birr."
+            },
+            {
+              "amharic": "ሻይ ስንት ነው፧",
+              "english": "How much is tea?"
+            },
+            {
+              "amharic": "ሻይ ፭ ብር ነው።",
+              "english": "Tea is 5 birr."
+            },
+            {
+              "amharic": "ጥሩ! ሁለት ቡና!",
+              "english": "Good! Two coffees!"
+            }
+          ],
+          "note": "ብር (birr) is Ethiopian money, and ስንት means 'how much' or 'how many'. The prices are made up for practice."
+        },
+        {
+          "type": "punctuation",
+          "items": [
+            "፧",
+            "፤",
+            "፡"
+          ],
+          "text": "Three more marks. ፧ ends a question — you just read it in the café. ፤ is a semicolon. ፡ is the old word separator: older writing puts it between words instead of a space."
+        },
+        {
+          "type": "say",
+          "items": [
+            "አንድ",
+            "ሦስት",
+            "አምስት"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "You've learned the whole fidel: all 34 families, 238 characters, the numerals one to ten, and 89 words. That's the alphabet done — congratulations! 🎉"
+        }
+      ]
+    }
+  ]
+}

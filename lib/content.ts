@@ -6,6 +6,7 @@ import week2Json from "@/content/lessons/week-2.json";
 import week3Json from "@/content/lessons/week-3.json";
 import week4Json from "@/content/lessons/week-4.json";
 import week5Json from "@/content/lessons/week-5.json";
+import week6Json from "@/content/lessons/week-6.json";
 
 export type FidelForm = {
   order: number;
@@ -74,7 +75,8 @@ export type Step =
   | { type: "exercise"; kind: "pictureNaming"; target: string; options: string[] }
   | { type: "story"; title: string; lines: StoryLine[]; note?: string }
   | { type: "review" }
-  | { type: "punctuation"; items: string[] };
+  | { type: "punctuation"; items: string[]; text?: string }
+  | { type: "numerals"; items: string[]; text?: string };
 
 export type ExerciseStep = Extract<Step, { type: "exercise" }>;
 
@@ -95,7 +97,7 @@ export type Lesson = {
 export type LessonWeek = { week: number; lessons: Lesson[] };
 
 export const fidel = fidelJson as FidelData;
-export const weeks: LessonWeek[] = [week1Json, week2Json, week3Json, week4Json, week5Json] as unknown as LessonWeek[];
+export const weeks: LessonWeek[] = [week1Json, week2Json, week3Json, week4Json, week5Json, week6Json] as unknown as LessonWeek[];
 export const lessons: Lesson[] = weeks.flatMap((w) => w.lessons);
 export const families: FidelFamily[] = [...fidel.families].sort(
   (a, b) => a.sequence - b.sequence,
@@ -201,4 +203,9 @@ export function tokenizeLine(line: string): { text: string; word: string }[] {
 
 export function punctuationName(char: string): string | undefined {
   return fidel.meta.punctuation.find((p) => p.char === char)?.name;
+}
+
+/** The value of a Ge'ez numeral, e.g. ፲ → 10. */
+export function numeralValue(char: string): number | undefined {
+  return fidel.meta.numerals.find((n) => n.char === char)?.value;
 }

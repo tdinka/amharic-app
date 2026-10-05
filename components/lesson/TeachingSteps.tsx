@@ -5,7 +5,7 @@ import { AudioButton, ComputerVoice, RecordingComing } from "@/components/AudioB
 import { VowelMarkGlyph } from "@/components/Glyphs";
 import { Roman } from "@/components/Roman";
 import { charAudioPath, wordAudioPath } from "@/lib/audio";
-import { familyByBase, punctuationName, type Step, type Word } from "@/lib/content";
+import { familyByBase, numeralValue, punctuationName, type Step, type Word } from "@/lib/content";
 import { romanOfChar } from "@/lib/romanization";
 import { audioSource, playAudio, stopAudio, wait } from "@/lib/useAudio";
 import { Badge, CharTile, StepHeading, StepText } from "./ui";
@@ -220,11 +220,28 @@ export function PhraseStep({ step }: { step: StepOf<"phrase"> }) {
   );
 }
 
+export function NumeralsStep({ step }: { step: StepOf<"numerals"> }) {
+  return (
+    <div>
+      <StepHeading>Numerals</StepHeading>
+      <StepText>{step.text ?? "The fidel has its own numerals."}</StepText>
+      <div className="mt-6 grid grid-cols-5 gap-2">
+        {step.items.map((c) => (
+          <div key={c} className="flex flex-col items-center rounded-2xl border border-line bg-card py-3">
+            <span className="font-ethiopic text-5xl leading-tight">{c}</span>
+            <span className="text-lg font-semibold text-muted">{numeralValue(c) ?? "?"}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function PunctuationStep({ step }: { step: StepOf<"punctuation"> }) {
   return (
     <div>
       <StepHeading>Punctuation</StepHeading>
-      <StepText>Amharic has its own punctuation marks. You just met these in the story.</StepText>
+      <StepText>{step.text ?? "Amharic has its own punctuation marks. You just met these in the story."}</StepText>
       <div className="mt-6 grid gap-3 sm:grid-cols-2">
         {step.items.map((c) => (
           <div key={c} className="flex items-center gap-4 rounded-2xl border border-line bg-card p-4">
