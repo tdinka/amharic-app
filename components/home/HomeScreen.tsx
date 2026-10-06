@@ -44,7 +44,7 @@ function LessonNode({ lesson, state, offset }: { lesson: Lesson; state: NodeStat
       >
         {state === "done" ? "✓" : state === "locked" ? "🔒" : lesson.order}
       </div>
-      <div className={`mt-2 max-w-[12rem] text-center text-sm font-semibold ${state === "locked" ? "text-muted" : ""}`}>
+      <div className={`mt-2 max-w-[12rem] rounded-md bg-paper px-2 py-0.5 text-center text-sm font-semibold ${state === "locked" ? "text-muted" : ""}`}>
         {lesson.title}
       </div>
     </div>
