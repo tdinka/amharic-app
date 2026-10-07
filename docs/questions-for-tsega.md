@@ -46,10 +46,12 @@ Open questions about content and wording. Claude adds to this list and brings it
   - Culture notes: why Ge'ez had separate letters for the h/s/a/ts' sounds; the Ethiopian calendar being about 7–8 years behind; where fidel numerals are still used. Accurate?
   - No dictation in lesson 1–2 and only one in lesson 3 (ሰባት), since hearing a word can't tell you which sound-alike letter it uses. Is that the right call?
 - **Welcome screens (unreviewed)** — `content/intro.json`, shown to new learners before lesson 1 and linked from Settings. Is the description of Amharic right (one of Ethiopia's main languages and its federal working language; tens of millions of speakers; Semitic, related to Arabic and Hebrew; Addis Ababa standard)? And does “How the course works” set the right expectations for your learners — especially heritage learners?
+- **Gentler start to Week 1 (unreviewed)** — lesson 1 now teaches ለ then መ, one vowel at a time (forms 1–4, a check, then 5–7), listening and looking only; አ moved to lesson 2 with its own explanation, along with the first writing and speaking. Does this order work for your learners? And are these sound hints right for Addis Ababa Amharic: ē “like the ‘ay’ in ‘say’”, ə “a very short vowel, sometimes not said at all”, o “like the ‘o’ in ‘go’”?
+- **Alphabet map in the welcome (unreviewed)** — a new card shows the whole fidel as a faded grid, one row and one column highlighted. Helpful, or too much on day one?
 
 ## Answered
 
 - **Total characters:** 238 (the count in `content/fidel.json`) is right. Spec updated from 231.
 - **Week 1 word count:** the Lesson 3 wrap-up now says 11 words, not 9.
-- **Grid-fill `hide` numbers:** they are vowel orders (1–7), so `"hide": [3, 5]` in Lesson 1 hides ሊ (li) and ሌ (lē). Use the same numbering in new lessons.
+- **Grid-fill `hide` numbers:** they are vowel orders (1–7), e.g. `"hide": [2, 4]` hides the 2nd and 4th forms. Use the same numbering in all lessons.
 - **ሰባ (seventy):** moved from Week 1 lesson 2 to lesson 3, after its letters are taught. `npm run check:lessons` now passes.

@@ -6,49 +6,46 @@
       "week": 1,
       "order": 1,
       "title": "Seven sounds, one shape",
-      "goal": "Learn the 7 vowel orders using the አ and ለ families.",
+      "goal": "Meet the ለ family one vowel at a time, then see the same marks on መ.",
       "newFamilies": [
-        "አ",
-        "ለ"
+        "ለ",
+        "መ"
       ],
-      "estimatedMinutes": 15,
+      "estimatedMinutes": 12,
       "cultureNote": "Ethiopian children learn the fidel by chanting each family across its seven orders: ሀ ሁ ሂ ሃ ሄ ህ ሆ. The app's 'chant' button does the same.",
       "steps": [
         {
           "type": "intro",
-          "text": "Amharic letters come in families. Each family has 7 forms — one per vowel. Learn the 7 vowel marks once, and they work for every family."
+          "text": "Amharic letters come in families: one shape, changed a little for each vowel. Today you'll meet one family, step by step — just listening and looking. No writing yet."
         },
         {
           "type": "hear",
           "items": [
-            "አ",
-            "ኡ",
-            "ኢ",
-            "ኣ",
-            "ኤ",
-            "እ",
-            "ኦ"
+            "ለ"
           ],
-          "text": "Listen to the 7 vowel sounds: a, u, i, a, ē, ə, o."
+          "text": "This is ለ — \"le\". It's the base shape of the l family."
+        },
+        {
+          "type": "hear",
+          "items": [
+            "ለ",
+            "ሉ",
+            "ሊ",
+            "ላ"
+          ],
+          "text": "Add a small mark and the vowel changes. Here are the first four: le, lu, li, la."
         },
         {
           "type": "see",
           "family": "ለ",
-          "text": "Watch how ለ changes: a foot for u, a little leg for i, a lowered leg for a, a ring for ē, a bent stem for ə, a loop for o."
-        },
-        {
-          "type": "chant",
-          "family": "ለ"
-        },
-        {
-          "type": "trace",
-          "chars": [
-            "አ",
-            "ለ",
-            "ሉ",
-            "ላ",
-            "ሎ"
-          ]
+          "orders": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "title": "Four forms",
+          "text": "ሉ has a little foot for u. ሊ has a leg for i. ላ lowers its leg for a. The gold shows each mark."
         },
         {
           "type": "exercise",
@@ -62,6 +59,36 @@
           ]
         },
         {
+          "type": "soundKey",
+          "title": "Three more sounds",
+          "text": "Two of them are written with letters you may not know: ē and ə. Tap each one to hear it.",
+          "items": [
+            {
+              "char": "ሌ",
+              "hint": "ē — like the “ay” in “say”"
+            },
+            {
+              "char": "ል",
+              "hint": "ə — a very short vowel, sometimes not said at all"
+            },
+            {
+              "char": "ሎ",
+              "hint": "o — like the “o” in “go”"
+            }
+          ]
+        },
+        {
+          "type": "see",
+          "family": "ለ",
+          "orders": [
+            5,
+            6,
+            7
+          ],
+          "title": "Three more forms",
+          "text": "ሌ has a ring for ē. ል bends its stem for ə. ሎ has a loop for o."
+        },
+        {
           "type": "exercise",
           "kind": "soundMatch",
           "prompt": "ሎ",
@@ -73,12 +100,81 @@
           ]
         },
         {
+          "type": "see",
+          "family": "ለ",
+          "title": "The whole family",
+          "text": "Seven forms, one shape. Tap any of them to hear it again."
+        },
+        {
+          "type": "chant",
+          "family": "ለ"
+        },
+        {
+          "type": "rule",
+          "title": "Same marks, new letter",
+          "text": "Here's a second family, መ — \"me\". You've never seen it, but you already know its marks."
+        },
+        {
+          "type": "see",
+          "family": "መ",
+          "title": "The መ family",
+          "text": "Look for the same foot, leg, ring and loop you just learned."
+        },
+        {
           "type": "exercise",
           "kind": "gridFill",
-          "family": "ለ",
+          "family": "መ",
           "hide": [
-            3,
-            5
+            2,
+            4
+          ]
+        },
+        {
+          "type": "exercise",
+          "kind": "soundMatch",
+          "prompt": "ሚ",
+          "options": [
+            "ሚ",
+            "ሊ",
+            "ማ",
+            "ሙ"
+          ]
+        },
+        {
+          "type": "wrapUp",
+          "text": "You can already read 14 characters. Next time: writing and saying them, plus አ and ሰ — and your first words."
+        }
+      ]
+    },
+    {
+      "id": "w1-l2",
+      "week": 1,
+      "order": 2,
+      "title": "Hello, name, mother",
+      "goal": "Write and say your first letters, then add አ and ሰ and read real words.",
+      "newFamilies": [
+        "አ",
+        "ሰ"
+      ],
+      "estimatedMinutes": 20,
+      "cultureNote": "ሰላም (selam) means peace. It is the everyday greeting — and many Ethiopian girls are named Selam.",
+      "steps": [
+        {
+          "type": "review"
+        },
+        {
+          "type": "intro",
+          "text": "Today you'll write and say the letters you met last time, then add two families — አ and ሰ — and read your first real words."
+        },
+        {
+          "type": "trace",
+          "chars": [
+            "ለ",
+            "ላ",
+            "ሎ",
+            "መ",
+            "ማ",
+            "ም"
           ]
         },
         {
@@ -94,50 +190,26 @@
           ]
         },
         {
-          "type": "phrase",
-          "word": {
-            "id": "selam",
-            "amharic": "ሰላም",
-            "roman": "selam",
-            "english": "hello / peace",
-            "picture": "🕊️",
-            "audio": "/audio/words/selam.mp3",
-            "reviewed": false,
-            "note": "You'll learn to read this in lesson 2 — for now, just hear and say it."
-          }
+          "type": "hear",
+          "items": [
+            "አ",
+            "ኡ",
+            "ኢ",
+            "ኣ",
+            "ኤ",
+            "እ",
+            "ኦ"
+          ]
         },
         {
-          "type": "wrapUp",
-          "text": "You can already read 14 characters. Tomorrow: መ and ሰ."
-        }
-      ]
-    },
-    {
-      "id": "w1-l2",
-      "week": 1,
-      "order": 2,
-      "title": "Hello, name, mother",
-      "goal": "Add the መ and ሰ families and read your first words.",
-      "newFamilies": [
-        "መ",
-        "ሰ"
-      ],
-      "estimatedMinutes": 18,
-      "cultureNote": "ሰላም (selam) means peace. It is the everyday greeting — and many Ethiopian girls are named Selam.",
-      "steps": [
-        {
-          "type": "review"
+          "type": "see",
+          "family": "አ",
+          "title": "A letter for vowels",
+          "text": "አ is different: it has no consonant of its own, so each form is just a vowel — a, u, i, a, ē, ə, o. The first and fourth forms both sound like “a”."
         },
         {
           "type": "hear",
           "items": [
-            "መ",
-            "ሙ",
-            "ሚ",
-            "ማ",
-            "ሜ",
-            "ም",
-            "ሞ",
             "ሰ",
             "ሱ",
             "ሲ",
@@ -146,10 +218,6 @@
             "ስ",
             "ሶ"
           ]
-        },
-        {
-          "type": "see",
-          "family": "መ"
         },
         {
           "type": "see",
@@ -163,12 +231,11 @@
         {
           "type": "trace",
           "chars": [
-            "መ",
-            "ማ",
             "ሰ",
             "ሳ",
             "ስ",
-            "ም"
+            "አ",
+            "እ"
           ]
         },
         {
