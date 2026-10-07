@@ -64,6 +64,7 @@ export interface ProgressStore {
   load(): Promise<ProgressData>;
   completeLesson(lessonId: string, at: Date): Promise<void>;
   upsertCards(cards: StoredCard[]): Promise<void>;
+  removeCards(ids: string[]): Promise<void>;
   /** Log practice time and/or skill activity; also marks the day for the streak. */
   logPractice(entry: { at: Date; seconds?: number; skill?: Skill; count?: number }): Promise<void>;
   updateSettings(patch: Partial<Settings>): Promise<void>;

@@ -64,6 +64,12 @@ export class LocalStorageProgressStore implements ProgressStore {
     });
   }
 
+  async removeCards(ids: string[]) {
+    this.mutate((d) => {
+      for (const id of ids) delete d.cards[id];
+    });
+  }
+
   async upsertCards(cards: ProgressData["cards"][string][]) {
     this.mutate((d) => {
       for (const c of cards) d.cards[c.id] = c;

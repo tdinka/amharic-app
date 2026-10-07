@@ -1,6 +1,7 @@
 "use client";
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from "react";
+import { reconcileCards } from "@/lib/srs";
 import { LocalStorageProgressStore } from "./localStorageStore";
 import { emptyProgress, type ProgressData, type ProgressStore } from "./types";
 
@@ -21,7 +22,15 @@ export function ProgressProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false);
 
   const refresh = useCallback(async () => {
-    setData(await store.load());
+    let loaded = await store.load();
+    // Lessons can change after a learner has done them; bring their cards in line.
+    const { add, remove } = reconcileCards(loaded, new Date());
+    if (add.length || remove.length) {
+      if (remove.length) await store.removeCards(remove);
+      if (add.length) await store.upsertCards(add);
+      loaded = await store.load();
+    }
+    setData(loaded);
     setReady(true);
   }, [store]);
 
