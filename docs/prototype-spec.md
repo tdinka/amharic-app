@@ -14,7 +14,7 @@ Goal: a working web prototype that a real learner can use for the first week of 
    | --- | --- |
    | `intro`, `rule`, `wrapUp` | Text card |
    | `hear` | Big character tiles; tap to play audio; auto-play in sequence |
-   | `see` | One family's 7 forms in a row, the vowel mark highlighted in a second color, with the explanation text |
+   | `see` | One family's 7 forms in a row, the vowel mark highlighted in a second color, with the explanation text; optional `orders` shows only some forms, to introduce the vowel marks a few at a time |
    | `chant` | Plays all 7 forms of a family in rhythm, highlighting each as it sounds |
    | `trace` | Handwriting canvas (see below) for each character |
    | `say` | Record button (MediaRecorder API), play back yours next to the native audio |
@@ -30,6 +30,7 @@ Goal: a working web prototype that a real learner can use for the first week of 
    | `review` | Spaced-repetition cards due today (see below) |
    | `punctuation` | Show the marks with their names from `fidel.json` |
    | `numerals` | Show Ge'ez numerals with their values from `fidel.json` |
+   | `soundKey` | A short key to unfamiliar Latin letters (ē, ə…): letter, sound, a plain-English hint; tap to hear |
    - Correct/incorrect feedback is warm and quick; wrong answers come back at the end of the lesson.
    - The lesson finishes with a culture note card (`cultureNote`).
 

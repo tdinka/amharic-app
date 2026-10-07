@@ -3,7 +3,9 @@
   "pages": [
     {
       "title": "Welcome to Amharic",
-      "example": { "word": "selam" },
+      "example": {
+        "word": "selam"
+      },
       "paragraphs": [
         "Amharic is one of the main languages of Ethiopia and the country's federal working language. Tens of millions of people speak it, in Ethiopia and in communities around the world.",
         "It's a Semitic language, related to Arabic and Hebrew. You'll be learning the standard Amharic of Addis Ababa."
@@ -11,10 +13,22 @@
     },
     {
       "title": "A script of its own",
-      "example": { "family": "l" },
+      "example": {
+        "family": "l"
+      },
       "paragraphs": [
         "Amharic is written in the fidel. Each character is a consonant and a vowel together, so the fidel comes in families: one base shape for each consonant, changed a little for each of seven vowels.",
-        "There are 34 families, 238 characters in all — but learn the seven vowel marks once and they work across every family. The fidel reads left to right and has no capital letters."
+        "Learn the seven vowel marks once and they work across every family. The fidel reads left to right and has no capital letters."
+      ]
+    },
+    {
+      "title": "The whole fidel at a glance",
+      "example": {
+        "map": true
+      },
+      "paragraphs": [
+        "Here's every letter you'll learn — 34 families, 238 characters. Each row is one family (one consonant); each column is one vowel.",
+        "No need to take it in now. You'll learn it a few rows at a time over six weeks, and you can explore it whenever you like from the Fidel tab."
       ]
     },
     {

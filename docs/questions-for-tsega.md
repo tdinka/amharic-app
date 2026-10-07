@@ -51,5 +51,8 @@ Open questions about content and wording. Claude adds to this list and brings it
 
 - **Total characters:** 238 (the count in `content/fidel.json`) is right. Spec updated from 231.
 - **Week 1 word count:** the Lesson 3 wrap-up now says 11 words, not 9.
-- **Grid-fill `hide` numbers:** they are vowel orders (1–7), so `"hide": [3, 5]` in Lesson 1 hides ሊ (li) and ሌ (lē). Use the same numbering in new lessons.
+- **Grid-fill `hide` numbers:** they are vowel orders (1–7), e.g. `"hide": [2, 4]` hides the 2nd and 4th forms. Use the same numbering in all lessons.
 - **ሰባ (seventy):** moved from Week 1 lesson 2 to lesson 3, after its letters are taught. `npm run check:lessons` now passes.
+- **Gentler start to Week 1:** keep it — lesson 1 teaches ለ then መ one vowel at a time, listening and looking only; አ, writing and speaking start in lesson 2.
+- **Sound hints:** keep them — ē “like the ‘ay’ in ‘say’”, ə “a very short vowel, sometimes not said at all”, o “like the ‘o’ in ‘go’”.
+- **Alphabet map in the welcome:** keep it.

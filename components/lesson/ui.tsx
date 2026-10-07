@@ -6,8 +6,30 @@ export function StepHeading({ children }: { children: React.ReactNode }) {
   return <h2 className="font-display text-2xl font-semibold leading-snug">{children}</h2>;
 }
 
+/** Runs of Ethiopic characters inside lesson text, shown a little larger so their marks are visible. */
+export function WithFidel({ text }: { text: string }) {
+  const parts = text.split(/([\u1200-\u137F\u2D80-\u2DDF\uAB00-\uAB2F]+)/u);
+  return (
+    <>
+      {parts.map((part, i) =>
+        i % 2 === 1 ? (
+          <span key={i} className="font-ethiopic text-[1.35em] leading-none">
+            {part}
+          </span>
+        ) : (
+          part
+        ),
+      )}
+    </>
+  );
+}
+
 export function StepText({ children }: { children: React.ReactNode }) {
-  return <p className="mt-3 text-lg leading-relaxed text-ink/90">{children}</p>;
+  return (
+    <p className="mt-3 text-lg leading-relaxed text-ink/90">
+      {typeof children === "string" ? <WithFidel text={children} /> : children}
+    </p>
+  );
 }
 
 export function Badge({ children, tone = "ochre" }: { children: React.ReactNode; tone?: "ochre" | "indigo" | "leaf" }) {

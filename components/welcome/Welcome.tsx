@@ -10,7 +10,45 @@ import { families, intro, lessons, wordById, type IntroPage } from "@/lib/conten
 import { nextLesson } from "@/lib/learning";
 import { useProgress } from "@/lib/progress/ProgressProvider";
 
+/**
+ * The whole fidel as a quiet map: every family (row) × vowel (column), small and faded,
+ * with one row and one column picked out to show how the grid works.
+ */
+function AlphabetMap() {
+  const row = families.find((f) => f.consonantRoman === "l")!;
+  const column = 2;
+  return (
+    <div className="rounded-2xl border border-line bg-card p-3">
+      <div className="mb-2 flex flex-wrap gap-x-4 gap-y-1 text-xs">
+        <span className="flex items-center gap-1.5">
+          <span className="inline-block h-3 w-5 rounded-sm bg-ochre" /> one family (a row)
+        </span>
+        <span className="flex items-center gap-1.5">
+          <span className="inline-block h-3 w-5 rounded-sm bg-leaf-light ring-1 ring-leaf" /> one vowel (a column)
+        </span>
+      </div>
+      <div className="grid grid-cols-7 gap-x-1 font-ethiopic text-[13px] leading-[1.3]" aria-label="All 34 letter families of the fidel">
+        {families.flatMap((f) =>
+          f.forms.map((form) => {
+            const inRow = f.base === row.base;
+            const inCol = form.order === column;
+            return (
+              <span
+                key={form.char}
+                className={`text-center ${inRow ? "rounded-sm bg-ochre text-ink" : inCol ? "bg-leaf-light text-ink" : "text-ink/35"}`}
+              >
+                {form.char}
+              </span>
+            );
+          }),
+        )}
+      </div>
+    </div>
+  );
+}
+
 function Example({ example }: { example: NonNullable<IntroPage["example"]> }) {
+  if (example.map) return <AlphabetMap />;
   if (example.word) {
     const word = wordById(example.word);
     if (!word) return null;
@@ -75,7 +113,8 @@ export function Welcome() {
       <main key={index} className="mx-auto w-full max-w-2xl flex-1 animate-pop px-4 pb-36 pt-6">
         {index === 0 && <div className="tibeb mb-6 rounded" />}
         <h1 className="font-display text-3xl font-semibold leading-tight">{page.title}</h1>
-        {page.example && (
+        {/* The map is tall, so its card explains first and shows the map after. */}
+        {page.example && !page.example.map && (
           <div className="mt-5">
             <Example example={page.example} />
           </div>
@@ -85,6 +124,11 @@ export function Welcome() {
             <p key={i}>{p}</p>
           ))}
         </div>
+        {page.example?.map && (
+          <div className="mt-5">
+            <Example example={page.example} />
+          </div>
+        )}
       </main>
 
       <footer className="fixed inset-x-0 bottom-0 border-t border-line bg-card/95 pb-[env(safe-area-inset-bottom)] backdrop-blur">

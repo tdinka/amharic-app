@@ -94,7 +94,7 @@ export function HearStep({ step }: { step: StepOf<"hear"> }) {
       </div>
       <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <button type="button" onClick={play} className="btn-secondary px-4 py-2 text-sm">
-          ▶ Play all again
+          {step.items.length === 1 ? "▶ Play again" : "▶ Play all again"}
         </button>
         {anyMissing && <RecordingComing />}
         {anyTts && <ComputerVoice />}
@@ -106,14 +106,17 @@ export function HearStep({ step }: { step: StepOf<"hear"> }) {
 export function SeeStep({ step }: { step: StepOf<"see"> }) {
   const family = familyByBase(step.family);
   if (!family) return <p>Missing family {step.family} in fidel.json.</p>;
+  // `orders` shows just some forms (e.g. 1–4), to introduce the vowel marks a few at a time.
+  const forms = step.orders ? family.forms.filter((f) => step.orders!.includes(f.order)) : family.forms;
+  const cols = forms.length <= 4 ? "grid-cols-4" : "grid-cols-4 sm:grid-cols-7";
   return (
     <div>
-      <StepHeading>One family, seven forms</StepHeading>
+      <StepHeading>{step.title ?? (forms.length === 7 ? "One family, seven forms" : "New forms")}</StepHeading>
       <StepText>
         {step.text ?? "The base shape stays the same. Only the vowel mark changes — shown here in gold."}
       </StepText>
-      <div className="mt-6 grid grid-cols-4 gap-2 sm:grid-cols-7">
-        {family.forms.map((f) => (
+      <div className={`mt-6 grid gap-2 ${cols}`}>
+        {forms.map((f) => (
           <button
             key={f.char}
             type="button"
@@ -215,6 +218,30 @@ export function PhraseStep({ step }: { step: StepOf<"phrase"> }) {
       <StepHeading>A word to say</StepHeading>
       <div className="mt-5">
         <WordCard word={step.word} onlyHearSay />
+      </div>
+    </div>
+  );
+}
+
+/** A short key to sounds written with unfamiliar Latin letters (ē, ə…), with an example to hear. */
+export function SoundKeyStep({ step }: { step: StepOf<"soundKey"> }) {
+  return (
+    <div>
+      <StepHeading>{step.title ?? "Reading the sounds"}</StepHeading>
+      {step.text && <StepText>{step.text}</StepText>}
+      <div className="mt-5 space-y-3">
+        {step.items.map((item) => (
+          <button
+            key={item.char}
+            type="button"
+            onClick={() => playAudio(charAudioPath(item.char) ?? "")}
+            className="flex w-full items-center gap-4 rounded-2xl border border-line bg-card p-4 text-left"
+          >
+            <span className="font-ethiopic text-5xl leading-none">{item.char}</span>
+            <span className="min-w-[3rem] text-2xl font-semibold">{romanOfChar(item.char)}</span>
+            <span className="text-muted">{item.hint}</span>
+          </button>
+        ))}
       </div>
     </div>
   );

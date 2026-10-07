@@ -62,7 +62,8 @@ export type Step =
   | { type: "wrapUp"; text: string }
   | { type: "rule"; title?: string; text: string }
   | { type: "hear"; items: string[]; text?: string }
-  | { type: "see"; family: string; text?: string }
+  | { type: "see"; family: string; text?: string; title?: string; orders?: number[] }
+  | { type: "soundKey"; title?: string; text?: string; items: { char: string; hint: string }[] }
   | { type: "chant"; family: string }
   | { type: "trace"; chars: string[] }
   | { type: "say"; items: string[] }
@@ -104,7 +105,7 @@ export type IntroPage = {
   title: string;
   paragraphs: string[];
   /** Show a word (by id) or a letter family (by its consonant romanization) from the content. */
-  example?: { word?: string; family?: string };
+  example?: { word?: string; family?: string; map?: boolean };
 };
 export const intro = introJson as { reviewed: boolean; pages: IntroPage[] };
 export const weeks: LessonWeek[] = [week1Json, week2Json, week3Json, week4Json, week5Json, week6Json] as unknown as LessonWeek[];
