@@ -4,7 +4,7 @@
 // lesson is finished. The lesson itself is the introduction, not a review, so a
 // new card first comes due the next morning; reviews (build step 4) take it from there.
 import { createEmptyCard, fsrs, generatorParameters, type Card } from "ts-fsrs";
-import { charInfo, familyByBase, wordsInStep, type Lesson } from "@/lib/content";
+import { charInfo, familyByBase, lessons, wordsInStep, type Lesson } from "@/lib/content";
 import { addDays } from "@/lib/progress/dates";
 import type { CardKind, ProgressData, SavedFsrsCard, StoredCard } from "@/lib/progress/types";
 
@@ -51,6 +51,28 @@ export function cardsToIntroduce(lesson: Lesson, data: ProgressData, now: Date):
     cards.push({ id, kind, ref, introducedAt: now.toISOString(), fsrs: toSaved(fsrsCard) });
   }
   return cards;
+}
+
+/**
+ * Keep a learner's cards in step with what their finished lessons teach *now*. Lessons
+ * can change after someone has done them (e.g. Week 1 was reordered), so: remove cards
+ * for letters/words no finished lesson teaches any more, and add any that are missing.
+ */
+export function reconcileCards(data: ProgressData, now: Date): { add: StoredCard[]; remove: string[] } {
+  const done = lessons.filter((l) => data.completedLessons[l.id]);
+  const taught = new Set(done.flatMap((l) => lessonCardRefs(l).map(({ kind, ref }) => cardId(kind, ref))));
+  const remove = Object.keys(data.cards).filter((id) => !taught.has(id));
+  const add: StoredCard[] = [];
+  const seen = new Set(Object.keys(data.cards));
+  for (const lesson of done) {
+    for (const card of cardsToIntroduce(lesson, data, now)) {
+      if (!seen.has(card.id)) {
+        seen.add(card.id);
+        add.push(card);
+      }
+    }
+  }
+  return { add, remove };
 }
 
 export function dueCards(data: ProgressData, now = new Date()): StoredCard[] {
